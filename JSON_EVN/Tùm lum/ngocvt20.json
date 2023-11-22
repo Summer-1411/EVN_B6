@@ -1,0 +1,2087 @@
+{
+    "individual": [
+      {"id": -10000,
+        "name": "Requestor",
+        "type": "masterdata",
+        "additionalDisplayClass": "left-info", "position": -10000,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      },
+      {"id": -9980,
+        "name": "Department",
+        "type": "masterdata",
+        "additionalDisplayClass": "right-info", "position": -9980,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      },
+      {"id": -9960,
+        "name": "Your Contact Number",
+        "type": "text",
+        "additionalDisplayClass": "left-info", "position": -9960,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      },
+      {"id": -9940,
+        "name": "Lý do cấp",
+        "type": "text",
+        "additionalDisplayClass": "right-info", "position": -9940,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      },
+      {"id": -9920,
+        "name": "Đơn vị",
+        "type": "text",
+        "additionalDisplayClass": "left-info", "position": -9920,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      },
+      {"id": -9900,
+        "name": "Tên đơn vị đề nghị",
+        "type": "TEXTAREA",
+        "additionalDisplayClass": "right-info", "position": -9900,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      },
+      {"id": -9600,
+        "name": "Chọn trưởng/ phó phòng phê duyệt",
+        "type": "masterdata",
+        "additionalDisplayClass": "left-info", "position": -9600,
+        "conditions": {
+          "required": true,
+          "locationRelated": true
+        }
+      }
+    ],
+    "multitable": [
+      { "id": -9880,
+        "position": -9880,
+        "name": "Danh sách các thiết bị vật tư",
+        "type": "table",
+        "columns": [
+          {
+            "id": -9860,
+            "position": -9860,
+            "name": "STT",
+            "type": "number",
+            "conditions": {
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9840,
+            "position": -9840,
+            "name": "Mã vật tư",
+            "type": "MASTERDATA",
+            "conditions": {
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9820,
+            "position": -9820,
+            "name": "Tên vật tư và quy cách",
+            "type": "text"
+          },
+          {
+            "id": -9800,
+            "position": -9800,
+            "name": "Mã- tên NSX",
+            "type": "text",
+            "conditions": {
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9780,
+            "position": -9780,
+            "name": "Đơn vị tính",
+            "type": "textarea",
+            "conditions": {
+              "height": 5,
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9760,
+            "position": -9760,
+            "name": "Xin cấp",
+            "type": "text",
+            "conditions": {
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9740,
+            "position": -9740,
+            "name": "Cấp ngay",
+            "type": "text"
+          },
+          {
+            "id": -9720,
+            "position": -9720,
+            "name": "Sẽ cấp",
+            "type": "textarea",
+            "conditions": {
+              "height": 5,
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9700,
+            "position": -9700,
+            "name": "Điều chuyển",
+            "type": "text",
+            "conditions": {
+              "height": 5
+            }
+          },
+          {
+            "id": -9680,
+            "position": -9680,
+            "name": "Đơn vị điều chuyển",
+            "type": "text",
+            "conditions": {
+              "height": 5
+            }
+          },
+          {
+            "id": -9660,
+            "position": -9660,
+            "name": "Nguồn vốn",
+            "type": "text",
+            "conditions": {
+              "height": 5,
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9640,
+            "position": -9640,
+            "name": "Đơn giá",
+            "type": "text",
+            "conditions": {
+              "height": 5,
+              "required": true,
+              "locationRelated": true
+            }
+          },
+          {
+            "id": -9620,
+            "position": -9620,
+            "name": "Thành tiền",
+            "type": "number",
+            "conditions": {
+              "height": 5,
+              "required": true,
+              "locationRelated": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+
+  {
+    "individual": [
+      {
+        "id": -10000,
+        "position": -10000,
+        "name": "Người tạo Bản dự thảo",
+        "type": "master_data_npc_user",
+        "valuefeeder": "TicketOwner",
+        "conditions": {
+          "required": false
+        },
+        "disabled": true,
+        "additionalDisplayClass": "left-info"
+      },
+      {
+        "name": "Đơn vị tạo Bản dự thảo",
+        "value": "",
+        "type": "master_data_npc_user_account_donvi",
+        "conditions": {
+          "required": false,
+          "min-length": 1
+        },
+        "additionalDisplayClass": "left-info",
+        "id": -9900,
+        "position": -9900
+      },
+      {
+        "name": "Số điện thoại người tạo bản dự thảo",
+        "type": "text",
+        "staticContent": "<p style='padding-top:10px;font-size: 12px; color: #1a06c9'><i></i></p>",
+        "value": "",
+        "placeholder": "IPPhone, Mobile,...",
+        "display": true,
+        "conditions": {
+          "required": false,
+          "min-length": 1
+        },
+        "additionalDisplayClass": "right-info",
+        "id": -9800,
+        "position": -9800
+      },
+      {
+        "name": "Thông tin Bản dự thảo",
+        "type": "SPLITTER",
+        "collapse": false,
+        "id": -9700,
+        "position": -9700
+      },
+      {
+        "valuefeeder": "Now",
+        "id": -9600,
+        "position": -9600,
+        "name": "Ngày bản dự thảo",
+        "type": "date",
+        "conditions": {
+          "required": false,
+          "format": {
+            "regex": "dd/MM/yyyy",
+            "text": "Nhập định dạng dd/MM/yyyy"
+          }
+        },
+        "value": "",
+        "additionalDisplayClass": "left-info"
+      },
+      {
+        "name": "Tỉnh",
+        "type": "master_data_npc_user_province_user",
+        "staticContent": "<p style='padding-top:10px;font-size: 12px; color: #1a06c9'><i></i></p>",
+        "value": "",
+        "placeholder": "",
+        "display": true,
+        "conditions": {
+          "required": false,
+          "min-length": 1
+        },
+        "additionalDisplayClass": "left-info",
+        "id": -9500,
+        "position": -9500
+      },
+      {
+        "name": "Tên biên bản",
+        "type": "text",
+        "value": "ĐÁNH GIÁ CHẤT LƯỢNG VTTB/TSCĐ XIN THANH XỬ LÝ",
+        "placeholder": "",
+        "display": true,
+        "conditions": {
+          "required": false
+        },
+        "additionalDisplayClass": "right-info",
+        "id": -9400,
+        "position": -9400
+      },
+  
+      {
+        "name": "Đợt",
+        "type": "text",
+        "value": "",
+        "placeholder": "",
+        "display": true,
+        "conditions": {
+          "required": false
+        },
+        "additionalDisplayClass": "left-info",
+        "id": -9360,
+        "position": -9360
+      },
+  
+      {
+        "valuefeeder": "Now",
+        "id": -9330,
+        "position": -9330,
+        "name": "Năm",
+        "type": "date",
+        "conditions": {
+          "required": false,
+          "format": {
+            "regex": "yyyy",
+            "text": "yyyy"
+          }
+        },
+        "value": "",
+        "additionalDisplayClass": "right-info"
+      },
+      {
+        "id": -9300,
+        "position": -9300,
+        "name": "Loại thanh xử lý",
+        "type": "select",
+        "conditions": {
+          "required": false,
+          "data": [
+            {
+              "text": "VTTB",
+              "value": "VTTB"
+            },
+            {
+              "text": "TSCĐ",
+              "value": "TSCĐ"
+            },
+            {
+              "text": "VTTB và TSCĐ",
+              "value": "VTTB và TSCĐ"
+            }
+          ]
+        },
+        "additionalDisplayClass": "left-info"
+      },
+  
+      {
+        "name": "Thành phần",
+        "type": "SPLITTER",
+        "collapse": false,
+        "id": -9200,
+        "position": -9200
+      },
+  
+  
+      {
+        "id": -9149,
+        "position": -9149,
+        "display": true,
+        "name": "Chức vụ Giám đốc-Chủ tịch HĐTXL-Chủ trì",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9148,
+        "position": -9148,
+        "display": false,
+        "name": "Tài khoản Giám đốc-Chủ tịch HĐTXL-Chủ trì",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9147,
+        "position": -9147,
+        "display": false,
+        "name": "Họ Tên Giám đốc-Chủ tịch HĐTXL-Chủ trì",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9146,
+        "position": -9146,
+        "display": false,
+        "name": "Phòng ban Giám đốc-Chủ tịch HĐTXL-Chủ trì",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9145,
+        "position": -9145,
+        "display": false,
+        "name": "Chức vụ Giám đốc-Chủ tịch HĐTXL-Chủ trì",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+  
+  
+  
+      {
+        "id": -9049,
+        "position": -9049,
+        "display": true,
+        "name": "Chức vụ phòng ban Trưởng phòng",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9048,
+        "position": -9048,
+        "display": false,
+        "name": "Tài khoản Trưởng phòng",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9047,
+        "position": -9047,
+        "display": false,
+        "name": "Họ Tên Trưởng phòng",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9046,
+        "position": -9046,
+        "display": false,
+        "name": "Phòng ban Trưởng phòng",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -9045,
+        "position": -9045,
+        "display": false,
+        "name": "Chức vụ Trưởng phòng",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+  
+  
+  
+  
+      {
+        "id": -9000,
+        "position": -9000,
+        "name": "Số lượng người xem xét",
+        "type": "select",
+        "conditions": {
+          "required": false,
+          "data": [
+            {
+              "text": "2",
+              "value": "2"
+            },
+            {
+              "text": "3",
+              "value": "3"
+            },
+            {
+              "text": "4",
+              "value": "4"
+            },
+            {
+              "text": "5",
+              "value": "5"
+            },
+            {
+              "text": "6",
+              "value": "6"
+            },
+            {
+              "text": "7",
+              "value": "7"
+            },
+            {
+              "text": "8",
+              "value": "8"
+            },
+            {
+              "text": "9",
+              "value": "9"
+            },
+            {
+              "text": "10",
+              "value": "10"
+            },
+            {
+              "text": "11",
+              "value": "11"
+            }
+          ]
+        },
+        "additionalDisplayClass": "left-info"
+      },
+      {
+        "id": -8895,
+        "position": -8895,
+        "display": true,
+        "name": "Chức vụ phòng ban Người xem xét 1",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8890,
+        "position": -8890,
+        "display": false,
+        "name": "Tài khoản Người xem xét 1",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8880,
+        "position": -8880,
+        "display": false,
+        "name": "Họ Tên Người xem xét 1",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8870,
+        "position": -8870,
+        "display": false,
+        "name": "Phòng ban Người xem xét 1",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8860,
+        "position": -8860,
+        "display": false,
+        "name": "Chức vụ Người xem xét 1",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8795,
+        "position": -8795,
+        "display": true,
+        "name": "Chức vụ phòng ban Người xem xét 2",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "2,3,4,5,6,7,8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8790,
+        "position": -8790,
+        "display": false,
+        "name": "Tài khoản Người xem xét 2",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8780,
+        "position": -8780,
+        "display": false,
+        "name": "Họ Tên Người xem xét 2",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8770,
+        "position": -8770,
+        "display": false,
+        "name": "Phòng ban Người xem xét 2",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8760,
+        "position": -8760,
+        "display": false,
+        "name": "Chức vụ Người xem xét 2",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8695,
+        "position": -8695,
+        "display": true,
+        "name": "Chức vụ phòng ban Người xem xét 3",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "3,4,5,6,7,8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8690,
+        "position": -8690,
+        "display": false,
+        "name": "Tài khoản Người xem xét 3",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8680,
+        "position": -8680,
+        "display": false,
+        "name": "Họ Tên Người xem xét 3",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8670,
+        "position": -8670,
+        "display": false,
+        "name": "Phòng ban Người xem xét 3",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8660,
+        "position": -8660,
+        "display": false,
+        "name": "Chức vụ Người xem xét 3",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8595,
+        "position": -8595,
+        "display": true,
+        "name": "Chức vụ phòng ban Người xem xét 4",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "4,5,6,7,8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8590,
+        "position": -8590,
+        "display": false,
+        "name": "Tài khoản Người xem xét 4",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8580,
+        "position": -8580,
+        "display": false,
+        "name": "Họ Tên Người xem xét 4",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8570,
+        "position": -8570,
+        "display": false,
+        "name": "Phòng ban Người xem xét 4",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8560,
+        "position": -8560,
+        "display": false,
+        "name": "Chức vụ Người xem xét 4",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8495,
+        "position": -8495,
+        "display": true,
+        "name": "Chức vụ phòng ban Người xem xét 5",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "5,6,7,8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8490,
+        "position": -8490,
+        "display": false,
+        "name": "Tài khoản Người xem xét 5",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8480,
+        "position": -8480,
+        "display": false,
+        "name": "Họ Tên Người xem xét 5",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8470,
+        "position": -8470,
+        "display": false,
+        "name": "Phòng ban Người xem xét 5",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8460,
+        "position": -8460,
+        "display": false,
+        "name": "Chức vụ Người xem xét 5",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8395,
+        "position": -8395,
+        "name": "Chức vụ phòng ban Người xem xét 6",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "6,7,8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8390,
+        "position": -8390,
+        "display": false,
+        "name": "Tài khoản Người xem xét 6",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8380,
+        "position": -8380,
+        "display": false,
+        "name": "Họ Tên Người xem xét 6",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8370,
+        "position": -8370,
+        "display": false,
+        "name": "Phòng ban Người xem xét 6",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8360,
+        "position": -8360,
+        "display": false,
+        "name": "Chức vụ Người xem xét 6",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8295,
+        "position": -8295,
+        "name": "Chức vụ phòng ban Người xem xét 7",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "7,8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8290,
+        "position": -8390,
+        "display": false,
+        "name": "Tài khoản Người xem xét 7",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8280,
+        "position": -8280,
+        "display": false,
+        "name": "Họ Tên Người xem xét 7",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8270,
+        "position": -8270,
+        "display": false,
+        "name": "Phòng ban Người xem xét 7",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8260,
+        "position": -8260,
+        "display": false,
+        "name": "Chức vụ Người xem xét 7",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8195,
+        "position": -8195,
+        "name": "Chức vụ phòng ban Người xem xét 8",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "8,9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8190,
+        "position": -8190,
+        "display": false,
+        "name": "Tài khoản Người xem xét 8",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8180,
+        "position": -8180,
+        "display": false,
+        "name": "Họ Tên Người xem xét 8",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8170,
+        "position": -8170,
+        "display": false,
+        "name": "Phòng ban Người xem xét 8",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8160,
+        "position": -8160,
+        "display": false,
+        "name": "Chức vụ Người xem xét 8",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8095,
+        "position": -8095,
+        "name": "Chức vụ phòng ban Người xem xét 9",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "9,10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -8090,
+        "position": -8090,
+        "display": false,
+        "name": "Tài khoản Người xem xét 9",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8080,
+        "position": -8080,
+        "display": false,
+        "name": "Họ Tên Người xem xét 9",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8070,
+        "position": -8070,
+        "display": false,
+        "name": "Phòng ban Người xem xét 9",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -8060,
+        "position": -8060,
+        "display": false,
+        "name": "Chức vụ Người xem xét 9",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7995,
+        "position": -7995,
+        "name": "Chức vụ phòng ban Người xem xét 10",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "10,11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -7990,
+        "position": -7990,
+        "display": false,
+        "name": "Tài khoản Người xem xét 10",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7980,
+        "position": -7980,
+        "display": false,
+        "name": "Họ Tên Người xem xét 10",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7970,
+        "position": -7970,
+        "display": false,
+        "name": "Phòng ban Người xem xét 10",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7960,
+        "position": -7960,
+        "display": false,
+        "name": "Chức vụ Người xem xét 10",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7895,
+        "position": -7895,
+        "name": "Chức vụ phòng ban Người xem xét 11",
+        "disabled": false,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false,
+          "displayCondition": {
+            "idCondition": -9000,
+            "valueCondition": "11",
+            "clearData": true
+          }
+        }
+      },
+      {
+        "id": -7890,
+        "position": -7890,
+        "display": false,
+        "name": "Tài khoản Người xem xét 11",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7880,
+        "position": -7880,
+        "display": false,
+        "name": "Họ Tên Người xem xét 11",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7870,
+        "position": -7870,
+        "display": false,
+        "name": "Phòng ban Người xem xét 11",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+      {
+        "id": -7860,
+        "position": -7860,
+        "display": false,
+        "name": "Chức vụ Người xem xét 11",
+        "disabled": true,
+        "additionalDisplayClass": "right-info",
+        "type": "text",
+        "conditions": {
+          "required": false
+        }
+      },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      {
+        "id": -4340,
+        "position": -4340,
+        "display": false,
+        "name": "Tổng trọng lượng",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "conditions": {
+          "required": false
+        },
+        "type": "expression",
+        "expressionConfig": {
+          "operands": [
+            {
+              "data-config": {
+                "columnId": -4950,
+                "tableId": -5000,
+                "dataset": "MULTITABLE"
+              },
+              "type": "simple"
+            }
+          ],
+          "type": "FUNCTION",
+          "operator": "SUM"
+        }
+      },
+      {
+        "id": -4330,
+        "position": -4330,
+        "display": false,
+        "name": "Tổng thành tiền theo sổ sách",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "conditions": {
+          "required": false
+        },
+        "type": "expression",
+        "expressionConfig": {
+          "operands": [
+            {
+              "data-config": {
+                "columnId": -4930,
+                "tableId": -5000,
+                "dataset": "MULTITABLE"
+              },
+              "type": "simple"
+            }
+          ],
+          "type": "FUNCTION",
+          "operator": "SUM"
+        }
+      },
+      {
+        "id": -4320,
+        "position": -4320,
+        "display": false,
+        "name": "Tổng thành tiền theo thanh lý",
+        "disabled": true,
+        "additionalDisplayClass": "left-info",
+        "conditions": {
+          "required": false
+        },
+        "type": "expression",
+        "expressionConfig": {
+          "operands": [
+            {
+              "data-config": {
+                "columnId": -4890,
+                "tableId": -5000,
+                "dataset": "MULTITABLE"
+              },
+              "type": "simple"
+            }
+          ],
+          "type": "FUNCTION",
+          "operator": "SUM"
+        }
+      },
+  
+      {
+        "id": -1900,
+        "position": -1900,
+        "name": "Đính kèm file",
+        "type": "upload",
+        "value": "",
+        "conditions": {
+          "required": false,
+          "max-size": 5,
+          "multiple": true
+        },
+        "additionalDisplayClass": "left-info"
+      },
+  
+      {
+        "name": "Đính kèm Danh sách VTTB (B.01TXL)",
+        "id": -1880,
+        "position": -1880,
+        "dataFromTable": "-6000",
+        "dataFromTableName": "Danh sách VTTB (B.01TXL)",
+        "type": "upload",
+        "conditions": {
+          "hideEmpty": false,
+          "max-length": 1000,
+          "required": false
+        },
+        "value": ""
+      },
+      {
+        "name": "Đính kèm DANH MỤC VTTB THU HỒI THANH XỬ LÝ NĂM (B.02TXL)",
+        "id": -1860,
+        "position": -1860,
+        "dataFromTable": "-5000",
+        "dataFromTableName": "DANH MỤC VTTB THU HỒI THANH XỬ LÝ NĂM (B.02TXL)",
+        "type": "upload",
+        "conditions": {
+          "hideEmpty": false,
+          "max-length": 1000,
+          "required": false
+        },
+        "value": ""
+      },
+      {
+        "name": "Đính kèm DANH MỤC TSCĐ ĐỀ NGHỊ THANH XỬ LÝ NĂM (B.09TXL)",
+        "id": -1840,
+        "position": -1840,
+        "dataFromTable": "-4000",
+        "dataFromTableName": "DANH MỤC TSCĐ ĐỀ NGHỊ THANH XỬ LÝ NĂM (B.09TXL)",
+        "type": "upload",
+        "conditions": {
+          "hideEmpty": false,
+          "max-length": 1000,
+          "required": false
+        },
+        "value": ""
+      },
+      {
+        "name": "Đính kèm Phụ lục chi tiết Chất thải nguy hại thanh xử lý",
+        "id": -1820,
+        "position": -1820,
+        "dataFromTable": "-3000",
+        "dataFromTableName": "Phụ lục chi tiết Chất thải nguy hại thanh xử lý",
+        "type": "upload",
+        "conditions": {
+          "hideEmpty": false,
+          "max-length": 1000,
+          "required": false
+        },
+        "value": ""
+      },
+  
+  
+  
+     
+  
+      
+  
+  
+  
+  
+      {
+        "display": false,
+        "id": -6005,
+        "position": -6005,
+        "name": "Có ẩn bảng đi không",
+        "type": "select",
+        "conditions": {
+          "required": false,
+          "data": [
+            {
+              "text": "Yes",
+              "value": "Yes"
+            },
+            {
+              "text": "No",
+              "value": "No"
+            }
+  
+          ]
+        },
+        "additionalDisplayClass": "left-info"
+      }
+    ],
+    "multitable": [
+      {
+        "name": "Danh sách VTTB (B.01TXL)",
+        "id": -6000,
+        "position": -6000,
+        "conditions": {
+          "displayCondition": {
+            "dataCondition": "INDIVIDUAL",
+            "idCondition": -6005,
+            "valueCondition": "No",
+            "clearData": true
+          }
+        },
+        "columns": [
+          {
+            "name": "STT",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -5990,
+            "position": -5990
+          },
+          {
+            "name": "TÊN, QUY CÁCH VTTB",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -5980,
+            "position": -5980
+          },
+          {
+            "name": "Đơn vị tính",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -5970,
+            "position": -5970
+          },
+          {
+            "display": true,
+            "name": "Số lượng",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -5960,
+            "position": -5960,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "name": "Chất lượng thực tế VTTB tại thời điểm kiểm tra",
+            "type": "textarea",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false,
+              "height": 5
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -5950,
+            "position": -5950
+          },
+          {
+            "name": "Đánh giá (%)",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false,
+              "height": 5
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -5945,
+            "position": -5945
+          },
+          {
+            "name": "Kết luận của Hội đồng",
+            "type": "textarea",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false,
+              "height": 5
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -5940,
+            "position": -5940
+          }
+        ]
+      },
+  
+      {
+        "name": "DANH MỤC VTTB THU HỒI THANH XỬ LÝ NĂM (B.02TXL)",
+        "id": -5000,
+        "position": -5000,
+        "conditions": {
+          "displayCondition": {
+            "dataCondition": "INDIVIDUAL",
+            "idCondition": -6005,
+            "valueCondition": "No",
+            "clearData": true
+          }
+        },
+        "columns": [
+          {
+            "name": "STT",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -4990,
+            "position": -4990
+          },
+          {
+            "name": "Tên và quy cách VTTB",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -4980,
+            "position": -4980
+          },
+          {
+            "name": "Đơn vị tính",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -4970,
+            "position": -4970
+          },
+          {
+            "display": true,
+            "name": "Số lượng",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4960,
+            "position": -4960,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Trọng lượng (kg)",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4950,
+            "position": -4950,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Đơn giá",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4940,
+            "position": -4940,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Thành Tiền theo sổ sách",
+            
+            "additionalDisplayClass": "left-info",
+            "id": -4930,
+            "position": -4930,
+            "conditions": {
+              "required": false
+            },
+            "value": "",
+            "disabled": false,
+            "type": "finance"
+          },
+          {
+            "display": true,
+            "name": "Đơn giá mới",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4920,
+            "position": -4920,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Chất lượng % còn lại",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4910,
+            "position": -4910,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+  
+          {
+            "display": true,
+            "name": "Đơn giá thanh lý",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4900,
+            "position": -4900,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+  
+  
+          {
+            "display": true,
+            "name": "Thành Tiền thanh lý",
+            "additionalDisplayClass": "left-info",
+            "id": -4890,
+            "position": -4890,
+            "conditions": {
+              "required": false
+            },
+            "value": "",
+            "type": "finance",
+            "disabled": false
+          },
+  
+  
+          {
+            "display": true,
+            "name": "Thời gian nhập TK",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4880,
+            "position": -4880,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Nguồn gốc VTTB",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4870,
+            "position": -4870,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": false,
+            "name": "Nguồn vốn hình thành",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4860,
+            "position": -4860,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": false,
+            "name": "Biện pháp TXL",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4850,
+            "position": -4850,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": false,
+            "name": "Tình trạng kỹ thuật",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -4840,
+            "position": -4840,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          }
+        ]
+      },
+  
+      {
+        "name": "DANH MỤC TSCĐ ĐỀ NGHỊ THANH XỬ LÝ NĂM (B.09TXL)",
+        "id": -4000,
+        "position": -4000,
+        "conditions": {
+          "displayCondition": {
+            "dataCondition": "INDIVIDUAL",
+            "idCondition": -6005,
+            "valueCondition": "No",
+            "clearData": true
+          }
+        },
+        "columns": [
+          {
+            "name": "STT",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -3990,
+            "position": -3990
+          },
+          {
+            "name": "Tên TSCĐ",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -3980,
+            "position": -3980
+          },
+          {
+            "name": "Số thẻ",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -3970,
+            "position": -3970
+          },
+  
+          {
+            "display": true,
+            "name": "Đặc tính kỹ thuật",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3960,
+            "position": -3960,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Đơn vị tính",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3950,
+            "position": -3950,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Số lượng",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3940,
+            "position": -3940,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Thời gian sử dụng",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3930,
+            "position": -3930,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Thời gian ngừng sử dụng",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3920,
+            "position": -3920,
+            "type": "date",
+            "conditions": {
+              "required": false,
+              "format": {
+                "regex": "dd/MM/yyyy",
+                "text": "Nhập định dạng dd/MM/yyyy"
+              }
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Nguyên giá",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3910,
+            "position": -3910,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+  
+          {
+            "display": true,
+            "name": "Giá trị còn lại",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3900,
+            "position": -3900,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Chất lượng % còn lại",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3890,
+            "position": -3890,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Giá trị đề nghị thu hồi",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3880,
+            "position": -3880,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Nguồn vốn hình thành",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3870,
+            "position": -3870,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Biện pháp TXL",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3860,
+            "position": -3860,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Tình trạng kỹ thuật",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -3850,
+            "position": -3850,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          }
+        ]
+      },
+  
+      {
+        "name": "Phụ lục chi tiết Chất thải nguy hại thanh xử lý",
+        "id": -3000,
+        "position": -3000,
+        "conditions": {
+          "displayCondition": {
+            "dataCondition": "INDIVIDUAL",
+            "idCondition": -6005,
+            "valueCondition": "No",
+            "clearData": true
+          }
+        },
+        "columns": [
+          {
+            "name": "STT",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -2990,
+            "position": -2990
+          },
+          {
+            "name": "Danh mục CTNH",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -2980,
+            "position": -2980
+          },
+          {
+            "name": "ĐVT",
+            "type": "text",
+            "value": "",
+            "display": true,
+            "conditions": {
+              "required": false
+            },
+            "additionalDisplayClass": "left-info",
+            "id": -2970,
+            "position": -2970
+          },
+  
+          {
+            "display": true,
+            "name": "Số lượng",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -2960,
+            "position": -2960,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Chi phí xử lý CTNH",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -2950,
+            "position": -2950,
+            "type": "finance",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Biện pháp TXL",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -2940,
+            "position": -2940,
+            "type": "textarea",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          },
+          {
+            "display": true,
+            "name": "Tình trạng kỹ thuật",
+            "disabled": false,
+            "additionalDisplayClass": "left-info",
+            "id": -2930,
+            "position": -2930,
+            "type": "text",
+            "conditions": {
+              "required": false
+            },
+            "value": ""
+          }
+          
+        ]
+      }
+    ]
+  }
+   

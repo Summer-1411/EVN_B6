@@ -1,0 +1,337 @@
+{
+    "relatives": [
+      {
+        "customNote": "Bước 1",
+        "id": -10,
+        "type": "ticket",
+        "isDone": false,
+        "status": "Opened"
+      },
+      {
+        "summary": "Giám đốc phê duyệt",
+        "customNote": "Bước 2",
+        "sla": {
+          "res": 15.99,
+          "fix": 16
+        },
+        "id": -20,
+        "type": "phase",
+        "isDone": false,
+        "phaseType": "Implement",
+        "status": "Responding",
+        "role_config": {
+          "functions": [
+            {
+              "role_type_to_add": "implementer",
+              "id": 3,
+              "params": [
+                {
+                  "infoId": -8700,
+                  "name": "info",
+                  "type": "INPUT",
+                  "dataset": "INDIVIDUAL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "summary": "Chuyên viên ban KT xem xét hồ sơ",
+        "customNote": "Bước 3",
+        "sla": {
+          "res": 15.99,
+          "fix": 16
+        },
+        "id": -30,
+        "type": "phase",
+        "isDone": false,
+        "phaseType": "Implement",
+        "status": "Responding",
+        "role_config": {
+          "functions": [
+            {
+              "role_type_to_add": "implementer",
+              "id": 3,
+              "params": [
+                {
+                  "infoId": -8900,
+                  "name": "info",
+                  "type": "INPUT",
+                  "dataset": "INDIVIDUAL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "summary": "Trưởng Ban KT phê duyệt",
+        "customNote": "Bước 4",
+        "sla": {
+          "res": 15.99,
+          "fix": 16
+        },
+        "id": -40,
+        "type": "phase",
+        "isDone": false,
+        "phaseType": "Implement",
+        "status": "Responding",
+        "role_config": {
+          "functions": [
+            {
+              "role_type_to_add": "implementer",
+              "id": 3,
+              "params": [
+                {
+                  "infoId": -8600,
+                  "name": "info",
+                  "type": "INPUT",
+                  "dataset": "INDIVIDUAL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "summary": "TGĐ/Phó tổng giám đốc duyệt",
+        "customNote": "Bước 5",
+        "sla": {
+          "res": 15.99,
+          "fix": 16
+        },
+        "id": -50,
+        "type": "phase",
+        "isDone": false,
+        "phaseType": "Implement",
+        "status": "Responding",
+        "role_config": {
+          "functions": [
+            {
+              "role_type_to_add": "implementer",
+              "id": 3,
+              "params": [
+                {
+                  "infoId": -8800,
+                  "name": "info",
+                  "type": "INPUT",
+                  "dataset": "INDIVIDUAL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "summary": "Kết thúc",
+        "id": -1,
+        "type": "phase",
+        "isDone": false,
+        "phaseType": "Close",
+        "status": "Waiting"
+      }
+    ],
+    "relationships": [
+      {
+        "customNote": "Bước 1",
+        "from": -10,
+        "id": -1020,
+        "to": -20,
+        "type": "default",
+        "status": "finished"
+      },
+      {
+        "customNote": "Bước 2",
+        "from": -20,
+        "id": -2030,
+        "to": -30,
+        "detail": {
+          "individual": [
+            {
+              "name": "Ghi chú",
+              "additionalDisplayClass": "left-info",
+              "id": -12,
+              "position": -12,
+              "type": "textarea",
+              "conditions": {
+                "max-length": 1000,
+                "height": 5
+              }
+            }
+          ]
+        },
+        "type": "approval",
+        "status": "waiting"
+      },
+      {
+        "customNote": "Nối Bước 1 - Bước 3 (Request update bỏ qua Bước 2)",
+        "display": false,
+        "from": -10,
+        "to": -30,
+        "id": -1030,
+        "relatedTo": -1020,
+        "status": "finished"
+      },
+      {
+        "customNote": "Bước 3",
+        "from": -30,
+        "id": -3040,
+        "to": -40,
+        "detail": {
+          "individual": [
+            {
+              "name": "Ghi chú",
+              "additionalDisplayClass": "left-info",
+              "id": -12,
+              "position": -12,
+              "type": "textarea",
+              "conditions": {
+                "max-length": 1000,
+                "height": 5
+              }
+            },
+            {
+              "name": "TGĐ/Phó TGĐ",
+              "id": -10,
+              "position": -10,
+              "type": "master_data_npc_tgd_pho_tgd",
+              "conditions": {
+                "required": true,
+                "min-length": 1
+              }
+            }
+          ]
+        },
+        "type": "default",
+        "status": "waiting"
+      },
+      {
+        "customNote": "Bước 4",
+        "from": -40,
+        "id": -4050,
+        "to": -50,
+        "detail": {
+          "individual": [
+            {
+              "name": "Ghi chú",
+              "additionalDisplayClass": "left-info",
+              "id": -12,
+              "position": -12,
+              "type": "textarea",
+              "conditions": {
+                "max-length": 1000,
+                "height": 5
+              }
+            }
+          ]
+        },
+        "type": "approval",
+        "status": "waiting"
+      },
+      {
+        "customNote": "Bước 5",
+        "from": -50,
+        "id": -401,
+        "to": -1,
+        "detail": {
+          "individual": [
+            {
+              "name": "Ghi chú",
+              "additionalDisplayClass": "left-info",
+              "id": -12,
+              "position": -12,
+              "type": "textarea",
+              "conditions": {
+                "max-length": 1000,
+                "height": 5
+              }
+            }
+          ]
+        },
+        "type": "approval",
+        "status": "waiting"
+      }
+    ],
+    "notification_config": {
+      "approvers_pending_mail_template": 20,
+      "ticket_response_mail_template": 8,
+      "comment_mail_template": 27,
+      "viewers_assignment_mail_template": 29,
+      "watchers_ticket_rejection_mail_template": 21,
+      "ticket_result_reject_mail_template": 15,
+      "new_performer_phase_reassignment_mail_template": 17,
+      "creator_rejected_mail_template": 26,
+      "ticket_share_mail_template": 32,
+      "ticket_creation_mail_template": 6,
+      "relationship_result_reject_mail_template": 16,
+      "creator_approved_mail_template": 28,
+      "mention_mail_template": 14,
+      "co_execute_rejection_mail_template": 30,
+      "implementation_reminder_mail_template": 24,
+      "ticket_cancellation_mail_template": 10,
+      "creator_requested_update_mail_template": 19,
+      "approval_input_finish_mail_template": 22,
+      "co_execute_request_to_update_mail_template": 31,
+      "old_performer_phase_reassignment_mail_template": 18,
+      "watchers_ticket_auto_closing_mail_template": 13,
+      "approval_reminder_no_token_mail_template": 34,
+      "watchers_ticket_creation_mail_template": 7,
+      "watchers_ticket_cancellation_mail_template": 11,
+      "approval_reminder_mail_template": 23,
+      "confirmation_reminder_mail_template": 25,
+      "phase_input_finish_mail_template": 21,
+      "phase_finished_mail_template": 35,
+      "watchers_ticket_closing_mail_template": 12,
+      "watchers_ticket_response_mail_template": 9,
+      "phase_approve_finished_mail_template": 36
+    },
+    "display": [
+      {
+        "positions": [
+          200,
+          15
+        ],
+        "id": -10
+      },
+      {
+        "image": "/images/workflowimage/User_male.png",
+        "positions": [
+          200,
+          150
+        ],
+        "id": -20
+      },
+      {
+        "image": "/images/workflowimage/User_male.png",
+        "positions": [
+          200,
+          300
+        ],
+        "id": -30
+      },
+      {
+        "image": "/images/workflowimage/User_male.png",
+        "positions": [
+          200,
+          450
+        ],
+        "id": -40
+      },
+      {
+        "image": "/images/workflowimage/User_male.png",
+        "positions": [
+          200,
+          600
+        ],
+        "id": -50
+      },
+      {
+        "positions": [
+          200,
+          750
+        ],
+        "id": -1
+      }
+    ]
+  }

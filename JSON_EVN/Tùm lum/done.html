@@ -1,0 +1,342 @@
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Untitled 1</title>
+	<style type="text/css">
+		body {
+			font-family: Times New Roman;
+			font-size: 13pt;
+		}
+
+		table {
+
+			font-family: Times New Roman;
+			font-size: 13pt;
+			line-height: 1.3;
+			width: 100%;
+		}
+		.table-small{
+		    line-height: 1 !important;
+		}
+
+		table th {
+			font-family: Times New Roman;
+			font-size: 13pt;
+			text-align: center;
+		}
+
+		table th,
+		table td {
+			vertical-align: top;
+			font-size: 13pt;
+		}
+
+		.tableContent {
+			font-size: 13pt;
+			width: 100%;
+			border-collapse: collapse;
+			border: 0.75pt solid gray;
+		}
+
+		.tableContent th,
+		.tableContent td {
+			border: 0.75pt solid gray;
+		}
+
+		.tableHeader {
+			width: 100%;
+			border-collapse: collapse;
+			border: 0.75pt solid white;
+		}
+
+		.tableHeader th,
+		.tableHeader td {
+			border: 0.75pt solid white;
+		}
+		.tableHeaderxx {
+			width: 100%;
+			border-collapse: collapse;
+			border: 0.75pt solid black;
+		}
+		.tableHeaderxx th
+		{
+			border: 0.75pt solid black;
+			text-align: center;
+		}
+		.tableHeaderxx td {
+			border: 0.75pt solid black;
+			text-align: left;
+		}
+		.tableHeaderxx .tdb span{
+			font-weight: bold;
+			float: right;
+		}
+		.tableHeaderxx .trtablexx{
+			font-weight: bold;
+		}
+		.tdtablexx{
+			float: right;
+			border: 0pt !important;
+		}
+
+		.header {
+			width: 100%;
+			margin-bottom: 37.5pt;
+		}
+
+		.sectionGuide {
+			padding: 0;
+			width: 100%;
+		}
+
+		#my-div {
+			width: 7.5pt;
+			height: 7.5pt;
+			background: blue;
+			margin-left: 2.5cm;
+			margin-right: 2cm;
+			margin-bottom: 2cm;
+			margin-top: 2cm;
+		}
+
+		.pagebreak {
+			page-break-before: always;
+		}
+
+		.footer {
+			position: fixed;
+			display: block;
+			padding-top: 90em;
+		}
+
+		.sup {
+			position: relative;
+			vertical-align: baseline;
+			top: -0.5em;
+			font-size: 13pt;
+		}
+		.indent {
+            text-indent: 50pt;
+            line-height: 1.3;
+        }
+        .lineHeight16 {
+            line-height: 1.3;
+        }
+		.PaddingCellTable td{
+			padding: 3.75pt;
+		}
+		.PaddingCellTable th{
+			padding: 3.75pt;
+		}
+	</style>
+</head>
+<body>
+	#macro( formatFinance $value )
+        #if($value.contains("."))
+            #set($tmp = $value.split("\."))
+            $tmp[0].replaceAll(',','.'),$tmp[1]
+        #else
+            $value.replaceAll(',','.')
+        #end
+    #end
+	<div class="sectionGuide" style="padding: 1cm 0.3cm 1cm 0.3cm;">
+		<div style="padding-top: 22.5pt;">
+			<table class="tableHeader">
+				<tr>
+					<td style="text-align: center; font-size:14pt;">
+						<b>DOANH THU BÁN ĐIỆN CHO CÁC CÔNG TY ĐIỆN LỰC TRỰC THUỘC</b>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center; font-size:14pt;">
+						<b>Tháng Value</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="padding-top: 10pt;">
+			<table class="tableHeader">
+				<tr>
+					<td width="100%">
+						<p style="text-align: right;">
+							ĐVT: đồng
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="padding-top: 2pt;">
+			<table class="tableHeaderxx" style="font-size: 11pt;">
+				<tr class="PaddingCellTable">
+					<th rowspan="2" style="text-align: center; font-weight: bold;">
+						STT
+					</th>
+					<td rowspan="2" style="text-align: center; font-weight: bold;">
+						Tên đơn vị
+					</td>
+					<th colspan="3" style="text-align: center; font-weight: bold;">
+						Giá bán điện 3 thời điểm
+					</th>
+					<th colspan="3" style="text-align: center; font-weight: bold;">
+						Điện nhận tháng Value
+					</th>
+					<!-- <th colspan="4" style="text-align: center; font-weight: bold;">
+						Điện nhận tháng $Thang - $Nam
+					</th> -->
+					<th colspan="4" style="text-align: center; font-weight: bold;">
+						Doanh thu tháng Value
+					</th>
+					<td rowspan="2" style="text-align: center; font-weight: bold;">
+						VAT
+					</td>
+					<!-- <td rowspan="2" style="text-align: center; font-weight: bold;">
+						Điều chỉnh
+					</td> -->
+					<td rowspan="2" style="text-align: center; font-weight: bold;">
+						Tổng cộng
+					</td>
+				</tr>	
+				<tr class="PaddingCellTable">
+					<th style="text-align: center; font-weight: bold;">
+						BT
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						CĐ
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						TĐ
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						BT
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						CĐ
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						TĐ
+					</th>
+					<!-- <th style="text-align: center; font-weight: bold;">
+						Cộng
+					</th> -->
+					<th style="text-align: center; font-weight: bold;">
+						BT
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						CĐ
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						TĐ
+					</th>
+					<th style="text-align: center; font-weight: bold;">
+						Cộng
+					</th>
+				</tr>
+
+				
+					<tr class="PaddingCellTable">
+						<td style="text-align: center; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: left; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<!-- <td style="text-align: center;">
+							$row.get("NhanBT") + $row.get("NhanCD") + $row.get("NhanTD")
+						</td> -->
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>
+						<!-- <td style="text-align: right; font-size: 10.5pt;">
+							#formatFinance($row.get("DieuChinh"))
+						</td> -->
+						<td style="text-align: right; font-size: 10.5pt;">
+							Value
+						</td>			
+					</tr>
+				
+
+				<!-- Footer -->
+				<tr class="PaddingCellTable" style="font-weight: bold;">
+					<td></td>
+					<td style="text-align: center; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: center; font-size: 10.5pt;">
+						<!-- #formatFinance($TongCotBT) -->
+					</td>
+					<td style="text-align: center; font-size: 10.5pt;">
+						<!-- #formatFinance($TongCotCD) -->
+					</td>
+					<td style="text-align: center; font-size: 10.5pt;">
+						<!-- #formatFinance($TongCotTD) -->
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<!-- <td style="text-align: center;">
+					</td> -->
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+					<!-- <td style="text-align: right; font-size: 10.5pt;">
+						#formatFinance($TongCotDieuChinh)
+					</td> -->
+					<td style="text-align: right; font-size: 10.5pt;">
+						Value
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+	
+	</div>
+</body>

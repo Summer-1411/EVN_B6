@@ -1,0 +1,26 @@
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": 1,
+        "createDate": "(created-date)",
+        "createUser": "(phase-owner)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "warehouse": "(-9900)",
+            "tableData": [(t)<-9880>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9840)",
+                    "materialName": "(-9820)",
+                    "unit": "(-9780)",
+                    "requestQuantity": "(-9760)"
+                }(endt)
+            ]
+        }
+    }
+}

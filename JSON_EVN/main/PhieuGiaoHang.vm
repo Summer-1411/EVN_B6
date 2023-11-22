@@ -1,0 +1,348 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Untitled 1</title>
+    <style type="text/css">
+        body {
+            font-family: Times New Roman;
+            font-size: 13pt;
+        }
+
+        table {
+
+            font-family: Times New Roman;
+            font-size: 13pt;
+            line-height: 1.3;
+            width: 100%;
+        }
+
+        .table-small {
+            line-height: 1 !important;
+        }
+
+        table th {
+            font-family: Times New Roman;
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        table th,
+        table td {
+            vertical-align: top;
+            font-size: 13pt;
+        }
+
+        .tableContent {
+            font-size: 13pt;
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid gray;
+        }
+
+        .tableContent th,
+        .tableContent td {
+            border: 0.25pt solid gray;
+        }
+
+        .tableHeader {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid white;
+        }
+
+        .tableHeader th,
+        .tableHeader td {
+            border: 0.25pt solid white;
+        }
+
+        .tableHeaderxx {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid black;
+        }
+
+        .tableHeaderxx th {
+            border: 0.25pt solid black;
+            text-align: center;
+        }
+
+        .tableHeaderxx td {
+            border: 0.25pt solid black;
+            text-align: left;
+        }
+
+        .tableHeaderxx .tdb span {
+            font-weight: bold;
+            float: right;
+        }
+
+        .tableHeaderxx .trtablexx {
+            font-weight: bold;
+        }
+
+        .tdtablexx {
+            float: right;
+            border: 0pt !important;
+        }
+
+        .header {
+            width: 100%;
+            margin-bottom: 37.5pt;
+        }
+
+        .sectionGuide {
+            padding: 0;
+            width: 100%;
+        }
+
+        #my-div {
+            width: 7.5pt;
+            height: 7.5pt;
+            background: blue;
+            margin-left: 2.5cm;
+            margin-right: 2cm;
+            margin-bottom: 2cm;
+            margin-top: 2cm;
+        }
+
+        .pagebreak {
+            page-break-before: always;
+        }
+
+        .footer {
+            position: fixed;
+            display: block;
+            padding-top: 90em;
+        }
+
+        .sup {
+            position: relative;
+            vertical-align: baseline;
+            top: -0.5em;
+            font-size: 13pt;
+        }
+
+        .indent {
+            text-indent: 50pt;
+            line-height: 1.3;
+        }
+
+        .lineHeight16 {
+            line-height: 1.3;
+        }
+
+        .PaddingCellTable td {
+            padding: 3.75pt;
+        }
+
+        .PaddingCellTable th {
+            padding: 3.75pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sectionGuide" style="padding: 1cm 1cm 0.5cm 0.5cm;">
+        <table colspan="0" rowspan="0" class="tableHeader"
+            style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
+            <tr>
+                <td width="30%" style="font-size:11pt">
+                    <b>Đơn vị : $DonVi</b>
+                    <br />
+                    <b>Địa chỉ: $DiaChi</b>
+                </td>
+                <td width="50%" style="text-align: center; font-size:13pt">
+                    <b>PHIẾU GIAO HÀNG</b>
+                    <p>Ngày lập phiếu: $NgayLapPhieu</p>
+                    <p>Liên 2: </p>
+                </td>
+                <td width="40%" style="text-align: center; font-size:11pt">
+                    <p>Số: <b>$SoCongVan</b></p>
+                    <p>Ký hiệu: <b>$KyHieu</b></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="sectionGuide" style="padding: 0cm 1cm 0.5cm 0.5cm; display: flex;">
+        <table>
+            <tr>
+                <td>
+                    <p>Căn cứ: <b>$CanCu</b></p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Của: <b>$Cua</b></p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Họ và tên người vận chuyển(Người nhận hàng): <b>$HoTenNguoiNhanHang</b></p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Phương tiện vận chuyển: <b>$PhuongTienVanChuyen</b></p>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Xuất tại kho: <b>$XuatTaiKho</b></p>
+                </td>
+                <td>
+                    <p>CT: <b>$CongTrinhXuat</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Nhập vào kho kho: <b>$NhapVaoKho</b></p>
+                </td>
+                <td>
+                    <p>CT: <b>$CongTrinhNhap</b></p>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div class="sectionGuide" style="padding: 0cm 1cm 1cm 0.5cm;">
+        <div>
+            <table class="tableHeaderxx">
+                <tr class="PaddingCellTable">
+                    <th rowspan="2" style="text-align: center; font-weight: bold; width:5%;">
+                        STT
+                    </th>
+                    <th rowspan="2" style="text-align: center; font-weight: bold;width:10%">
+                        Mã vật tư
+                    </th>
+                    <th rowspan="2" style="text-align: center; font-weight: bold;width:20%">
+                        Tên, nhãn hiệu quy cách vật tư
+                    </th>
+                    <th rowspan="2" style="text-align: center; font-weight: bold;width:10%">
+                        ĐVT
+                    </th>
+                    <th colspan="2" style="text-align: center; font-weight: bold;width:20%">
+                        Số lượng
+                    </th>
+                    <th rowspan="2" style="text-align: center; font-weight: bold;width:13%">
+                        Đơn giá
+                    </th>
+                    <th rowspan="2" style="text-align: center; font-weight: bold;width:13%">
+                        Thành tiền
+                    </th>
+                    <th colspan="2" style="text-align: center; font-weight: bold;width:20%">
+                        Tài khoản
+                    </th>
+                </tr>
+                <tr>
+                    <th style="text-align: center; font-weight: bold; width:13%;">
+                        Yêu cầu
+                    </th>
+                    <th style="text-align: center; font-weight: bold; width:13%;">
+                        Thực xuất
+                    </th>
+                    <th style="text-align: center; font-weight: bold; width:10%;">
+                        Nợ
+                    </th>
+                    <th style="text-align: center; font-weight: bold; width:10%;">
+                        Có
+                    </th>
+                </tr>
+                
+                #set($index = 1)
+                #foreach($row in $DanhSachVatTu)
+                <tr class="PaddingCellTable">
+                    <td style="text-align: center; font-size: 10.5pt; width: 70px">
+                        $index
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt;">
+                        $row.get("MaVatTu")
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt;">
+                        $row.get("TenVatTuVaQuyCach")
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt;">
+                        $row.get("DonViTinh")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt; width: 100px">
+                        $row.get("SoLuongYeuCau")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt;">
+                        $row.get("ThucXuat")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt;">
+                        $row.get("DonGia")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt;">
+                        $row.get("ThanhTien")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt;">
+                        $row.get("No")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt;">
+                        $row.get("Co")
+                    </td>
+                </tr>
+                #set($index = $index + 1)
+                #end
+                <tr>
+                    <th colspan="7" style="text-align: left; font-size: 10.5pt; font-weight: bold;">Tổng cộng bằng số
+                    </th>
+                    <th style="text-align: right; font-size: 10.5pt; font-weight: bold;">$Giatriso</th>
+                </tr>
+            </table>
+            <div style="font-style: normal; text-align: left;">Tổng giá trị xuất(viết bằng chữ ): $Giatrichu</div>
+            <div style="font-style: italic; text-align: right;">Hà nội, ngày $NgayLapPhieu.split(" ")[0].split("/")[0]
+                tháng
+                $NgayLapPhieu.split("
+                ")[0].split(
+                "/")[1] năm $NgayLapPhieu.split(" ")[0].split("/")[2]
+            </div>
+            <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 10px;">
+                <tr>
+                    <br />
+                    <br />
+                    <th style="text-align: center; font-size: 11pt;">
+                        <b>NGƯỜI LẬP PHIẾU</b>
+                        <br />
+                        (Ký, họ tên)
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:2pt; color: white">$ChuKy_NguoiLapPhieu</p>
+                    </th>
+                    <th style="text-align: center; font-size: 11pt;">
+                        <b>NGƯỜI NHẬN HÀNG</b>
+                        <br />
+                        (Ký, họ tên)
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:2pt; color: white">$ChuKy_NguoiNhanHang</p>
+                    </th>
+                    <th style="text-align: center; font-size: 11pt;">
+                        <b>PHÒNG KẾ HOẠCH VẬT TƯ</b>
+                        <br />
+                        (Ký, họ tên)
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:2pt; color: white">$ChuKy_PhongKHVatTu</p>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

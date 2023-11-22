@@ -1,0 +1,835 @@
+{
+  "individual": [
+    {
+      "id": -10000,
+      "name": "Requestor",
+      "type": "text",
+      "additionalDisplayClass": "left-info",
+      "position": -10000,
+      "valuefeeder": "TicketOwner",
+      "disabled": true,
+      "conditions": {
+        "required": true
+      }
+    },
+    {
+      "id": -9980,
+      "name": "Department",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "B6_PARAM_GET_USER_ORGANIZATION",
+          "hostnameKey": "SPRO_EVN",
+          "urlFilter": "/common-spro/get-user-organization",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "deptName",
+          "minimumSearch": 0,
+          "displayField": "deptName"
+        }
+      },
+      "position": -9980,
+      "conditions": {
+        "required": true,
+        "feedTo": [
+          {
+            "fieldName": "deptId",
+            "id": -9560,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "orgId",
+            "id": -9580,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "orgName",
+            "id": -9900,
+            "dataset": "INDIVIDUAL"
+          }
+        ]
+      },
+      "type": "apiweb"
+    },
+    {
+      "id": -9960,
+      "name": "Your Contact Number",
+      "type": "text",
+      "additionalDisplayClass": "left-info",
+      "position": -9960,
+      "conditions": {
+        "required": true
+      }
+    },
+    {
+      "name": "Thông tin công văn",
+      "type": "SPLITTER",
+      "collapse": false,
+      "id": -9950,
+      "position": -9950
+    },
+    {
+      "id": -9940,
+      "name": "Tại kho",
+      "type": "apiweb",
+      "additionalDisplayClass": "left-info",
+      "position": -9940,
+      "conditions": {
+        "required": true,
+        "feedTo": []
+      },
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "EVN_SPRO_PARAM_PICKER_FILTER_STOCK",
+          "hostnameKey": "SPRO_EVN",
+          "urlFilter": "/common-spro/get-category-warehouse",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "stockName",
+          "minimumSearch": 0,
+          "displayField": "stockName"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": -9900,
+      "name": "Tên đơn vị đề nghị",
+      "type": "text",
+      "additionalDisplayClass": "right-info",
+      "position": -9900,
+      "conditions": {
+        "required": true
+      },
+      "display": true
+    },
+    {
+      "id": -9880,
+      "name": "Kính gửi",
+      "type": "text",
+      "additionalDisplayClass": "left-info",
+      "position": -9880,
+      "conditions": {
+        "required": true
+      }
+    },
+    {
+      "id": -9860,
+      "name": "Lý do cấp",
+      "type": "apiweb",
+      "additionalDisplayClass": "right-info",
+      "position": -9860,
+      "conditions": {
+        "required": true,
+        "feedTo": []
+      },
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "EVN_SPRO_PARAM_PICKER_FILTER_REASON",
+          "hostnameKey": "SPRO_EVN",
+          "urlFilter": "/common-spro/get-reason-erp",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "reasonName",
+          "minimumSearch": 0,
+          "displayField": "reasonName"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": -9840,
+      "name": "Tra cứu tồn kho",
+      "type": "link",
+      "additionalDisplayClass": "left-info",
+      "position": -9840,
+      "disabled": true,
+      "value": "http://10.15.24.74:8081/sso/exportTicketRoom",
+      "staticContent": "<p style='font-size: 15px; color: #f44842'><i><a target='_blank' href='http://10.15.24.74:8081/sso/exportTicketRoom'>Bấm vào link để thực hiện tra cứu</a></i></p>"
+    },
+    {
+      "id": -9680,
+      "name": "Chon trưởng/ phó phòng phê duyệt",
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "hostnameKey": "SPRO_EVN",
+          "param": "EVN_SPRO_PARAM_TRUONG_PHO_PHONG_PHE_DUYET",
+          "urlFilter": "/common-spro/getUserByPosition",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "userName",
+          "minimumSearch": 0,
+          "displayField": "fullName"
+        }
+      },
+      "position": -9680,
+      "conditions": {
+        "required": true,
+        "feedTo": []
+      },
+      "additionalDisplayClass": "left-info"
+    },
+    {
+      "id": -9620,
+      "position": -9660,
+      "name": "Trưởng phòng KHVT",
+      "type": "master_data_user_login",
+      "disable": true,
+      "conditions": {
+        "feedTo": []
+      },
+      "apiWebConfig": {
+        "apiConfig": {
+          "hostnameKey": "SPRO_EVN",
+          "param": "EVN_SPRO_PARAM_TRUONG_PHO_PHONG_KHVT",
+          "urlFilter": "/common-spro/getUserByPosition",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "userName",
+          "minimumSearch": 0,
+          "displayField": "fullName"
+        }
+      },
+      "additionalDisplayClass": "right-info"
+    },
+    {
+      "id": -9600,
+      "position": -9600,
+      "name": "mappinglevel",
+      "display": false,
+      "type": "number",
+      "value": "5",
+      "additionalDisplayClass": "left-info"
+    },
+    {
+      "id": -9580,
+      "position": -9580,
+      "name": "Id Đơn vị",
+      "display": false,
+      "type": "number",
+      "additionalDisplayClass": "left-info"
+    },
+    {
+      "id": -9560,
+      "position": -9560,
+      "name": "Id Department",
+      "display": false,
+      "type": "number",
+      "additionalDisplayClass": "right-info"
+    },
+    {
+      "id": -9540,
+      "position": -9540,
+      "name": "mappinglevel của KHVT",
+      "display": false,
+      "type": "number",
+      "additionalDisplayClass": "right-info",
+      "value": "6"
+    }
+  ],
+  "multitable": [
+    {
+      "id": -9820,
+      "position": -9820,
+      "name": "Danh sách các thiết bị vật tư",
+      "type": "table",
+      "columns": [
+        {
+          "id": -9800,
+          "position": -9800,
+          "name": "STT",
+          "type": "number",
+          "conditions": {
+            "required": true
+          }
+        },
+        {
+          "id": -9780,
+          "position": -9780,
+          "name": "Mã vật tư",
+          "type": "apiweb",
+          "conditions": {
+            "required": true,
+            "feedTo": [
+              {
+                "fieldName": "suppliesName",
+                "id": -9760,
+                "dataset": "TABLE"
+              }
+            ]
+          },
+          "apiWebConfig": {
+            "apiConfig": {
+              "param": "EVN_SPRO_PARAM_PICKER_FILTER_SUPPLIES",
+              "hostnameKey": "SPRO_EVN",
+              "urlFilter": "/common-spro/get-supplies",
+              "returnKey": "MT_GET_VENDOR_RP_S"
+            },
+            "searchConfig": {
+              "idField": "suppliesCode",
+              "minimumSearch": 0,
+              "displayField": "suppliesCode"
+            }
+          }
+        },
+        {
+          "id": -9760,
+          "position": -9760,
+          "name": "Tên vật tư và quy cách",
+          "type": "text"
+        },
+        {
+          "id": -9740,
+          "position": -9740,
+          "name": "Đơn vị tính",
+          "type": "text",
+          "conditions": {
+            "height": 5,
+            "required": true
+          }
+        },
+        {
+          "id": -9720,
+          "position": -9720,
+          "name": "Số lượng",
+          "type": "text",
+          "conditions": {
+            "required": true
+          }
+        },
+        {
+          "id": -9700,
+          "position": -9700,
+          "name": "Ghi chú",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{
+  "ticket": {
+    "ticketCode": "-0",
+    "requestSubject": "ticket-title",
+    "type": "EXPORT_DTXD",
+    "status": 1,
+    "createDate": "created-date",
+    "createUser": "-10000",
+    "actionType": "REQUEST",
+    "importExport": {
+      "ixId": 0,
+      "ticketCode": "-0",
+      "orgRequest": "-9920",
+      "reason": "-9860",
+      "warehouse": "-9900",
+      "tableData": [(t)<-9880>
+          {
+          "ticketCode": "-0",
+          "materialCode": "-9840",
+          "materialName": "-9820",
+          "unit": "-9780",
+          "requestQuantity": "-9760"
+        }(endt)
+      ]
+    }
+  }
+}
+
+
+{
+  "ticket": {
+    "ticketCode": "-0",
+    "type": "EXPORT_DTXD",
+    "actionType": "APPROVE",
+    "importExport": {
+      "ticketCode": "-0",
+      "orgRequest": "-10000,-80,-90",
+      "receiver": "-9700,-80,-90",
+      "reason": "-9550,-80,-90",
+      "deliver": "-9650,-80,-90",
+      "description": "-9650,-80,-90",
+      "location": "-9750,-80,-90",
+      "construction": "-9400,-80,-90",
+      "warehouse": "-9600,-80,-90",
+      "orgCode": "-10000,-80,-90",
+      "locator": "-9950,-80,-90",
+      "typeErp": "-9600,-80,-90",
+      "sourceErp": "-9500,-80,-90",
+      "receiptDate": "-9900,-80,-90",
+      "tableData": [(t)<"(-9880, -80, -90">
+              {
+          "ticketCode": "-0",
+          "materialCode": "-9840,-80,-90",
+          "materialName": "-9820,-80,-90",
+          "unit": "-9780,-80,-90",
+          "requestQuantity": "-9760,-80,-90",
+          "approveQuantity": "-9060,-80,-90",
+          "batch": "-9120,-80,-90",
+          "unitPrice": "-9040,-80,-90",
+          "amount": "-9020,-80,-90",
+          "accountDebit": "-9000,-80,-90",
+          "accountCredit": "-8980,-80,-90"
+        }(endt)
+      ]
+    }
+  },
+  {
+    "approval": {
+      "ticketCode": "-0",
+      "status": "INPROGRESS",
+      "flowName": "Buoc 8",
+      "action": "FINISH",
+      "approvalUser": "phase-owner,-80"
+    }
+  }
+}
+
+
+
+{
+  "ticket": {
+    "ticketId": 0,
+    "ticketCode": 0,
+    "requestSubject": "string",
+    "type": "string",
+    "statusErp": "string",
+    "status": "string",
+    "createDate": "2023-11-16T17:37:21.194Z",
+    "createUser": "string",
+    "actionType": "string",
+    "importExport": {
+      "ixId": 0,
+      "ticketCode": 0,
+      "orgRequest": "string",
+      "reason": "string",
+      "receiver": "string",
+      "deliver": "string",
+      "description": "string",
+      "location": "string",
+      "construction": "string",
+      "warehouse": "string",
+      "type": "string",
+      "orgCode": "string",
+      "subInventory": "string",
+      "locator": "string",
+      "typeErp": "string",
+      "sourceErp": "string",
+      "receiptDate": "2023-11-16",
+      "cmis": "string",
+      "staff": "string",
+      "tableData": [
+        {
+          "id": 0,
+          "ixfId": 0,
+          "ticketCode": 0,
+          "materialCode": "string",
+          "materialName": "string",
+          "producer": "string",
+          "unit": "string",
+          "requestQuantity": 0,
+          "approveQuantity": 0,
+          "batch": "string",
+          "unitPrice": 0,
+          "amount": 0,
+          "accountDebit": "string",
+          "accountCredit": "string"
+        }
+      ]
+    },
+    "listMaterial": [
+      {
+        "orgId": 0,
+        "materialCodeFmis": "string",
+        "materialNameFmis": "string",
+        "unit": "string",
+        "productionCode": "string",
+        "accessoryCode": "string",
+        "qualityCode": "string",
+        "materialCode": "string",
+        "note": "string"
+      }
+    ]
+  },
+  "approval": {
+    "ticketCode": 0,
+    "status": "string",
+    "reason": "string",
+    "flowName": "string",
+    "approvalUser": "string",
+    "action": "string"
+  }
+}
+
+{
+  "ticket": {
+    "ticketCode": "8576",
+    "type": "EXPORT_DTXD4",
+    "status": 1,
+    "createUser": "duonglh1",
+    "actionType": "APPROVE",
+    "importExport": {
+      "ticketCode": "8576",
+      "orgRequest": "Công ty Công nghệ thông tin Điện lực Hà Nội",
+      "receiver": "(-9700, -80,-90)",
+      "reason": "(-9550, -80,-90)",
+      "deliver": "(-9650, -80,-90)",
+      "description": "(-9650, -80,-90)",
+      "location": "(-9750, -80,-90)",
+      "construction": "(-9400, -80,-90)",
+      "warehouse": "(-9600, -80,-90)",
+      "orgCode": "(-10000, -80,-90)",
+      "locator": "(-9950, -80,-90)",
+      "typeErp": "(-9600, -80,-90)",
+      "sourceErp": "(-9500, -80,-90)",
+      "actionType": "APPROVE",
+      "tableData": [
+        {
+          "materialCode": "suppliesCode1",
+          "materialName": "suppliesName1",
+          "unit": "Chai",
+          "requestQuantity": "10",
+          "approveQuantity": "10",
+          "batch": "111",
+          "unitPrice": "1111",
+          "amount": "11110",
+          "accountDebit": "1",
+          "accountCredit": "1"
+        },
+        {
+          "materialCode": "suppliesCode1",
+          "materialName": "suppliesName1",
+          "unit": "Chiếc",
+          "requestQuantity": "11",
+          "approveQuantity": "9",
+          "batch": "9",
+          "unitPrice": "9999",
+          "amount": "89991",
+          "accountDebit": "9",
+          "accountCredit": "9"
+        }
+      ]
+    }
+  },
+  "approval": {
+    "ticketCode": "8576",
+    "status": "INPROGRESS",
+    "flowName": "Buoc 8",
+    "action": "FINISH",
+    "approvalUser": "(phase-owner,-80)"
+  }
+}
+
+{
+  "ticket": {
+    "ticketCode": "(-0)",
+    "type": "EXPORT_DTXD",
+    "status": 1,
+    "createUser": "(-10000)",
+    "actionType": "APPROVE",
+    "importExport": {
+      "ticketCode": "(-0)",
+      "orgRequest": "(-10000,-80,-90)",
+      "receiver": "(-9700,-80,-90)",
+      "reason": "(-9550,-80,-90)",
+      "deliver": "(-9650,-80,-90)",
+      "description": "(-9650,-80,-90)",
+      "location": "(-9750,-80,-90)",
+      "construction": "(-9400,-80,-90)",
+      "warehouse": "(-9600,-80,-90)",
+      "orgCode": "(-9975,-80,-90)",
+      "locator": "(-9950,-80,-90)",
+      "typeErp": "(-9600,-80,-90)",
+      "sourceErp": "(-9500,-80,-90)",
+      "tableData": [(t)<-9880,-80,-90>
+        {
+          "materialCode": "(-9840)",
+          "materialName": "(-9820)",
+          "unit": "(-9780)",
+          "requestQuantity": "(-9760)",
+          "approveQuantity": "(-9060)",
+          "batch": "(-9120)",
+          "unitPrice": "(-9040)",
+          "amount": "(-9020)",
+          "accountDebit": "(-9000)",
+          "accountCredit": "(-8980)"
+        }(endt)
+      ]
+    }
+  },
+  "approval": {
+    "ticketCode": "(-0)",
+    "status": "INPROGRESS",
+    "flowName": "Buoc 8",
+    "action": "FINISH",
+    "approvalUser": "(phase-owner,-80)"
+  }
+}
+
+
+SGK
+{
+  "hopDong": {
+  "canCuKyKetHD": "(-9200,-40,-41)",
+  "chuDauTu": "(-9090,-40,-41)",
+"diaChi": "(-9080,-40,-41)",
+  "chucVu": "(-9060,-40,-41)",
+  "daiDien": "(-9070,-40,-41)",
+  "dienThoai": "(-9050,-40,-41)",
+  "doiTuongHD": null,
+  "duAn": "(-9400,-40,-41)",
+  "duToan": "(-9600,-40,-41)",
+  "email": null,
+  "fax": "(-9040,-40,-41)",
+  "giaHD": "(-8665,-40,-41)",
+  "goiThau": "(-9500,-40,-41)",
+  "hinhThucNguonVon": "(-9300,-40,-41)",
+  "idNhaThau": null,
+  "loaiHD": null,
+  "maSoThue": "(-9005,-40,-41)",
+"nganHang": "(-9010,-40,-41)",
+  "phuongThucThanhToan": null,
+  "soGiayUyQuyen": "(-9002,-40,-41)",
+  "soHopDong": "(-2000,-40,-41)",
+  "taiKhoan": "(-9020,-40,-41)",
+  "thanhPhanHD": null,
+  "thoiGianHieuLuc": null,
+  "thoiGianThucHien": null,
+  "ticketId": "(-0)",
+  "trachNhiemChuDauTu": null,
+  "trachNhiemNhaThau": null,
+"thue": "(-8670,-40,-41)",
+  "giaTriTruocThue": "(-8680,-40,-41)"
+},
+"listNhaThau": [(t)<-8991,-40,-41>{
+  "chucVu": "(-8070)",
+  "daiDien": "(-8075)",
+  "diaChi": "(-8080)",
+  "email": "(-8055)",
+  "fax": "(-8060)",
+  "maSoThue": "(-8040)",
+  "nganHang": "(-8045)",
+  "ngayTao": "(created-date)",
+  "soDienThoai": "(-8065)",
+  "soGiayUyQuyen": "(-8035)",
+  "taiKhoan": "(-8050)",
+  "tenGiaoDich": "(-8085)"
+ }(endt)
+ ],
+ "listDuAn": [(t)<-9400,-40,-41>
+    {
+      "tenDuAn": "(-9390)",
+      "giaTriQuyetToan": "(-9380)"
+    }(endt)
+  ],
+"yeuCau": {
+  "donVi": "(-9900)",
+  "ngayTao": "(created-date)",
+  "nguoiTao": "(-10000)",
+  "soDienThoai": "(-9800)",
+  "tenQuyTrinh": "HOPDONG_MuaSam_ThueKhoBaiVTTB",
+  "tenYeuCau": "(ticket-title)",
+  "ticketId": "(-0)"
+}
+}
+
+{
+  "ticket": {
+    "ticketId": 0,
+    "ticketCode": 0,
+    "requestSubject": "string",
+    "type": "string",
+    "statusErp": "string",
+    "status": "string",
+    "createDate": "2023-11-17T01:45:59.137Z",
+    "createUser": "string",
+    "actionType": "string",
+    "importExport": {
+      "ixId": 0,
+      "ticketCode": 0,
+      "orgRequest": "string",
+      "reason": "string",
+      "receiver": "string",
+      "deliver": "string",
+      "description": "string",
+      "location": "string",
+      "construction": "string",
+      "warehouse": "string",
+      "type": "string",
+      "orgCode": "string",
+      "subInventory": "string",
+      "locator": "string",
+      "typeErp": "string",
+      "sourceErp": "string",
+      "receiptDate": "2023-11-17",
+      "cmis": "string",
+      "staff": "string",
+      "tableData": [
+        {
+          "id": 0,
+          "ixfId": 0,
+          "ticketCode": 0,
+          "materialCode": "string",
+          "materialName": "string",
+          "producer": "string",
+          "unit": "string",
+          "requestQuantity": 0,
+          "approveQuantity": 0,
+          "batch": "string",
+          "unitPrice": 0,
+          "amount": 0,
+          "accountDebit": "string",
+          "accountCredit": "string"
+        }
+      ]
+    },
+  },
+  "approval": {
+    "ticketCode": 0,
+    "status": "string",
+    "reason": "string",
+    "flowName": "string",
+    "approvalUser": "string",
+    "action": "string"
+  }
+}
+
+
+Linh
+{
+  "ticket": {
+    "ticketCode": "-0",
+    "requestSubject": "ticket-title",
+    "type": "EXPORT_PT_DV",
+    "statusErp": 1,
+    "status": 1,
+    "createDate": "created-date",
+    "createUser": "-10000",
+    "importExport": {
+      "ticketCode": "-0",
+      "orgRequest": "-9900",
+      "reason": "-9700",
+      "receiver": null,
+      "deliver": null,
+      "description": "-9650",
+      "location": "-9750",
+      "construction": "-9550",
+      "warehouse": "-9600",
+      "type": "2",
+      "orgCode": null,
+      "subInventory": null,
+      "locator": null,
+      "typeErp": null,
+      "sourceErp": null,
+      "receiptDate": "-9900",
+      "cmis": null,
+      "staff": null,
+      "tableData": [(t)<-9400>
+              {
+          "id": 0,
+          "ixfId": 0,
+          "ticketCode": "-0",
+          "materialCode": "-9360",
+          "materialName": "-9340",
+          "producer": null,
+          "unit": "-9300",
+          "requestQuantity": 0,
+          "approveQuantity": 0,
+          "batch": "-9320",
+          "unitPrice": null,
+          "amount": "-9280",
+          "accountDebit": null,
+          "accountCredit": null
+        }(endt)
+      ]
+    },
+    "listMaterial": [
+      {
+        "orgId": null,
+        "materialCodeFmis": null,
+        "materialNameFmis": null,
+        "unit": null,
+        "productionCode": null,
+        "accessoryCode": null,
+        "qualityCode": null,
+        "materialCode": null,
+        "note": null
+      }
+    ],
+    "approval": {
+      "ticketCode": null,
+      "status": null,
+      "reasonCancel": null,
+      "ticketType": null,
+      "flowName": null,
+      "nextFlowName": null,
+      "approvalUser": null,
+      "approvers": null,
+      "reason": null
+    }
+  }
+}
+
+
+REQ
+{
+  "ticket": {
+    "ticketCode": "8576",
+    "type": "EXPORT_DTXD4",
+    "status": 1,
+    "createUser": "duonglh1",
+    "actionType": "APPROVE",
+    "importExport": {
+      "ticketCode": "8576",
+      "orgRequest": "Công ty Công nghệ thông tin Điện lực Hà Nội",
+      "receiver": "Họ và tên người nhận hàng",
+      "reason": "Lý do xuất kho",
+      "deliver": "Phương tiện vận chuyển",
+      "description": "Phương tiện vận chuyển",
+      "location": "Của",
+      "construction": "cmis name 9",
+      "warehouse": "type name 0",
+      "orgCode": "Công ty Công nghệ thông tin Điện lực Hà Nội",
+      "locator": "hà Nội",
+      "typeErp": "type name 0",
+      "sourceErp": "Don vi 0",
+      "tableData": [
+        {
+          "materialCode": "suppliesCode1",
+          "materialName": "suppliesName1",
+          "unit": "Chai",
+          "requestQuantity": "10",
+          "approveQuantity": "10",
+          "batch": "Lô 1",
+          "unitPrice": "1000000",
+          "amount": "10000000",
+          "accountDebit": "0",
+          "accountCredit": "0"
+        },
+        {
+          "materialCode": "suppliesCode1",
+          "materialName": "suppliesName1",
+          "unit": "Chiếc",
+          "requestQuantity": "11",
+          "approveQuantity": "10",
+          "batch": "Lô 2",
+          "unitPrice": "6000000",
+          "amount": "60000000",
+          "accountDebit": "0",
+          "accountCredit": "0"
+        }
+      ]
+    }
+  },
+  "approval": {
+    "ticketCode": "8576",
+    "status": "INPROGRESS",
+    "flowName": "Buoc 8",
+    "action": "FINISH",
+    "approvalUser": "duonglh1"
+  }
+}

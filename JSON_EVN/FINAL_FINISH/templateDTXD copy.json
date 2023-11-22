@@ -1,0 +1,431 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "name": "Requestor",
+            "valuefeeder": "TicketOwner",
+            "value": "",
+            "additionalDisplayClass": "left-info",
+            "position": -10000,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9980,
+            "name": "Department",
+            "additionalDisplayClass": "left-info",
+            "position": -9980,
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -9940,
+                        "fieldName": "orgId",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -9930,
+                        "fieldName": "deptId",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -9920,
+                        "fieldName": "orgName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_GET_USER_ORGANIZATION",
+                    "urlFilter": "/common-spro/get-user-organization",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "deptName",
+                    "minimumSearch": 0,
+                    "displayField": "deptName"
+                }
+            },
+            "type": "apiweb"
+        },
+        {
+            "id": -9960,
+            "name": "Số điện thoại người tạo yêu cầu",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9960,
+            "display": true,
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            }
+        },
+        {
+            "name": "Thông tin công văn",
+            "type": "SPLITTER",
+            "collapse": false,
+            "id": -9950,
+            "position": -9950
+        },
+        {
+            "id": -9940,
+            "position": -9940,
+            "name": "Id Đơn vị(Acount tạo yêu cầu _ orgId)",
+            "display": false,
+            "type": "number",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9930,
+            "position": -9930,
+            "name": "Id phòng ban(Acount tạo yêu cầu _ depId)",
+            "display": false,
+            "type": "number",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9925,
+            "position": -9925,
+            "name": "ID Đơn vị phòng KHVT",
+            "value": "277",
+            "display": false,
+            "type": "number",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9920,
+            "name": "Tên đơn vị đề nghị",
+            "type": "text",
+            "position": -9920,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9915,
+            "position": -9915,
+            "name": "mappinglevel_Trưởng/Phó phong",
+            "display": false,
+            "type": "number",
+            "value": "5",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9910,
+            "name": "Ngày lập",
+            "type": "date",
+            "valuefeeder": "Now",
+            "conditions": {
+                "required": true,
+                "format": {
+                    "regex": "dd/MM/yyyy",
+                    "text": "Nhập dd/MM/yyyy"
+                }
+            },
+            "additionalDisplayClass": "left-info",
+            "position": -9910
+        },
+        {
+            "id": -9900,
+            "name": "Tại kho",
+            "type": "apiweb",
+            "additionalDisplayClass": "left-info",
+            "position": -9900,
+            "conditions": {
+                "required": true,
+                "feedTo": []
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_STOCK",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-category-warehouse",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "stockName",
+                    "minimumSearch": 0,
+                    "displayField": "stockName"
+                }
+            },
+            "display": true
+        },
+        {
+            "id": -9880,
+            "name": "Kính gửi",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9880,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9860,
+            "name": "Lý do cấp",
+            "type": "apiweb",
+            "additionalDisplayClass": "right-info",
+            "position": -9860,
+            "conditions": {
+                "required": true,
+                "feedTo": []
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_REASON",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-reason-erp",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "reasonName",
+                    "minimumSearch": 0,
+                    "displayField": "reasonName"
+                }
+            }
+        },
+        {
+            "id": -9840,
+            "name": "Tra cứu tồn kho",
+            "type": "link",
+            "additionalDisplayClass": "left-info",
+            "position": -9840,
+            "disabled": true,
+            "value": "http://10.15.24.74:8081/sso/exportTicketRoom",
+            "staticContent": "<p style='font-size: 15px; color: #f44842'><i><a target='_blank' href='http://10.15.24.74:8081/sso/exportTicketRoom'>Bấm vào link để thực hiện tra cứu</a></i></p>"
+        },
+        {
+            "id": -9600,
+            "name": "Chọn trưởng/ phó phòng phê duyệt",
+            "type": "apiweb",
+            "additionalDisplayClass": "left-info",
+            "position": -9600,
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -9550,
+                        "fieldName": "userName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_TRUONG_PHO_PHONG_PD_DTXD",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            }
+        },
+        {
+            "id": -9550,
+            "position": -9550,
+            "name": "Account trưởng/ phó phòng phê duyệt",
+            "display": false,
+            "type": "text",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9525,
+            "position": -9525,
+            "name": "mappinglevel_Trưởng phòng",
+            "display": false,
+            "type": "number",
+            "value": "1",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9520,
+            "position": -9520,
+            "name": "Id phòng KHVT",
+            "display": false,
+            "value": "3522",
+            "type": "number",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9500,
+            "position": -9500,
+            "name": "Chọn trưởng phòng KHVT",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -9450,
+                        "fieldName": "userName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_TRUONG_PHO_PHONG_KHVT_DTXD",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9450,
+            "position": -9450,
+            "name": "Account trưởng/phó phòng KHVT",
+            "display": false,
+            "type": "text",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -6000,
+            "position": -6000,
+            "name": "mappinglevel_Giám đốc",
+            "display": false,
+            "type": "number",
+            "value": "0",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5800,
+            "position": -5800,
+            "name": "mappinglevel_Phó phòng",
+            "display": false,
+            "type": "number",
+            "value": "2",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5700,
+            "position": -5700,
+            "name": "mappinglevel_Chuyên viên",
+            "display": false,
+            "type": "number",
+            "value": "3",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5600,
+            "position": -5600,
+            "name": "mappinglevel_Thủ kho",
+            "display": false,
+            "type": "number",
+            "value": "4",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5500,
+            "position": -5500,
+            "name": "type",
+            "display": false,
+            "type": "text",
+            "value": "EXPORT_DTXD",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5400,
+            "position": -5400,
+            "name": "actionType",
+            "display": false,
+            "type": "text",
+            "value": "APPROVE",
+            "additionalDisplayClass": "right-info"
+        }
+    ],
+    "multitable": [
+        {
+            "id": -9880,
+            "position": -9880,
+            "name": "Danh sách các thiết bị vật tư",
+            "type": "table",
+            "columns": [
+                {
+                    "id": -9860,
+                    "position": -9860,
+                    "name": "STT",
+                    "type": "number",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9840,
+                    "position": -9840,
+                    "name": "Mã vật tư",
+                    "type": "apiweb",
+                    "conditions": {
+                        "required": true,
+                        "feedTo": [
+                            {
+                                "fieldName": "suppliesName",
+                                "id": -9820,
+                                "dataset": "TABLE"
+                            }
+                        ]
+                    },
+                    "apiWebConfig": {
+                        "apiConfig": {
+                            "param": "EVN_SPRO_PARAM_PICKER_FILTER_SUPPLIES",
+                            "hostnameKey": "SPRO_EVN",
+                            "urlFilter": "/common-spro/get-supplies",
+                            "returnKey": "MT_GET_VENDOR_RP_S"
+                        },
+                        "searchConfig": {
+                            "idField": "suppliesCode",
+                            "minimumSearch": 0,
+                            "displayField": "suppliesCode"
+                        }
+                    }
+                },
+                {
+                    "id": -9820,
+                    "position": -9820,
+                    "name": "Tên vật tư và quy cách",
+                    "type": "text"
+                },
+                {
+                    "id": -9780,
+                    "position": -9780,
+                    "name": "Đơn vị tính",
+                    "type": "master_data_unit",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9760,
+                    "position": -9760,
+                    "name": "Số lượng",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9740,
+                    "position": -9740,
+                    "name": "Ghi chú",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                }
+            ]
+        }
+    ]
+}

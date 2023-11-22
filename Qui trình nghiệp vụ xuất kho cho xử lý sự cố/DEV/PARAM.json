@@ -1,0 +1,115 @@
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_XLSC",
+        "status": 1,
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-110,-120)",
+            "receiver": "(-8600,-110,-120)",
+            "reason": "(-8500,-110,-120)",
+            "description": "(-8400,-110,-120)",
+            "location": "(-8900,-110,-120)",
+            "warehouse": "(-8100,-110,-120)",
+            "orgCode": "(-9920)",
+            "typeErp": "(-8300,-110,-120)",
+            "sourceErp": "(-8200,-110,-120)",
+            "tableData": [(t)<-9800,
+                -110,
+                -120>
+        {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+
+
+
+{
+    "ticket": {
+        "ticketId": 0,
+        "ticketCode": 0,
+        "requestSubject": "string",
+        "type": "string",
+        "statusErp": "string",
+        "status": "string",
+        "createDate": "2023-11-21T09:23:01.067Z",
+        "createUser": "string",
+        "actionType": "string",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": 0,
+            "orgRequest": "string",
+            "reason": "string",
+            "receiver": "string",
+            "deliver": "string",
+            "description": "string",
+            "location": "string",
+            "construction": "string",
+            "warehouse": "string",
+            "type": "string",
+            "orgCode": "string",
+            "subInventory": "string",
+            "locator": "string",
+            "typeErp": "string",
+            "sourceErp": "string",
+            "receiptDate": "2023-11-21",
+            "cmis": "string",
+            "staff": "string",
+            "tableData": [
+                {
+                    "id": 0,
+                    "ixfId": 0,
+                    "ticketCode": 0,
+                    "materialCode": "string",
+                    "materialName": "string",
+                    "producer": "string",
+                    "unit": "string",
+                    "requestQuantity": 0,
+                    "approveQuantity": 0,
+                    "batch": "string",
+                    "unitPrice": 0,
+                    "amount": 0,
+                    "accountDebit": "string",
+                    "accountCredit": "string"
+                }
+            ]
+        },
+        "listMaterial": [
+            {
+                "orgId": 0,
+                "materialCodeFmis": "string",
+                "materialNameFmis": "string",
+                "unit": "string",
+                "productionCode": "string",
+                "accessoryCode": "string",
+                "qualityCode": "string",
+                "materialCode": "string",
+                "note": "string"
+            }
+        ]
+    },
+    "approval": {
+        "ticketCode": 0,
+        "status": "string",
+        "reason": "string",
+        "flowName": "string",
+        "approvalUser": "string",
+        "action": "string"
+    }
+}

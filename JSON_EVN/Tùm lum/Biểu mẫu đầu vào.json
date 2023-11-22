@@ -1,0 +1,551 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "position": -10000,
+            "name": "Người tạo yêu cầu",
+            "type": "master_data_npc_user",
+            "valuefeeder": "ticketOwner",
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            },
+            "disabled": true,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9900,
+            "position": -9900,
+            "name": "Đơn vị tạo yêu cầu",
+            "type": "master_data_npc_user_account_donvi",
+            "value": "",
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9800,
+            "position": -9800,
+            "name": "Số điện thoại người tạo yêu cầu",
+            "type": "number",
+            "value": "",
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9700,
+            "position": -9700,
+            "name": "Thông tin tờ trình",
+            "type": "splitter",
+            "collapse": false
+        },
+        {
+            "id": -9600,
+            "position": -9600,
+            "name": "Nội dung tờ trình",
+            "type": "textarea",
+            "value": "",
+            "conditions": {
+                "required": false,
+                "height": 5
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9500,
+            "position": -9500,
+            "name": "Đơn vị gửi",
+            "type": "master_data_npc_user_account_donvi",
+            "value": "",
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            },
+            "disabled": true,
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9450,
+            "position": -9450,
+            "name": "Năm lấy dữ liệu",
+            "type": "number",
+            "value": "",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9445,
+            "position": -9445,
+            "name": "Tháng lấy dữ liệu",
+            "type": "select",
+            "value": "",
+            "conditions": {
+                "required": true,
+                "data": [
+                    {
+                        "text": "",
+                        "value": ""
+                    },
+                    {
+                        "text": "1",
+                        "value": "1"
+                    },
+                    {
+                        "text": "2",
+                        "value": "2"
+                    },
+                    {
+                        "text": "3",
+                        "value": "3"
+                    },
+                    {
+                        "text": "4",
+                        "value": "4"
+                    },
+                    {
+                        "text": "5",
+                        "value": "5"
+                    },
+                    {
+                        "text": "6",
+                        "value": "6"
+                    },
+                    {
+                        "text": "7",
+                        "value": "7"
+                    },
+                    {
+                        "text": "8",
+                        "value": "8"
+                    },
+                    {
+                        "text": "9",
+                        "value": "9"
+                    },
+                    {
+                        "text": "10",
+                        "value": "10"
+                    },
+                    {
+                        "text": "11",
+                        "value": "11"
+                    },
+                    {
+                        "text": "12",
+                        "value": "12"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9440,
+            "position": -9440,
+            "name": "Đính kèm file",
+            "type": "upload",
+            "value": "",
+            "conditions": {
+                "required": false,
+                "multiple": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9400,
+            "position": -9400,
+            "name": "Doanh thu bán điện",
+            "type": "apiweb",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "CapPhatThueGTGT_Get_DoanhThuBanDien",
+                    "hostnameKey": "URL_NPC",
+                    "urlFilter": "/cap-phat/doanh-thu-ban-dien-table",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "code",
+                    "minimumSearch": 0,
+                    "displayField": "code"
+                }
+            },
+            "value": "",
+            "conditions": {
+                "required": true,
+                "feedTo": [
+                    {
+                        "fieldName": "list",
+                        "feedType": "append",
+                        "id": -9300,
+                        "type": "table",
+                        "cols": [
+                            {
+                                "fieldName": "MA_DV",
+                                "id": -9296
+                            },
+                            {
+                                "fieldName": "TENDV",
+                                "id": -9295
+                            },
+                            {
+                                "fieldName": "BINHTHUONG",
+                                "id": -9290
+                            },
+                            {
+                                "fieldName": "CAODIEM",
+                                "id": -9285
+                            },
+                            {
+                                "fieldName": "THAPDIEM",
+                                "id": -9280
+                            },
+                            {
+                                "fieldName": "TONG",
+                                "id": -9275
+                            }
+                        ]
+                    },
+                    {
+                        "fieldName": "fileURL",
+                        "id": -9390,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9390,
+            "position": -9390,
+            "name": "Link file tổng hợp dữ liệu Doanh thu bán điện",
+            "display": true,
+            "additionalDisplayClass": "left-info",
+            "placeholder": "",
+            "disabled": true,
+            "type": "link",
+            "conditions": {
+                "required": false,
+                "min-length": 1,
+                "height": 5
+            },
+            "value": ""
+        },
+        {
+            "id": -9200,
+            "position": -9200,
+            "name": "Chức vụ",
+            "type": "select",
+            "value": "",
+            "conditions": {
+                "required": true,
+                "data": [
+                    {
+                        "text": "",
+                        "value": ""
+                    },
+                    {
+                        "text": "Trưởng ban kinh doanh",
+                        "value": "Trưởng ban kinh doanh"
+                    },
+                    {
+                        "text": "Phó ban kinh doanh",
+                        "value": "Phó ban kinh doanh"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9100,
+            "position": -9100,
+            "name": "Trưởng ban kinh doanh",
+            "type": "apiweb",
+            "value": "",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "PARAM_FILTER",
+                    "hostnameKey": "URL_NPC",
+                    "urlFilter": "/evn-master-data/load-approve-data?org-id=125&depart=B9&order-approve=5",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "fullname_username",
+                    "minimumSearch": 0,
+                    "displayField": "fullname_username"
+                }
+            },
+            "conditions": {
+                "required": true,
+                "displayCondition": {
+                    "idCondition": -9200,
+                    "valueCondition": "Trưởng ban kinh doanh",
+                    "clearData": true
+                },
+                "feedTo": [
+                    {
+                        "fieldName": "userName",
+                        "id": -195,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9000,
+            "position": -9000,
+            "name": "Phó ban kinh doanh",
+            "type": "apiweb",
+            "value": "",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "PARAM_FILTER",
+                    "hostnameKey": "URL_NPC",
+                    "urlFilter": "/evn-master-data/load-approve-data?org-id=125&depart=B9&order-approve=3",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "fullname_username",
+                    "minimumSearch": 0,
+                    "displayField": "fullname_username"
+                }
+            },
+            "conditions": {
+                "required": true,
+                "displayCondition": {
+                    "idCondition": -9200,
+                    "valueCondition": "Phó ban kinh doanh",
+                    "clearData": true
+                },
+                "feedTo": [
+                    {
+                        "fieldName": "userName",
+                        "id": -195,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -8900,
+            "position": -8900,
+            "name": "Trưởng ban TCKT",
+            "type": "apiweb",
+            "value": "",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "PARAM_FILTER",
+                    "hostnameKey": "URL_NPC",
+                    "urlFilter": "/evn-master-data/load-approve-data?org-id=125&depart=B5&order-approve=5",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "fullname_username",
+                    "minimumSearch": 0,
+                    "displayField": "fullname_username"
+                }
+            },
+            "conditions": {
+                "required": true,
+                "feedTo": [
+                    {
+                        "fieldName": "userName",
+                        "id": -194,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "fullName",
+                        "id": -192,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "posNameCut_departNameShort",
+                        "id": -193,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -195,
+            "position": -195,
+            "name": "Tài khoản trưởng/phó ban kinh doanh",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        },
+        {
+            "id": -194,
+            "position": -194,
+            "name": "Tài khoản trưởng ban TCKT",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        },
+        {
+            "id": -193,
+            "position": -193,
+            "name": "Danh xưng trưởng ban TCKT",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        },
+        {
+            "id": -192,
+            "position": -192,
+            "name": "Họ tên trưởng ban TCKT",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        },
+        {
+            "id": -8800,
+            "position": -8800,
+            "name": "Chuyên viên ban kinh doanh",
+            "type": "apiweb",
+            "value": "",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "PARAM_FILTER",
+                    "hostnameKey": "URL_NPC",
+                    "urlFilter": "/evn-master-data/load-approve-data?org-id=125&depart=B9&order-approve=1",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "fullname_username",
+                    "minimumSearch": 0,
+                    "displayField": "fullname_username"
+                }
+            },
+            "conditions": {
+                "required": true,
+                "feedTo": [
+                    {
+                        "fieldName": "userName",
+                        "id": -94,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "fullName",
+                        "id": -92,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "posNameCut_departNameShort",
+                        "id": -93,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -94,
+            "position": -94,
+            "name": "Tài khoản cv ban  kinh doanh",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        },
+        {
+            "id": -93,
+            "position": -93,
+            "name": "Danh xưng cv ban  kinh doanh",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        },
+        {
+            "id": -92,
+            "position": -92,
+            "name": "Họ tên cv ban kinh doanh",
+            "additionalDisplayClass": "left-info",
+            "type": "text",
+            "value": "",
+            "conditions": {},
+            "display": false
+        }
+    ],
+    "multitable": [
+        {
+            "id": -9300,
+            "position": -9300,
+            "name": "Thông tin doanh thu bán điện",
+            "columns": [
+                {
+                    "name": "Mã đơn vị",
+                    "type": "text",
+                    "id": -9296,
+                    "position": -9296,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Tên đơn vị",
+                    "type": "text",
+                    "id": -9295,
+                    "position": -9295,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Điện nhận BT",
+                    "type": "finance",
+                    "id": -9290,
+                    "position": -9290,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Điện nhận CĐ",
+                    "type": "finance",
+                    "id": -9285,
+                    "position": -9285,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9280,
+                    "position": -9280,
+                    "name": "Điện nhận TĐ",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9275,
+                    "position": -9275,
+                    "name": "Tổng điện nhận",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
+                    }
+                }
+            ]
+        }
+    ]
+}

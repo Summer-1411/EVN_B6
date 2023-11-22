@@ -1,0 +1,252 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "name": "Requestor",
+            "type": "master_data_tienlx6_masterdata_department_to_user",
+            "value": "",
+            "additionalDisplayClass": "left-info",
+            "position": -10000,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9980,
+            "name": "Department",
+            "type": "master_data_tienlx6_masterdata_department_to_user",
+            "value": "",
+            "additionalDisplayClass": "left-info",
+            "position": -9980,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9960,
+            "name": "Your Contact Number",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9960,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9940,
+            "name": "Đơn vị",
+            "type": "text",
+            "additionalDisplayClass": "right-info",
+            "position": -9940,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9920,
+            "name": "Tên đơn vị đề nghị",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9920,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9910,
+            "name": "Ngày lập",
+            "type": "date",
+            "additionalDisplayClass": "right-info",
+            "position": -9910,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9900,
+            "name": "Tại kho",
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "left-info",
+            "position": -9900,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9880,
+            "name": "Kính gửi",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9880,
+            "conditions": {
+                "required": true
+            }
+        },
+        
+        {
+            "id": -9860,
+            "name": "Lý do cấp",
+            "type": "text",
+            "additionalDisplayClass": "right-info",
+            "position": -9860,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9840,
+            "name": "Tra cứu tồn kho",
+            "type": "link",
+            "additionalDisplayClass": "left-info",
+            "position": -9840,
+            "value": "http://10.15.24.74:8081/sso/exportTicketRoom",
+            "staticContent": "<p style='font-size: 12px; color: #f44842'><i><a target='_blank' href='http://10.15.24.74:8081/sso/exportTicketRoom'>Tra cứu</a></i></p>"
+        },
+        {
+            "id": -9600,
+            "name": "Chọn trưởng/ phó phòng phê duyệt",
+            "type": "master_data_truong_pho_phong_khtv",
+            "additionalDisplayClass": "left-info",
+            "position": -9600,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "staticContent": "<p style='font-size: 12px; color: #3617FF'><i>Kế thừa dữ liệu từ Ticket Detail</i></p>",
+            "expressionConfig": {
+                "operands": [
+                    {
+                        "data-config": {
+                            "columnId": -9740,
+                            "tableId": -9880,
+                            "dataset": "MULTITABLE"
+                        },
+                        "type": "simple"
+                    }
+                ],
+                "type": "FUNCTION",
+                "operator": "SUM"
+            },
+            "name": "Tổng cộng",
+            "disabled": true,
+            "additionalDisplayClass": "left-info",
+            "id": -9599,
+            "position": -9599,
+            "type": "expression",
+            "value": ""
+        },
+        {
+            "dataFrom": -9599,
+            "type": "text",
+            "staticContent": "<p style='padding-top:10px;font-size: 12px; color: #1a06c9'><i></i></p>",
+            "name": "Bằng chữ",
+            "comment": "Loại chi phí khác",
+            "additionalDisplayClass": "left-info",
+            "disabled": true,
+            "placeholder": "",
+            "id": -9598,
+            "position": -9598,
+            "value": "",
+            "dataFromFunc": "convertNumberToWords"
+            
+        }
+        
+    ],
+    "multitable": [
+        {
+            "id": -9880,
+            "position": -9880,
+            "name": "Danh sách các thiết bị vật tư",
+            "type": "table",
+            "columns": [
+                {
+                    "id": -9860,
+                    "position": -9860,
+                    "name": "STT",
+                    "type": "number",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9840,
+                    "position": -9840,
+                    "name": "Mã vật tư",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9820,
+                    "position": -9820,
+                    "name": "Tên vật tư và quy cách",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9780,
+                    "position": -9780,
+                    "name": "Đơn vị tính",
+                    "type": "finance",
+                    "conditions": {
+                        "height": 5,
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9760,
+                    "position": -9760,
+                    "name": "Số lượng",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9740,
+                    "position": -9740,
+                    "expressionConfig": {
+                        "operands": [
+                            {
+                                "data-config": {
+                                    "operands": [
+                                        {
+                                            "data-config": {
+                                                "columnId": -9760,
+                                                "tableId": -9880,
+                                                "dataset": "MULTITABLE"
+                                            },
+                                            "type": "simple"
+                                        },
+                                        {
+                                            "data-config": {
+                                                "columnId": -9780,
+                                                "tableId": -9880,
+                                                "dataset": "MULTITABLE"
+                                            },
+                                            "type": "simple"
+                                        }
+                                    ],
+                                    "type": "ARITHMETIC",
+                                    "operator": "MULTIPLY"
+                                },
+                                "type": "expression"
+                            }
+                        ],
+                        "type": "ARITHMETIC"
+                    },
+                    "name": "Ghi chú",
+                    "type": "expression",
+                    "conditions": {
+                        "required": true
+                    }
+                }
+            ]
+        }
+    ]
+}

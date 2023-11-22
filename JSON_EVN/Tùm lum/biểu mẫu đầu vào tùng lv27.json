@@ -1,0 +1,208 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "name": "Requestor",
+            "type": "masterdata",
+            "additionalDisplayClass": "left-info",
+            "position": -10000,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9900,
+            "name": "Department",
+            "type": "masterdata",
+            "additionalDisplayClass": "right-info",
+            "position": -9900,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9800,
+            "name": "Your Contact Number",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9800,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9700,
+            "name": "Đơn vị",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9700,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9600,
+            "name": "Tên đơn vị đề nghị",
+            "type": "TEXTAREA",
+            "additionalDisplayClass": "right-info",
+            "position": -9600,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9500,
+            "name": "Lý do cấp",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9500,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -8900,
+            "name": "Chọn trưởng/ phó phòng phê duyệt",
+            "type": "masterdata",
+            "additionalDisplayClass": "left-info",
+            "position": -8900,
+            "conditions": {
+                "required": true
+            }
+        }
+    ],
+    "multitable": [
+        {
+            "id": -9000,
+            "position": -9000,
+            "name": "Danh sách các thiết bị vật tư",
+            "type": "table",
+            "columns": [
+                {
+                    "id": -9280,
+                    "position": -9280,
+                    "name": "STT",
+                    "type": "number",
+                    "conditions": {
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9260,
+                    "position": -9260,
+                    "name": "Mã vật tư",
+                    "type": "MASTERDATA",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9240,
+                    "position": -9240,
+                    "name": "Tên vật tư và quy cách",
+                    "type": "text"
+                },
+                {
+                    "id": -9220,
+                    "position": -9220,
+                    "name": "Mã- tên NSX",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9200,
+                    "position": -9200,
+                    "name": "Đơn vị tính",
+                    "type": "textarea",
+                    "conditions": {
+                        "height": 5,
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9180,
+                    "position": -9180,
+                    "name": "Xin cấp",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9160,
+                    "position": -9160,
+                    "name": "Cấp ngay",
+                    "type": "text"
+                },
+                {
+                    "id": -9140,
+                    "position": -9140,
+                    "name": "Sẽ cấp",
+                    "type": "textarea",
+                    "conditions": {
+                        "height": 5,
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9120,
+                    "position": -9120,
+                    "name": "Điều chuyển",
+                    "type": "text",
+                    "conditions": {
+                        "height": 5
+                    }
+                },
+                {
+                    "id": -9100,
+                    "position": -9100,
+                    "name": "Đơn vị điều chuyển",
+                    "type": "text",
+                    "conditions": {
+                        "height": 5
+                    }
+                },
+                {
+                    "id": -9080,
+                    "position": -9080,
+                    "name": "Nguồn vốn",
+                    "type": "text",
+                    "conditions": {
+                        "height": 5,
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9060,
+                    "position": -9060,
+                    "name": "Đơn giá",
+                    "type": "text",
+                    "conditions": {
+                        "height": 5,
+                        "required": true
+
+                    }
+                },
+                {
+                    "id": -9040,
+                    "position": -9040,
+                    "name": "Thành tiền",
+                    "type": "number",
+                    "conditions": {
+                        "height": 5,
+                        "required": true
+
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,761 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>CongVan_CFSX</title>
+    <style type="text/css">
+        body {
+            font-family: Times New Roman;
+            font-size: 13pt;
+
+        }
+
+        table {
+
+            font-family: Times New Roman;
+            font-size: 13pt;
+            line-height: 1.4;
+            width: 100%;
+        }
+
+        .table-small {
+            line-height: 1 !important;
+        }
+
+        table th {
+            font-family: Times New Roman;
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        table th,
+        table td {
+            vertical-align: top;
+            font-size: 13pt;
+        }
+
+        .tableContent {
+            font-size: 13pt;
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid gray;
+        }
+
+        .tableContent th,
+        .tableContent td {
+            padding: 5px;
+            border: 1px solid gray;
+        }
+
+        .tableHeader {
+            width: 100%;
+            border: 1px solid white;
+        }
+
+        .tableHeader {
+            border-spacing: 1px;
+        }
+
+        .tableHeader th,
+        .tableHeader td {
+            padding: 0px;
+            border: 1px solid white;
+        }
+
+        .sectionGuide {
+            padding: 0;
+            width: 100%;
+        }
+
+        #my-div {
+            width: 10px;
+            height: 10px;
+            background: blue;
+            margin-left: 2.5cm;
+            margin-right: 2cm;
+            margin-bottom: 2cm;
+            margin-top: 2cm;
+        }
+
+        .pagebreak {
+            page-break-before: always;
+        }
+
+        .footer {
+            position: fixed;
+            display: block;
+            padding-top: 90em;
+        }
+
+        .sup {
+            position: relative;
+            vertical-align: baseline;
+            top: -0.5em;
+            font-size: 13pt;
+        }
+
+        .indent {
+            text-indent: 50pt;
+            line-height: 1.4;
+        }
+
+        .lineHeight16 {
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        br {
+            line-height: 20px;
+        }
+
+        .hideElement {
+            color: white;
+            display: none;
+        }
+
+        .tableHeaderxx {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.3px solid black;
+        }
+
+        .tableHeaderxx th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 3pt;
+            border-collapse: collapse;
+        }
+
+        .tableHeaderxx td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 3pt;
+            border-collapse: collapse;
+        }
+
+        .tableHeaderxx .tdb span {
+            font-weight: bold;
+            float: right;
+            border-collapse: collapse;
+        }
+
+        .tableHeaderxx .trtablexx {
+            font-weight: bold;
+            border-collapse: collapse;
+        }
+
+        .padding-full-width {
+            padding: 2cm 4pt 2cm 4pt;
+        }
+
+        .padding-ok {
+            padding: 2cm 2cm 2cm 2.5cm;
+        }
+    </style>
+</head>
+
+<body>
+
+    #macro( formatFinance $value )
+    #if($value && $value != "")
+    #if($value.contains("."))
+    #set($tmp = $value.split("\."))
+    $tmp[0].replaceAll(',','.'),$tmp[1]
+    #else
+    $value.replaceAll(',','.')
+    #end
+    #end
+    #end
+
+    #macro( formatStringFinance $value )
+    #set($index1 = 0)
+    #set($index2 = 3)
+    #set($bien2 = '')
+    #set($bien1 = $value.toString())
+    #set($length1 = $bien1.length() /3)
+    #set($length = $bien1.length() % 3)
+    #foreach($i in [0..$length1])
+    #if($i != $length1)
+    #if($length != 0 && $i == 0)
+    #set($bien2 = $bien2 + $bien1.substring(0,$length) +'.')
+    #set($index1 = $index1 +$length)
+    #set($index2 = $index2 +$length)
+    #elseif(($i + 1) == $length1 && $length == 0)
+    #set($bien2 = $bien2 + $bien1.substring($index1,$index2))
+    #set($index1 = $index1 +3)
+    #set($index2 = $index2 +3)
+    #else
+    #set($bien2 = $bien2 + $bien1.substring($index1,$index2) +'.')
+    #set($index1 = $index1 +3)
+    #set($index2 = $index2 +3)
+    #end
+    #else
+    #set($bien2 = $bien2 + $bien1.substring($index1,$bien1.length()))
+    #end
+
+    #end
+    $bien2
+    #end
+
+    ## Định nghĩa biến Long dùng để convert
+    #set($val = 1)
+    #set($LONG_VALUE = $val.longValue())
+
+
+    <div class="sectionGuide padding-ok">
+
+
+        <table border="0" colspan="0" rowspan="0" class="tableHeader">
+            <tr>
+                <th width="45%;text-align: center" style="font-size:12pt;line-height: 1.3">
+                    TẬP ĐOÀN ĐIỆN LỰC VIỆT NAM
+                    <br />
+                    <b>TỔNG CÔNG TY</b>
+                    <br />
+                    <b>ĐIỆN LỰC MIỀN BẮC </b>
+                    <br />
+                    <b><span style="line-height: 3pt">_______________</span></b>
+                    <br />
+                    <p style="font-size:13pt;">
+                        Số:$SoCongVan/$MaCongVan.replaceAll("NPC","<i>NPC</i>")<br />
+                    </p>
+                    <p style="font-size:12pt;">
+                        V/v $Vv
+                    </p>
+                </th>
+                <th width="55%;" style="font-size:12pt; line-height: 1.3; text-align: center;">
+                    <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>
+                    <br />
+                    <b>Độc lập - Tự do - Hạnh phúc</b>
+                    <br />
+                    <b><span style="line-height: 3pt">________________________</span></b>
+                    <br />
+                    <br />
+                    <br />
+                    <div style="font-size:13pt; text-align: center;">
+                        <i>$TinhThanh, ngày $NgayCongVan.split(" ")[0].split("/")[0] tháng $NgayCongVan.split("
+                            ")[0].split(
+                            "/")[1] năm $NgayCongVan.split(" ")[0].split("/")[2] </i>
+                    </div>
+                </th>
+            </tr>
+        </table>
+
+
+        <div style="padding-top: 4px;">
+            <table class="tableHeader" style="margin-top: 1pt; margin-left: 10pt; margin-right: 10pt">
+                <tr>
+                    <td colspan="3" style="text-align: center; font-size:14pt;">
+                        Kính gửi: $KinhGui
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="padding-top: 4px;">
+            <table class="tableHeader table-small" style="margin-top: 1pt; margin-left: 10pt; margin-right: 10pt">
+
+                <tr>
+                    <td colspan="3" style="text-align: left; line-height: 1.6">
+                        <div class="lineHeight16" style="text-align:justify">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$NoiDungToTrinh.replaceAll(
+                                "\n","<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").replaceAll("NPC","<i>NPC</i>")
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align: left;line-height: 1.4">
+                        <div class="lineHeight16">
+                            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tổng số tiền: $TongTien.split("
+                                    ")[0].split("\.")[0].replaceAll(
+                                    ",",".") đồng</b></p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align: left;line-height: 1.4">
+                        <div class="lineHeight16">
+                            <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bằng chữ: $TongTienBangChu.replaceAll(
+                                    ",",".")</i></p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align: center; font-size:13pt;">
+                        <i>(Chi tiết theo bảng kê đính kèm).</i>
+                    </td>
+                </tr>
+
+                #if($DonViHachToan!="")
+                <tr>
+                    <td colspan="3" style="text-align: left;line-height: 1.4">
+                        <div class="lineHeight16">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Đơn vị hạch toán trên sổ sách kế toán
+                                    khi nhận được tiền:</b>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align: left; line-height: 1.6">
+                        <div class="lineHeight16" style="text-align:justify">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$DonViHachToan.replaceAll(
+                                "\n","<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;").replaceAll(
+                                "NPC","<i>NPC</i>")
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                #elseif($DonViHachToan=="")
+
+                #end
+
+                <tr>
+                    <td colspan="3" style="text-align: left;line-height: 1.4">
+                        <div class="lineHeight16">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tổng công ty thông báo cho các đơn vị biết
+                            và
+                            thực hiện ./.
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <table border="0" colspan="0" rowspan="0" class="tableHeader"
+            style=" margin-top: 10pt; margin-left: 10pt; margin-right: 10pt; line-height: 1.4" cellpadding="0"
+            cellspacing="0">
+            <tr>
+                <td width="40%; text-align: left" style="padding-left: 25pt;">
+                    <i><b style="font-size:12pt">Nơi nhận:</b></i>
+                    <!--
+                <br/>
+                - Như trên;
+                <br/>
+                - Lưu VT, TCKT.<br/>
+                -->
+                    <br /><br />
+                    <p style="font-size: 11pt">$NoiNhan.replaceAll("\n","<br />")</p>
+                </td>
+                #if($ChucVu =="15")
+                <th width="60%;text-align: center">
+                    <b>TỔNG GIÁM ĐỐC</b>
+                    <br />
+                    <br /><br /><br />
+                    <p style="font-size:2pt; color: white; display: none;">user_TGD</p>
+                    <br /><br /><br />
+                    <b>$NameTGD_PTGD</b>
+                </th>
+                #elseif($ChucVu =="13")
+                <th width="60%;text-align: center">
+                    <b>KT. TỔNG GIÁM ĐỐC</b>
+                    <br />
+                    <b>PHÓ TỔNG GIÁM ĐỐC </b>
+                    <br /><br /><br />
+                    <p style="font-size:2pt; color: white; display: none;">user_TGD</p>
+                    <br /><br /><br />
+                    <b>$NameTGD_PTGD</b>
+                </th>
+                #end
+            </tr>
+        </table>
+
+
+        <table border="0" colspan="0" rowspan="0" class="tableHeader"
+            style=" margin-left: 10pt; margin-right: 10pt; line-height: 1.4" cellpadding="0" cellspacing="0">
+            <tr>
+                <th width="33%; text-align: center">
+                    <b class="hideElement"> Phó ban TCKT </b>
+                    <br />
+                    <br /><br /><br />
+                    <p style="font-size:2pt; color: white; display: none;">user_PhoBanTCKT</p>
+                    <br /><br /><br />
+                    <b class="hideElement">Tên Phó ban TCKT </b>
+                </th>
+                <th width="33%; text-align: center">
+                    <b class="hideElement"> Trưởng ban TCKT </b>
+                    <br />
+                    <br /><br /><br />
+                    <p style="font-size:2pt; color: white; display: none;">user_TruongBanTCKT</p>
+                    <br /><br /><br />
+                    <b class="hideElement">Tên Trưởng ban TCKT </b>
+                </th>
+
+                <th width="33%; text-align: center">
+                    <b class="hideElement"> Thư ký </b>
+                    <br />
+                    <br /><br /><br />
+                    <p style="font-size:2pt; color: white; display: none;">ThuKy</p>
+                    <br /><br /><br />
+                    <b class="hideElement">Thư ký</b>
+                </th>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+    <div class="pagebreak"></div>
+
+
+    <div class="sectionGuide padding-full-width">
+
+        <p style="font-size:2pt; color:white;">1_break</p>
+
+
+        <table border="0" colspan="0" rowspan="0" class="tableHeader">
+            <tr>
+                <td width="60%;" style="font-size: 12pt; text-align: center;">
+                    <b style="font-size: 12pt; text-align: center;">$DonViYeuCau.toUpperCase()</b>
+                    <br />
+                    <div style="text-align: center; line-height: 3pt;">
+                        <hr width="30%" />
+                    </div>
+                </td>
+                <td width="40%;" style="font-size: 12pt; text-align: center;">
+
+                </td>
+            </tr>
+
+        </table>
+        <table border="0" colspan="0" rowspan="0" class="tableHeader">
+            <tr>
+                <th width="100%" style="font-size: 12pt;">
+                    <b>
+                        BẢNG ĐĂNG KÝ CẤP CHI PHÍ SẢN XUẤT THÁNG $Thang
+                    </b>
+                </th>
+
+            </tr>
+        </table>
+        <table class="tableHeaderxx">
+            <tr class="trtablexx">
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>STT</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Đơn vị</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Chi phí biến động</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Tiền lương</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Ăn ca</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>BHXH, YT, TN, KPCĐ</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Thuế đất</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Chi phí thủy điện</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Trợ cấp MVL</b>
+                </th>
+                <th rowspan="2" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Chi hộ - Thu hộ</b>
+                </th>
+                <th colspan="4" style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    <b>Tổng cộng</b>
+                </th>
+            </tr>
+
+            <tr>
+                <th style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    Tổng cộng
+                </th>
+                <th style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    Tổng cấp đợt 1
+                </th>
+                <th style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    Tổng cấp đợt 2
+                </th>
+                <th style="border-width: 1pt 0 1pt 1pt; font-size: 9pt;">
+                    Tổng cấp đợt 3
+                </th>
+            </tr>
+
+
+            ##Khai báo biến để tính tiền tổng cộng
+            #set($Tong_Cot1_ChiPhiBienDong = 0)
+            #set($Tong_Cot2_TienLuong = 0)
+            #set($Tong_Cot3_AnCa = 0)
+            #set($Tong_Cot4_BHXH = 0)
+            #set($Tong_Cot5_ThueDat = 0)
+            #set($Tong_Cot6_ChiPhiThuyDien = 0)
+            #set($Tong_Cot7_TroCapMVL = 0)
+            #set($Tong_Cot8_ChiHoThuHo = 0)
+
+
+            #set($Tong_TatCa_Dot1 = 0)
+            #set($Tong_TatCa_Dot2 = 0)
+            #set($Tong_TatCa_Dot3= 0)
+            #set($Tong_TatCa_CacDot= 0)
+            #set($index = 1)
+            #set($sumTable = 0)
+            #foreach($data in $BangChiPhi)
+
+            ##Khai báo biến để tính tiền trong bảng
+            #set($Cot1_ChiPhiBienDong = 0)
+            #set($Cot2_TienLuong = 0)
+            #set($Tong_Dot1 = 0)
+            #set($Tong_Dot2 = 0)
+            #set($Tong_Dot3 = 0)
+            #set($Tong_CacDot = 0)
+
+
+            #set($Cot4_BHXH = 0)
+            #set($Cot5_ThueDat = 0)
+            #set($Cot6_ChiPhiThuyDien = 0)
+            #set($Cot7_TroCapMVL = 0)
+            #set($Cot8_ChiHoThuHo = 0)
+
+
+            ## cộng 2 loại đầu
+            #set( $Cot1_ChiPhiBienDong = $LONG_VALUE.parseLong($data.get("chiPhiDot1").replaceAll(',','').split("
+            ")[0].split("\.")[0]) + $LONG_VALUE.parseLong($data.get("chiPhiDot2").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #set( $Cot2_TienLuong = $LONG_VALUE.parseLong($data.get("luongDot1").replaceAll(',','').split("
+            ")[0].split("\.")[0]) + $LONG_VALUE.parseLong($data.get("luongDot2").replaceAll(',','').split("
+            ")[0].split("\.")[0])
+            + $LONG_VALUE.parseLong($data.get("luongDot3").replaceAll(',','').split(" ")[0].split("\.")[0]) )
+
+
+            ## Cộng đợt 1
+            #set( $Tong_Dot1 = $LONG_VALUE.parseLong($data.get("chiPhiDot1").replaceAll(',','').split("
+            ")[0].split("\.")[0]) + $LONG_VALUE.parseLong($data.get("luongDot1").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #if($data.get("anCaDotCap").toString() == "Đợt 1")
+            #set( $Tong_Dot1 = $Tong_Dot1 + $LONG_VALUE.parseLong($data.get("anCa").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("baoHiemDotCap").toString() == "Đợt 1")
+            #set( $Tong_Dot1 = $Tong_Dot1 + $LONG_VALUE.parseLong($data.get("baoHiem").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("thueDatDotCap").toString() == "Đợt 1")
+            #set( $Tong_Dot1 = $Tong_Dot1 + $LONG_VALUE.parseLong($data.get("thueDat").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("chiPhiThuyDienDotCap").toString() == "Đợt 1")
+            #set( $Tong_Dot1 = $Tong_Dot1 + $LONG_VALUE.parseLong($data.get("chiPhiThuyDien").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("troCapMVLDotCap").toString() == "Đợt 1")
+            #set( $Tong_Dot1 = $Tong_Dot1 + $LONG_VALUE.parseLong($data.get("troCapMVL").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("chiHoThuHoDotCap").toString() == "Đợt 1")
+            #set( $Tong_Dot1 = $Tong_Dot1 + $LONG_VALUE.parseLong($data.get("chiHoThuHo").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+
+            ## Cộng đợt 2
+            #set( $Tong_Dot2 = $LONG_VALUE.parseLong($data.get("chiPhiDot2").replaceAll(',','').split("
+            ")[0].split("\.")[0]) + $LONG_VALUE.parseLong($data.get("luongDot2").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #if($data.get("anCaDotCap").toString() == "Đợt 2")
+            #set( $Tong_Dot2 = $Tong_Dot2 + $LONG_VALUE.parseLong($data.get("anCa").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("baoHiemDotCap").toString() == "Đợt 2")
+            #set( $Tong_Dot2 = $Tong_Dot2 + $LONG_VALUE.parseLong($data.get("baoHiem").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("thueDatDotCap").toString() == "Đợt 2")
+            #set( $Tong_Dot2 = $Tong_Dot2 + $LONG_VALUE.parseLong($data.get("thueDat").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("chiPhiThuyDienDotCap").toString() == "Đợt 2")
+            #set( $Tong_Dot2 = $Tong_Dot2 + $LONG_VALUE.parseLong($data.get("chiPhiThuyDien").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("troCapMVLDotCap").toString() == "Đợt 2")
+            #set( $Tong_Dot2 = $Tong_Dot2 + $LONG_VALUE.parseLong($data.get("troCapMVL").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("chiHoThuHoDotCap").toString() == "Đợt 2")
+            #set( $Tong_Dot2 = $Tong_Dot2 + $LONG_VALUE.parseLong($data.get("chiHoThuHo").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+
+
+            ## Cộng đợt 3
+            #set( $Tong_Dot3 = $LONG_VALUE.parseLong($data.get("luongDot3").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #if($data.get("anCaDotCap").toString() == "Đợt 3")
+            #set( $Tong_Dot3 = $Tong_Dot3 + $LONG_VALUE.parseLong($data.get("anCa").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("baoHiemDotCap").toString() == "Đợt 3")
+            #set( $Tong_Dot3 = $Tong_Dot3 + $LONG_VALUE.parseLong($data.get("baoHiem").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("thueDatDotCap").toString() == "Đợt 3")
+            #set( $Tong_Dot3 = $Tong_Dot3 + $LONG_VALUE.parseLong($data.get("thueDat").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("chiPhiThuyDienDotCap").toString() == "Đợt 3")
+            #set( $Tong_Dot3 = $Tong_Dot3 + $LONG_VALUE.parseLong($data.get("chiPhiThuyDien").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("troCapMVLDotCap").toString() == "Đợt 3")
+            #set( $Tong_Dot3 = $Tong_Dot3 + $LONG_VALUE.parseLong($data.get("troCapMVL").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+            #if($data.get("chiHoThuHoDotCap").toString() == "Đợt 3")
+            #set( $Tong_Dot3 = $Tong_Dot3 + $LONG_VALUE.parseLong($data.get("chiHoThuHo").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #end
+
+
+
+
+
+            ## Cộng tộng cộng các đợt
+            #set( $Tong_Cot1_ChiPhiBienDong = $Tong_Cot1_ChiPhiBienDong + $Cot1_ChiPhiBienDong)
+            #set( $Tong_Cot2_TienLuong = $Tong_Cot2_TienLuong + $Cot2_TienLuong )
+            #set( $Tong_Cot3_AnCa = $Tong_Cot3_AnCa + $LONG_VALUE.parseLong($data.get("anCa").replaceAll(',','').split("
+            ")[0].split("\.")[0]) )
+            #set( $Tong_Cot4_BHXH = $Tong_Cot4_BHXH +
+            $LONG_VALUE.parseLong($data.get("baoHiem").replaceAll(',','').split(" ")[0].split("\.")[0]) )
+            #set( $Tong_Cot5_ThueDat = $Tong_Cot5_ThueDat +
+            $LONG_VALUE.parseLong($data.get("thueDat").replaceAll(',','').split(" ")[0].split("\.")[0]) )
+            #set( $Tong_Cot6_ChiPhiThuyDien = $Tong_Cot6_ChiPhiThuyDien +
+            $LONG_VALUE.parseLong($data.get("chiPhiThuyDien").replaceAll(',','').split(" ")[0].split("\.")[0]) )
+            #set( $Tong_Cot7_TroCapMVL = $Tong_Cot7_TroCapMVL +
+            $LONG_VALUE.parseLong($data.get("troCapMVL").replaceAll(',','').split(" ")[0].split("\.")[0]) )
+            #set( $Tong_Cot8_ChiHoThuHo = $Tong_Cot8_ChiHoThuHo +
+            $LONG_VALUE.parseLong($data.get("chiHoThuHo").replaceAll(',','').split(" ")[0].split("\.")[0]) )
+
+
+
+            #set( $Tong_CacDot = $Tong_Dot1 + $Tong_Dot2 + $Tong_Dot3 )
+
+
+            #set( $Tong_TatCa_Dot1 = $Tong_TatCa_Dot1 + $Tong_Dot1 )
+            #set( $Tong_TatCa_Dot2 = $Tong_TatCa_Dot2 + $Tong_Dot2 )
+            #set( $Tong_TatCa_Dot3 = $Tong_TatCa_Dot3 + $Tong_Dot3 )
+
+            #set( $Tong_TatCa_CacDot = $Tong_TatCa_Dot1 + $Tong_TatCa_Dot2 + $Tong_TatCa_Dot3 )
+
+
+
+
+
+            <tr>
+                <td style="text-align: center; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $index
+
+                </td>
+                <td style="text-align: left; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("tenDonvi")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    #formatStringFinance($Cot1_ChiPhiBienDong)
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    #formatStringFinance($Cot2_TienLuong)
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("anCa").replaceAll(",",".")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("baoHiem").replaceAll(",",".")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("thueDat").replaceAll(",",".")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("chiPhiThuyDien").replaceAll(",",".")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("troCapMVL").replaceAll(",",".")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    $data.get("chiHoThuHo").replaceAll(",",".")
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    #formatStringFinance($Tong_CacDot)
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    #formatStringFinance($Tong_Dot1)
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 0 1pt 1pt;">
+                    #formatStringFinance($Tong_Dot2)
+                </td>
+                <td style="text-align: right; font-size: 7pt; border-width: 0 1pt 1pt 1pt;">
+                    #formatStringFinance($Tong_Dot3)
+                </td>
+            </tr>
+
+
+
+            #set($index = $index + 1)
+            #end
+
+            <tr class="trtablexx">
+                <th width="4%" style="font-size: 7pt;  text-align: left; border-width: 1pt 0 1pt 1pt;">
+                </th>
+                <th width="16.8%" style="font-size: 7pt; text-align: center; border-width: 1pt 0 1pt 1pt;">
+                    <b>Tổng cộng</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot1_ChiPhiBienDong)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot2_TienLuong)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot3_AnCa)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot4_BHXH)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot5_ThueDat)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot6_ChiPhiThuyDien)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot7_TroCapMVL)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_Cot8_ChiHoThuHo)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_TatCa_CacDot)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_TatCa_Dot1)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt; text-align: right; border-width: 1pt 0 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_TatCa_Dot2)</b>
+                </th>
+                <th width="6.1%" style="font-size: 7pt;  text-align: right;border-width: 1pt 1pt 1pt 1pt;">
+                    <b>#formatStringFinance($Tong_TatCa_Dot3)</b>
+                </th>
+            </tr>
+
+
+        </table>
+
+
+        <p style="font-size:2pt; color:white;">2_break</p>
+    </div>
+</body>

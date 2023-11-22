@@ -1,0 +1,821 @@
+{
+    "relatives": [
+        {
+            "customNote": "Bước 1",
+            "id": -10,
+            "type": "ticket",
+            "isDone": false,
+            "status": "Opened"
+        },
+        { 
+            "summary": "Trưởng/phó phòng ký duyệt và ký số",
+            "customNote": "Bước 2",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -20,
+            "type": "phase",
+            "printable": true,
+            "phaseType": "Implement",
+            "print-config": {
+                "margin": "0,0,0,0",
+                "filename": "Danh sách vật tư",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -9960,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9940,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoCap"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9840,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9820,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9800,
+                                    "key": "MaTenNSX"
+                                },
+                                {
+                                    "columnId": -9780,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9760,
+                                    "key": "XinCap"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "CapNgay"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "SeCap"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "DieuChuyen"
+                                },
+                                {
+                                    "columnId": -9680,
+                                    "key": "DonViDieuChuyen"
+                                },
+                                {
+                                    "columnId": -9660,
+                                    "key": "NguonVon"
+                                },
+                                {
+                                    "columnId": -9640,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -9620,
+                                    "key": "ThanhTien"
+                                }
+                            ],
+                            "tableId": -9880,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "/plugins/servlet/sms-attachment?id=61373&fileName=bangVatTuThietBi.vm"
+            },
+            "autocreate": true,
+            "status": "Responding"
+        },
+        {
+            "summary": "Trưởng phòng KHVT giao việc cho chuyên viên",
+            "customNote": "Bước 3",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -30,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8900,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Chuyên viên KHVT duyệt và ký số",
+            "customNote": "Bước 4",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -40,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8600,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Trưởng/phó phòng KHVT duyệt và ký số",
+            "customNote": "Bước 5",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -50,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Giám đốc duyệt và ký số",
+            "customNote": "Bước 6",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -60,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Chuyên viên lập phiếu xuất",
+            "customNote": "Bước 7",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -70,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Trưởng/phó phòng KHVT duyệt và ký số",
+            "customNote": "Bước 8",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -80,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Đơn vị thi công giao việc cho nhân viên viên",
+            "customNote": "Bước 9",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -90,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Nhân viên xác nhận đến kho",
+            "customNote": "Bước 10",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -100,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Thủ kho ký số phiếu xuất và phiếu giao hàng",
+            "customNote": "Bước 11",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -110,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Nhân viên ký số phiếu xuất và phiếu giao hàng",
+            "customNote": "Bước 12",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -120,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8800,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Kết thúc",
+            "id": -1,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Close",
+            "status": "Waiting"
+        }
+    ],
+    "relationships": [
+        {
+            "customNote": "Bước 1",
+            "from": -10,
+            "id": -1020,
+            "to": -20,
+            "type": "default",
+            "status": "finished"
+        },
+        {
+            "customNote": "Bước 2",
+            "from": -20,
+            "id": -2030,
+            "to": -30,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Nối Bước 1 - Bước 3 (Request update bỏ qua Bước 2)",
+            "display": false,
+            "from": -10,
+            "to": -30,
+            "id": -1030,
+            "status": "finished"
+        },
+        {
+            "customNote": "Bước 3",
+            "from": -30,
+            "id": -3040,
+            "to": -40,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Chọn chuyên viên",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10,
+                        "position": -10,
+                        "type": "text",
+                        "conditions": {
+                          "required": false
+                        }
+                      }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 4",
+            "from": -40,
+            "id": -4050,
+            "to": -50,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 5",
+            "from": -50,
+            "id": -5060,
+            "to": -60,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 6",
+            "from": -60,
+            "id": -6070,
+            "to": -70,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 7",
+            "from": -70,
+            "id": -7080,
+            "to": -80,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 8",
+            "from": -80,
+            "id": -8090,
+            "to": -90,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 9",
+            "from": -90,
+            "id": -90100,
+            "to": -100,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 10",
+            "from": -100,
+            "id": -100110,
+            "to": -110,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 11",
+            "from": -110,
+            "id": -110120,
+            "to": -120,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 12",
+            "from": -120,
+            "id": -1201,
+            "to": -1,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        }
+    ],
+    "notification_config": {
+        "approvers_pending_mail_template": 20,
+        "ticket_response_mail_template": 8,
+        "comment_mail_template": 27,
+        "viewers_assignment_mail_template": 29,
+        "watchers_ticket_rejection_mail_template": 21,
+        "ticket_result_reject_mail_template": 15,
+        "new_performer_phase_reassignment_mail_template": 17,
+        "creator_rejected_mail_template": 26,
+        "ticket_share_mail_template": 32,
+        "ticket_creation_mail_template": 6,
+        "relationship_result_reject_mail_template": 16,
+        "creator_approved_mail_template": 28,
+        "mention_mail_template": 14,
+        "co_execute_rejection_mail_template": 30,
+        "implementation_reminder_mail_template": 24,
+        "ticket_cancellation_mail_template": 10,
+        "creator_requested_update_mail_template": 19,
+        "approval_input_finish_mail_template": 22,
+        "co_execute_request_to_update_mail_template": 31,
+        "old_performer_phase_reassignment_mail_template": 18,
+        "watchers_ticket_auto_closing_mail_template": 13,
+        "approval_reminder_no_token_mail_template": 34,
+        "watchers_ticket_creation_mail_template": 7,
+        "watchers_ticket_cancellation_mail_template": 11,
+        "approval_reminder_mail_template": 23,
+        "confirmation_reminder_mail_template": 25,
+        "phase_input_finish_mail_template": 21,
+        "phase_finished_mail_template": 35,
+        "watchers_ticket_closing_mail_template": 12,
+        "watchers_ticket_response_mail_template": 9,
+        "phase_approve_finished_mail_template": 36
+    },
+    "display": [
+        {
+            "positions": [
+                0,
+                50
+            ],
+            "id": -10
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                200,
+                50
+            ],
+            "id": -20
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                400,
+                50
+            ],
+            "id": -30
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                400,
+                200
+            ],
+            "id": -40
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                200,
+                200
+            ],
+            "id": -50
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                200
+            ],
+            "id": -60
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                350
+            ],
+            "id": -70
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                200,
+                350
+            ],
+            "id": -80
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                400,
+                350
+            ],
+            "id": -90
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                400,
+                500
+            ],
+            "id": -100
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                200,
+                500
+            ],
+            "id": -110
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                500
+            ],
+            "id": -120
+        },
+        {
+            "positions": [
+                0,
+                650
+            ],
+            "id": -1
+        }
+    ]
+}
