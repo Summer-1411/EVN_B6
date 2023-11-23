@@ -1,77 +1,39 @@
-// B6_PARAM_GET_ALL_DEPARTMENT_XLSC
-{
-    "orgId": 9920
-}
-//B6_PARAM_TRUONG_PHONG_KT_XLSC
+//Nhập kho cho đi bảo hành: IMPORT_BH
+//B6_PARAM_TRUONG_PHO_PHONG_NKBH
 {
     "orgId": "-9920",
-    "deptId": "-9400",
-    "mappingLevel": "-5900"
-}
-// B6_PARAM_TRUONG_PHONG_KHVT_XLSC
-{
-    "orgId": "-9920",
-    "mappingLevel": "-5550"
-}
-//B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_XLSC (Chuyên viên KT)
-{
-    "orgId": "-9920",
-    "deptId": "-9400",
-    "mappingLevel": "-5700"
-}
-//B6_PARAM_CHON_TRUONG_PHO_PHONG_KT_BUOC5_XLSC (Phòng KT)
-{
-    "orgId": "-9920",
-    "deptId": "-9400",
+    "deptId": "-9980",
     "mappingLevel": "-5300"
 }
-
-
-
-//B6_PARAM_CHON_CHUYEN_VIEN_KHVT_BUOC7_XLSC (KHVT)
-{
-    "orgId": "-9920",
-    "deptId": "-9450",
-    "mappingLevel": "-5700"
-}
-//B6_PARAM_CHON_TRUONG_PHO_KHVT_XLSC (KHVT)
+//B6_PARAM_TRUONG_PHO_PHONG_KHVT_NKBH
 {
     "orgId": "-9920",
     "mappingLevel": "-5650"
 }
-//B6_PARAM_CHON_GIAMDOC_PGD_XLSC
+//B6_PARAM_CHON_GIAMDOC_PGD_NKBH
 {
     "orgId": "-9920",
     "mappingLevel": "-6000"
 }
-//B6_PARAM_CHON_THU_KHO_KHVT_XLSC (KHVT)
+// B6_PARAM_CHON_CHUYEN_VIEN_KHVT_BUOC5_NKXH
 {
     "orgId": "-9920",
     "deptId": "-9450",
-    "mappingLevel": "-5600"
-}
-//B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC11_XLSC (KHTVT)
-{
-    "orgId": "-9920",
-    "deptId": "-5700,-110,-120",
-    "mappingLevel": "-5300"
-}
-//Bước 16: Đơn vị thi công giao việc cho chuyên viên (đơn vị thi công chọn ở bước 11)
-//B6_PARAM_CHON_CHUYEN_VIEN_DON_VI_THI_CONG_BUOC16_XLSC
-{
-    "orgId": "-9920",
-    "deptId": "-5700,-110,-120",
     "mappingLevel": "-5700"
 }
-//API các bước duyệt
-// bước thì mình sẽ truyền FINISH, CANCEL , APPROVE vào action nhé
-// Tạo yêu cầu : REQUEST
-// Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
-Bước 1: {
+//B6_PARAM_THU_KHO_BUOC6_NKBH
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5600"
+}
+//Call api create-update (Nhập kho bảo hành)
+//Bước 1:
+// B6_PARAM_CREATE_TICKET_BUOC1_NKBH
+{
     "ticket": {
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
-        "type": "EXPORT_XLSC",
+        "type": "IMPORT_BH",
         "status": 1,
         "createDate": "(created-date)",
         "createUser": "(-10000)",
@@ -80,7 +42,6 @@ Bước 1: {
             "ixId": 0,
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
-            "reason": "(-9860)",
             "warehouse": "(-9900)",
             "tableData": [(t)<-9800>
 		        {
@@ -92,10 +53,17 @@ Bước 1: {
                 }(endt)
             ]
         }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 1",
+        "action": "FINISH",
+        "approvalUser": "(-9990)"
     }
 }
 // Bước 2
-// B6_PARAM_FINISH_BUOC2_XLSC
+// B6_PARAM_FINISH_BUOC2_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -105,8 +73,7 @@ Bước 1: {
         "approvalUser": "(phase-owner,-20)"
     }
 }
-//Bước 3
-// B6_PARAM_APPROVE_BUOC3_XLSC
+// B6_PARAM_APPROVE_BUOC3_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -116,40 +83,27 @@ Bước 1: {
         "approvalUser": "(phase-owner,-30)"
     }
 }
-// Bước 4
-// B6_PARAM_FINISH_BUOC4_XLSC
+// B6_PARAM_APPROVE_BUOC4_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 4",
-        "action": "FINISH",
+        "action": "APPROVE",
         "approvalUser": "(phase-owner,-40)"
     }
 }
-// Bước 5
-// B6_PARAM_APPROVE_BUOC5_XLSC
+// B6_PARAM_FINISH_BUOC5_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 5",
-        "action": "APPROVE",
+        "action": "FINISH",
         "approvalUser": "(phase-owner,-50)"
     }
 }
-// Bước 6
-// B6_PARAM_APPROVE_BUOC6_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 6",
-        "action": "APPROVE",
-        "approvalUser": "(phase-owner,-60)"
-    }
-}
-// B6_PARAM_FINISH_BUOC7_XLSC
+// B6_PARAM_FINISH_BUOC7_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -159,17 +113,56 @@ Bước 1: {
         "approvalUser": "(phase-owner,-70)"
     }
 }
-// B6_PARAM_FINISH_BUOC8_XLSC
+//Bước 6
+// B6_PARAM_FINISH_BUOC6_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_BH",
+        "status": 1,
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-60,-70)",
+            "receiver": "(-8600,-60,-70)",
+            "reason": "(-8500,-60,-70)",
+            "description": "(-8400,-60,-70)",
+            "location": "(-8900,-60,-70)",
+            "tableData": [(t)<-9800,-60,-70>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+
+// B6_PARAM_APPROVE_BUOC8_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 8",
-        "action": "FINISH",
+        "action": "APPROVE",
         "approvalUser": "(phase-owner,-80)"
     }
 }
-// B6_PARAM_APPROVE_BUOC9_XLSC
+// B6_PARAM_APPROVE_BUOC9_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -179,106 +172,38 @@ Bước 1: {
         "approvalUser": "(phase-owner,-90)"
     }
 }
-// B6_PARAM_APPROVE_BUOC10_XLSC
+// B6_PARAM_FINISH_BUOC10_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 10",
-        "action": "APPROVE",
+        "action": "FINISH",
         "approvalUser": "(phase-owner,-100)"
     }
 }
-// B6_PARAM_FINISH_BUOC11_XLSC
+// B6_PARAM_APPROVE_BUOC11_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 11",
-        "action": "FINISH",
+        "action": "APPROVE",
         "approvalUser": "(phase-owner,-110)"
     }
 }
-// B6_PARAM_APPROVE_BUOC12_XLSC
+//End
+// B6_PARAM_APPROVE_BUOC12_NKBH
 {
     "approval": {
         "ticketCode": "(-0)",
-        "status": "INPROGRESS",
+        "status": "CLOSED",
         "flowName": "Buoc 12",
         "action": "APPROVE",
         "approvalUser": "(phase-owner,-120)"
     }
 }
-// B6_PARAM_FINISH_BUOC13_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 13",
-        "action": "FINISH",
-        "approvalUser": "(phase-owner,-130)"
-    }
-}
-// B6_PARAM_APPROVE_BUOC14_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 14",
-        "action": "APPROVE",
-        "approvalUser": "(phase-owner,-140)"
-    }
-}
-// B6_PARAM_APPROVE_BUOC15_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 15",
-        "action": "APPROVE",
-        "approvalUser": "(phase-owner,-150)"
-    }
-}
-// B6_PARAM_FINISH_BUOC16_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 16",
-        "action": "FINISH",
-        "approvalUser": "(phase-owner,-160)"
-    }
-}
-// B6_PARAM_FINISH_BUOC17_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 17",
-        "action": "FINISH",
-        "approvalUser": "(phase-owner,-170)"
-    }
-}
-// B6_PARAM_APPROVE_BUOC18_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 18",
-        "action": "APPROVE",
-        "approvalUser": "(phase-owner,-180)"
-    }
-}
-// B6_PARAM_APPROVE_BUOC19_XLSC
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "CLOSED",
-        "flowName": "Buoc 19",
-        "action": "APPROVE",
-        "approvalUser": "(phase-owner,-190)"
-    }
-}
+
 
 
 
@@ -354,11 +279,4 @@ Bước 1: {
         "approvalUser": "string",
         "action": "string"
     }
-}
-
-//B6_PARAM_CHON_TPP_KT_BUOC5_XLSC
-{
-    "orgId":"-9920",
-    "deptId": "-9400",
-    "mappingLevel":"-5300"
 }

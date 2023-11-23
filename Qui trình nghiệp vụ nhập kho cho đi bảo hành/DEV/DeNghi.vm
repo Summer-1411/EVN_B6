@@ -1,0 +1,272 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Untitled 1</title>
+    <style type="text/css">
+        body {
+            font-family: Times New Roman;
+            font-size: 13pt;
+        }
+
+        table {
+
+            font-family: Times New Roman;
+            font-size: 13pt;
+            line-height: 1.3;
+            width: 100%;
+        }
+
+        .table-small {
+            line-height: 1 !important;
+        }
+
+        table th {
+            font-family: Times New Roman;
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        table th,
+        table td {
+            vertical-align: top;
+            font-size: 9pt;
+        }
+
+        .tableContent {
+            font-size: 13pt;
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid gray;
+        }
+
+        .tableContent th,
+        .tableContent td {
+            border: 0.25pt solid gray;
+        }
+
+        .tableHeader {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid white;
+        }
+
+        .tableHeader th,
+        .tableHeader td {
+            border: 0.25pt solid white;
+        }
+
+        .tableHeaderxx {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid black;
+        }
+
+        .tableHeaderxx th {
+            border: 0.25pt solid black;
+            text-align: center;
+        }
+
+        .tableHeaderxx td {
+            border: 0.25pt solid black;
+            text-align: left;
+        }
+
+        .tableHeaderxx .tdb span {
+            font-weight: bold;
+            float: right;
+        }
+
+        .tableHeaderxx .trtablexx {
+            font-weight: bold;
+        }
+
+        .tdtablexx {
+            float: right;
+            border: 0pt !important;
+        }
+
+        .header {
+            width: 100%;
+            margin-bottom: 37.5pt;
+        }
+
+        .sectionGuide {
+            padding: 0;
+            width: 100%;
+        }
+
+        #my-div {
+            width: 7.5pt;
+            height: 7.5pt;
+            background: blue;
+            margin-left: 2.5cm;
+            margin-right: 2cm;
+            margin-bottom: 2cm;
+            margin-top: 2cm;
+        }
+
+        .pagebreak {
+            page-break-before: always;
+        }
+
+        .footer {
+            position: fixed;
+            display: block;
+            padding-top: 90em;
+        }
+
+        .sup {
+            position: relative;
+            vertical-align: baseline;
+            top: -0.5em;
+            font-size: 13pt;
+        }
+
+        .indent {
+            text-indent: 50pt;
+            line-height: 1.3;
+        }
+
+        .lineHeight16 {
+            line-height: 1.3;
+        }
+
+        .PaddingCellTable td {
+            padding: 3.75pt;
+        }
+
+        .PaddingCellTable th {
+            padding: 3.75pt;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sectionGuide" style="padding: 1cm 2cm 1cm 2.22cm;">
+        <table colspan="0" rowspan="0" class="tableHeader"
+            style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
+            <tr>
+                <td width="40%" style="text-align: center; font-size:13pt">
+                    <span>TỔNG CÔNG TY<br />ĐIỆN LỰC TP HÀ NỘI</span>
+                    <br />
+                    <b class="title">ĐƠN VỊ $DonViDeNghi</b>
+                    <br />
+                    <b><span style="line-height: 3pt">_____________</span></b>
+                    <br />
+
+                </td>
+                <td width="60%" style="text-align: center; font-size:13pt">
+                    <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>
+                    <br />
+                    <b class="title">Độc lập - Tự do - Hạnh phúc</b>
+                    <br />
+                    <b><span style="line-height: 3pt">___________________</span></b>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="font-size:11pt; text-align: right;">
+        <i>
+            Hà Nội, ngày
+        </i>
+        <br />
+        <div class="sectionGuide" style="padding: 0.3cm 1.22cm 0cm 1.22cm;">
+            <table class="tableHeader">
+                <tr>
+                    <td style="text-align: center; font-size: 14pt;">
+                        <b class="title">
+                            ĐỀ NGHỊ
+                            <br />
+                            Xuất VTTB đi thí nghiệm, kiểm định
+                        </b>
+                        <br />
+                        <b><span style="line-height: 3pt">___________________</span></b>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sectionGuide">
+            <div style="padding: 1cm 1.22cm 0cm 1.22cm;">
+                <table class="tableHeaderxx" style="font-size: 12pt;">
+                    <tr class="PaddingCellTable">
+                        <th style="text-align: center; font-weight: bold; font-size: 13pt;">
+                            STT
+                        </th>
+                        <th style="text-align: center; font-weight: bold; font-size: 13pt;">
+                            Mã vật tư
+                        </th>
+                        <th style="text-align: center; font-weight: bold; font-size: 13pt;">
+                            Tên vật tư
+                        </th>
+                        <th style="text-align: center; font-weight: bold; font-size: 13pt;">
+                            Đơn vị tính
+                        </th>
+                        <th style="text-align: center; font-weight: bold; font-size: 13pt;">
+                            Số lượng
+                        </th>
+                        <th style="text-align: center; font-weight: bold; font-size: 13pt;">
+                            Ghi chú
+                        </th>
+                    </tr>
+                    #set($index = 1)
+                    #foreach($row in $DanhSachVatTu)
+                    <tr class="PaddingCellTable">
+                        <td style="text-align: center; font-size: 12pt;">
+                            $index
+                        </td>
+                        <td style="text-align: left; font-size: 12pt;">
+                            $row.get("MaVatTu")
+                        </td>
+                        <td style="text-align: left; font-size: 12pt;">
+                            $row.get("TenVatTuVaQuyCach")
+                        </td>
+                        <td style="text-align: left; font-size: 12pt;">
+                            $row.get("DonViTinh")
+                        </td>
+                        <td style="text-align: right; font-size: 12pt;">
+                            $row.get("SoLuong")
+                        </td>
+                        <td style="text-align: left; font-size: 12pt;">
+                            $row.get("GhiChu")
+                        </td>
+                    </tr>
+                    #set($index = $index + 1)
+                    #end
+                    <tr class="PaddingCellTable">
+                        <td></td>
+                        <td style="text-align: left; font-size: 12pt; font-weight: bold;">Tổng cộng</td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: right; font-size: 12pt;">
+                            $TongCong
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div style="padding: 0.3cm 1.22cm 0cm 1.22cm; text-align:left">
+                    <p>Ngày nhận thực tế: $NgayNhanThucTe</p>
+                    <p>Biên bản nhập kho CMIS: ...................................................................</p>
+                    <p>Nhân viên giao nhận (X05): .................................................................</p>
+                </div>
+                <div class="sectionGuide" style="padding: 0cm 2cm 1cm 2.22cm;">
+                    <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 16.5pt;">
+                        <tr>
+                            <th width="50%" style="text-align: left; font-size: 13pt;">
+                            </th>
+                            <th width="50%" style="text-align: center; font-size: 13pt;">
+                                <b>TRƯỞNG ĐƠN VỊ</b>
+                                <br />
+                                <i>(Ký tên, đóng dấu)</i>
+                                <br />
+                                <br />
+                                <br />
+                                <p style="font-size:2pt; color: white;">$ChuKy_TruongDonVi</p>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -25,9 +25,6 @@
     "deptId": "-9400",
     "mappingLevel": "-5300"
 }
-
-
-
 //B6_PARAM_CHON_CHUYEN_VIEN_KHVT_BUOC7_XLSC (KHVT)
 {
     "orgId": "-9920",
@@ -191,6 +188,36 @@ Bước 1: {
 }
 // B6_PARAM_FINISH_BUOC11_XLSC
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_XLSC",
+        "status": 1,
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-110,-120)",
+            "receiver": "(-8600,-110,-120)",
+            "reason": "(-8500,-110,-120)",
+            "description": "(-8400,-110,-120)",
+            "location": "(-8900,-110,-120)",
+            "warehouse": "(-8100,-110,-120)",
+            "orgCode": "(-9920)",
+            "typeErp": "(-8300,-110,-120)",
+            "sourceErp": "(-8200,-110,-120)",
+            "tableData": [(t)<-9800,
+                -110,
+                -120>
+          {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)"
+                }(endt)
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -355,10 +382,9 @@ Bước 1: {
         "action": "string"
     }
 }
-
 //B6_PARAM_CHON_TPP_KT_BUOC5_XLSC
 {
-    "orgId":"-9920",
+    "orgId": "-9920",
     "deptId": "-9400",
-    "mappingLevel":"-5300"
+    "mappingLevel": "-5300"
 }
