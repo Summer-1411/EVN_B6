@@ -5,24 +5,12 @@
             "name": "Requestor",
             "valuefeeder": "TicketOwner",
             "value": "",
-            "display": false,
+            "display": true,
             "additionalDisplayClass": "left-info",
             "position": -10000,
             "conditions": {
                 "required": true
             }
-        },
-        {
-            "id": -9991,
-            "position": -9991,
-            "name": "Họ tên người lập yêu cầu",
-            "type": "master_data_load_user_info_hotennguoitaoyeucau",
-            "display": false,
-            "disabled": true,
-            "conditions": {
-                "required": false
-            },
-            "additionalDisplayClass": "left-info"
         },
         {
             "id": -9990,
@@ -47,18 +35,6 @@
                 }
             ],
             "additionalDisplayClass": "right-info"
-        },
-        {
-            "id": -9985,
-            "position": -9985,
-            "name": "Requestor",
-            "type": "master_data_load_user_info_nguoiyeucau",
-            "display": true,
-            "disabled": true,
-            "conditions": {
-                "required": true
-            },
-            "additionalDisplayClass": "left-info"
         },
         {
             "id": -9980,
@@ -188,14 +164,6 @@
             "value": "http://10.15.24.74:8081/sso/exportTicketRoom"
         },
         {
-            "display": false,
-            "name": "Họ tên đội trưởng",
-            "additionalDisplayClass": "left-info",
-            "id": -9605,
-            "position": -9605,
-            "type": "text"
-        },
-        {
             "id": -9600,
             "name": "Chọn đội trưởng phê duyệt",
             "type": "apiweb",
@@ -203,11 +171,7 @@
             "position": -9600,
             "conditions": {
                 "feedTo": [
-                    {
-                        "id": -9605,
-                        "fieldName": "fullName",
-                        "dataset": "INDIVIDUAL"
-                    }
+                    
                 ],
                 "required": true
             },
@@ -227,36 +191,9 @@
         },
 
         {
-            "id": -9550,
-            "position": -9550,
-            "type": "apiweb",
-            "disable": true,
-            "name": "Chọn phòng KHVT",
-            "conditions": {
-                "feedTo": [],
-                "required": true
-            },
-            "apiWebConfig": {
-                "apiConfig": {
-                    "hostnameKey": "SPRO_EVN",
-                    "param": "B6_PARAM_GET_ALL_DEPARTMENT_XLSC",
-                    "urlFilter": "/common-spro/get-all-department",
-                    "returnKey": "MT_GET_VENDOR_RP_S"
-                },
-                "searchConfig": {
-                    "idField": "deptId",
-                    "minimumSearch": 0,
-                    "displayField": "name"
-                }
-            },
-            
-            "additionalDisplayClass": "left-info"
-        },
-
-        {
             "id": -9500,
             "position": -9500,
-            "name": "Chọn trưởng/phó phòng KHVT",
+            "name": "Chọn trưởng phòng KHVT",
             "type": "apiweb",
             "conditions": {
                 "feedTo": [
@@ -271,7 +208,7 @@
             "apiWebConfig": {
                 "apiConfig": {
                     "hostnameKey": "SPRO_EVN",
-                    "param": "B6_PARAM_TRUONG_PHO_PHONG_KHVT_XLSC",
+                    "param": "B6_PARAM_TRUONG_PHONG_KHVT_XLSC",
                     "urlFilter": "/common-spro/getUserByPosition",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
@@ -281,10 +218,10 @@
                     "displayField": "fullName"
                 }
             },
-            "additionalDisplayClass": "right-info"
+            "additionalDisplayClass": "left-info"
         },
         {
-            "display": false,
+            "display": true,
             "name": "ID phòng ban KHVT",
             "additionalDisplayClass": "left-info",
             "id": -9450,
@@ -323,7 +260,7 @@
             "apiWebConfig": {
                 "apiConfig": {
                     "hostnameKey": "SPRO_EVN",
-                    "param": "B6_PARAM_TRUONG_PHO_PHONG_KT_XLSC",
+                    "param": "B6_PARAM_TRUONG_PHONG_KT_XLSC",
                     "urlFilter": "/common-spro/getUserByPosition",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
@@ -333,7 +270,7 @@
                     "displayField": "fullName"
                 }
             },
-            "name": "Chọn trưởng/phó phòng KT",
+            "name": "Chọn trưởng phòng KT",
             "additionalDisplayClass": "right-info",
             "id": -8640,
             "position": -8640,
@@ -343,9 +280,6 @@
                 "required": true
             }
         },
-
-
-
         {
             "id": -6000,
             "position": -6000,

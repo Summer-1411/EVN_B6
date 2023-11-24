@@ -141,11 +141,19 @@
 </head>
 
 <body>
+    #macro( formatFinance $value )
+    #if($value.contains("."))
+    #set($tmp = $value.split("\."))
+    $tmp[0].replaceAll(',','.'),$tmp[1]
+    #else
+    $value.replaceAll(',','.')
+    #end
+    #end
     <div class="sectionGuide" style="padding: 1cm 2cm 1cm 1.22cm;">
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
-                <td width="30%" style="font-size:11pt">
+                <td width="30%" style="font-size:11pt; text-align: center;">
                     <b>$DonVi</b>
                     <br />
                     <b>$DiaChi</b>
@@ -262,7 +270,7 @@
                         <br />
                         <br />
                         <br />
-                        <p >$ChuKy_NguoiLapPhieu</p>
+                        <p >$NameSignature</p>
                     </th>
                     <th style="text-align: center; font-size: 11pt;">
                         <b>NGƯỜI NHẬN HÀNG</b>

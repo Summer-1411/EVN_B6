@@ -1,7 +1,34 @@
+
 // B6_PARAM_GET_ALL_DEPARTMENT_XLSC
 {
-    "orgId": 9920
+    "orgId": 9920,
+    "pickerFilter": "name"
 }
+
+
+// B6_PARAM_DOI_TRUONG_XuLySuCo
+{
+    "orgId" : "-9920",
+    "deptId" : "-9980",
+    "mappingLevel" : "-5300",
+    "pickerFilter": "fullName"
+}
+
+// B6_PARAM_TRUONG_PHO_PHONG_KHVT_XLSC
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId" : "-9550",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_TRUONG_PHO_PHONG_KT_XLSC
+{
+    "orgId": "-9920",
+    "deptId": "-9400",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+
 //B6_PARAM_TRUONG_PHONG_KT_XLSC
 {
     "orgId": "-9920",
@@ -11,60 +38,78 @@
 // B6_PARAM_TRUONG_PHONG_KHVT_XLSC
 {
     "orgId": "-9920",
-    "mappingLevel": "-5550"
+    "mappingLevel": "-5550",
+    "pickerFilter": "fullName"
 }
+
 //B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_XLSC (Chuyên viên KT)
 {
     "orgId": "-9920",
     "deptId": "-9400",
-    "mappingLevel": "-5700"
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_CHON_TRUONG_PHO_PHONG_KT_BUOC5_XLSC (Phòng KT)
 {
     "orgId": "-9920",
     "deptId": "-9400",
-    "mappingLevel": "-5300"
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_CHON_CHUYEN_VIEN_KHVT_BUOC7_XLSC (KHVT)
 {
     "orgId": "-9920",
-    "deptId": "-9450",
-    "mappingLevel": "-5700"
+    "deptId": "-9550",
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
 }
-//B6_PARAM_CHON_TRUONG_PHO_KHVT_XLSC (KHVT)
+// B6_PARAM_TRUONG_PHO_PHONG_KHVT_XLSC
+// B6_PARAM_CHON_TRUONG_PHO_KHVT_XLSC (KHVT)
 {
     "orgId": "-9920",
-    "mappingLevel": "-5650"
+    "mappingLevel": "-5650",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_CHON_GIAMDOC_PGD_XLSC
 {
     "orgId": "-9920",
-    "mappingLevel": "-6000"
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_CHON_THU_KHO_KHVT_XLSC (KHVT)
 {
     "orgId": "-9920",
-    "deptId": "-9450",
-    "mappingLevel": "-5600"
+    "mappingLevel": "-5600",
+    "pickerFilter": "fullName"
 }
+
+// B6_PARAM_CHON_DON_VI_THI_CONG_BUOC8_XLSC
+{
+    "orgId":"-9920",
+    "pickerFilter": "name"
+}
+
 //B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC11_XLSC (KHTVT)
 {
     "orgId": "-9920",
     "deptId": "-5700,-110,-120",
-    "mappingLevel": "-5300"
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
 }
 //Bước 16: Đơn vị thi công giao việc cho chuyên viên (đơn vị thi công chọn ở bước 11)
 //B6_PARAM_CHON_CHUYEN_VIEN_DON_VI_THI_CONG_BUOC16_XLSC
 {
     "orgId": "-9920",
     "deptId": "-5700,-110,-120",
-    "mappingLevel": "-5700"
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
 }
 //API các bước duyệt
 // bước thì mình sẽ truyền FINISH, CANCEL , APPROVE vào action nhé
 // Tạo yêu cầu : REQUEST
 // Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
-Bước 1: {
+// Bước 1: 
+{
     "ticket": {
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
@@ -85,7 +130,8 @@ Bước 1: {
                     "materialCode": "(-9760)",
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
-                    "requestQuantity": "(-9700)"
+                    "requestQuantity": "(-9700)",
+                    "description":  "(-9680)"
                 }(endt)
             ]
         }
@@ -208,7 +254,7 @@ Bước 1: {
             "tableData": [(t)<-9800,
                 -110,
                 -120>
-          {
+                {
                     "materialCode": "(-9760)",
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
@@ -386,5 +432,130 @@ Bước 1: {
 {
     "orgId": "-9920",
     "deptId": "-9400",
-    "mappingLevel": "-5300"
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
 }
+
+{
+    "name": "Chọn loại phê duyệt",
+    "additionalDisplayClass": "left-info",
+    "id": -9048,
+    "position": -9050,
+    "type": "select",
+    "conditions": {
+        "data": [
+            {
+                "text": "Không có phó giám đốc, giám đốc phê duyệt",
+                "value": "0"
+            },
+            {
+                "text": "Có giám đốc, phó giám đốc phê duyệt",
+                "value": "1"
+            }
+        ],
+        "min-length": 1
+    },
+    "value": "0"
+},
+{
+    "apiWebConfig": {
+        "apiConfig": {
+            "hostnameKey": "SPRO_EVN",
+            "param": "EVN_SPRO_PARAM_CHUYEN_VIEN_KHVT",
+            "urlFilter": "/common-spro/getUserByPosition?mappingLevel=0",
+            "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+            "idField": "userName",
+            "minimumSearch": 0,
+            "displayField": "fullName"
+        }
+    },
+    "name": "Chọn giám đốc, phó giám đốc",
+    "additionalDisplayClass": "left-info",
+    "id": -9050,
+    "position": -9048,
+    "type": "apiweb",
+    "conditions": {
+        "displayCondition": {
+            "valueCondition": "1",
+            "idCondition": -9048,
+            "dataCondition": "INDIVIDUAL"
+        },
+        "feedTo": []
+    }
+},
+
+
+"decisions": {
+    "text": "Chọn giám đốc, phó giám đốc",
+    "actions": [
+        {
+            "workflow": {
+                "relationships": [
+                    -110130
+                ],
+                "relatives": [
+                    -130
+                ]
+            },
+            "name": "Không chọn giám đốc, phó giám đốc",
+            "id": -1,
+            "conditions": {
+                "operation": "or",
+                "items": [
+                    {
+                        "right-element": {
+                            "dataset": "value",
+                            "value": "0"
+                        },
+                        "compare-type": "text",
+                        "operation": "equal",
+                        "left-element": {
+                            "inputId": -80,
+                            "infoId": -9048,
+                            "phaseId": -90,
+                            "type": "text",
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "workflow": {
+                "relationships": [
+                    -110120,
+                    -120130
+                ],
+                "relatives": [
+                    -120,
+                    -130
+                ]
+            },
+            "name": "Chọn giám đốc, phó giám đốc",
+            "id": -2,
+            "conditions": {
+                "operation": "or",
+                "items": [
+                    {
+                        "right-element": {
+                            "dataset": "value",
+                            "value": "0"
+                        },
+                        "compare-type": "text",
+                        "operation": "notEqual",
+                        "left-element": {
+                            "inputId": -80,
+                            "infoId": -9048,
+                            "phaseId": -90,
+                            "type": "text",
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "status": "unfinished"
+},

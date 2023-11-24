@@ -143,7 +143,15 @@
     </style>
 </head>
 <body>
-    <div class="sectionGuide" style="padding: 0cm 0.8cm 0.5cm 0pt;">
+    #macro( formatFinance $value )
+    #if($value.contains("."))
+    #set($tmp = $value.split("\."))
+    $tmp[0].replaceAll(',','.'),$tmp[1]
+    #else
+    $value.replaceAll(',','.')
+    #end
+    #end
+    <div class="sectionGuide" style="padding: 1cm 1.22cm 0cm 1.22cm;">
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
@@ -152,7 +160,7 @@
                     <br />
                     <span style="font-weight: normal;">ĐIỆN LỰC TP HÀ NỘI </span>
                     <br />
-                    <b>ĐƠN VỊ $DonViDeNghi</b>
+                    <b>$DonViDeNghi</b>
                     <br />
                     <b><span style="line-height: 3pt">_______________</span></b>
                     <br />
@@ -168,7 +176,7 @@
                     </span>
                     <div style="font-size:11pt; text-align: right;">
                         <br />
-                        <i>$DonViDeNghi, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
+                        <i>Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
                             "/")[1] năm $NgayToTrinh.split(" ")[0].split("/")[2]
                         </i>
@@ -177,7 +185,7 @@
             </tr>
         </table>
     </div>
-    <div class="sectionGuide" style="padding: 0cm 0.8cm 0cm 0pt;">
+    <div class="sectionGuide" style="padding: 1cm 1.22cm 0cm 1.22cm;">
         <div>
             <table class="tableHeader">
                 <tr>
@@ -242,7 +250,7 @@
                         $row.get("DonViTinh")
                     </td>
                     <td style="text-align: right; font-size: 10.5pt;">
-                        $row.get("SoLuong")
+                        #formatFinance($row.get("SoLuong"))
                     </td>
                     <td style="text-align: left; font-size: 10.5pt;">
                         $row.get("GhiChu")
@@ -272,7 +280,7 @@
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:12pt; color: white;">$ChuKy_TruongPhong</p>
+                        <p style="font-size:12pt; margin-top: 30px;">$NameSignature</p>
                     </th>
                 </tr>
             </table>
