@@ -1,0 +1,343 @@
+// ******************************************************* CÁC BƯỚC CALL DATA *******************************************************
+// B6_PARAM_TRUONG_PHO_PHONG_PD_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-9980",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_GET_ALL_DEPARTMENT_DTXD
+{
+    "orgId": "-9920",
+    "pickerFilter": "name"
+}
+//B6_PARAM_TRUONG_PHONG_KHVT_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId": "-9550",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_DTXD (KHVT)
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_TRUONG_PHO_PHONG_KHVT_DTXD (KHVT)
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+// B6_PARAM_CHON_GD_PGD_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_THU_KHO_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5600",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC8_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-8650,-80,-90",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_CHUYEN_VIEN_BUOC13_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5700",
+    "deptId": "-8650,-80,-90",
+    "pickerFilter": "fullName"
+}
+//start
+// ******************************************************* CÁC BƯỚC DUYỆT *******************************************************
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "null",
+        "flowName": "Bước 2",
+        "approvalUser": "null",
+        "ticketType": "EXPORT_DTXD",
+        "action": "FINISH"
+    }
+},
+{
+    "status": "INPROGRESS, CLOSED",
+    "action": "FINISH, CANCEL , APPROVE"
+}
+//có 3 bước thì mình sẽ truyền FINISH, CANCEL , APPROVE vào action nhé
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": 1,
+        "reasonCancel": "null",
+        "ticketType": "EXPORT_PT_DV",
+        "flowName": "Bước 3",
+        "action": "APPROVE",
+        "reason": "(update-reason)",
+        "approvalUser": "(phase-owner,-3040)"
+    }
+}
+
+Tạo yêu cầu : REQUEST
+Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
+//B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD
+// Bước 1
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": 1,
+        "createDate": "(created-date)",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "warehouse": "(-9900)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)"
+                }(endt)
+            ]
+        }
+    }
+}
+
+FINISH bước 2: B6_PARAM_FINISH_BUOC2_DTXD
+
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
+
+APPROVE bước 3 ĐTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 3",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-30)"
+    }
+}
+
+
+FINISH bước 4: B6_PARAM_FINISH_BUOC4_DTXD
+
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 4",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+
+APPROVE bước 5: B6_PARAM_APPROVE_BUOC5_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+
+
+APPROVE bước 6 ĐTXD: B6_PARAM_APPROVE_BUOC6_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+
+APPROVE bước 7 ĐTXD: B6_PARAM_APPROVE_BUOC7_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 7",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}
+
+Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": 1,
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-10000,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "description": "(-9650,-80,-90)",
+            "location": "(-9750,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "warehouse": "(-9600,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "locator": "(-9950,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "tableData": [(t)<-9800,-80,-90>
+          {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+
+
+
+
+APPROVE bước 9: B6_PARAM_APPROVE_BUOC9_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 9",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-90)"
+    }
+}
+
+
+FINISH bước 10: B6_PARAM_FINISH_BUOC10_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-100)"
+    }
+}
+
+
+APPROVE bước 11: B6_PARAM_APPROVE_BUOC11_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+APPROVE bước 12: B6_PARAM_APPROVE_BUOC12_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 12",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-120)"
+    }
+}
+
+FINISH bước 13: B6_PARAM_FINISH_BUOC13_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 13",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-130)"
+    }
+}
+
+FINISH bước 14: B6_PARAM_FINISH_BUOC14_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 14",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-140)"
+    }
+}
+
+APPROVE bước 15: B6_PARAM_APPROVE_BUOC15_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 15",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-150)"
+    }
+}
+APPROVE bước 16: B6_PARAM_APPROVE_BUOC16_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 16",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-160)"
+    }
+}
+
+
+{
+    "orgId": "-9940",
+    "deptId": "-9930",
+    "mappingLevel": "-9915"
+}
+
+{
+    "orgId": "-9940",
+    "mappingLevel": "-9525,-50,-60"
+}
