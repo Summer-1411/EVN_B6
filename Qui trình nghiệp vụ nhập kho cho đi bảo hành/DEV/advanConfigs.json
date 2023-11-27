@@ -3,28 +3,33 @@
 {
     "orgId": "-9920",
     "deptId": "-9980",
-    "mappingLevel": "-5300"
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_TRUONG_PHO_PHONG_KHVT_NKBH
 {
     "orgId": "-9920",
-    "mappingLevel": "-5650"
+    "mappingLevel": "-5650",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_CHON_GIAMDOC_PGD_NKBH
 {
     "orgId": "-9920",
-    "mappingLevel": "-6000"
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
 }
 // B6_PARAM_CHON_CHUYEN_VIEN_KHVT_BUOC5_NKXH
 {
     "orgId": "-9920",
     "deptId": "-9450",
-    "mappingLevel": "-5700"
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
 }
 //B6_PARAM_THU_KHO_BUOC6_NKBH
 {
     "orgId": "-9920",
-    "mappingLevel": "-5600"
+    "mappingLevel": "-5600",
+    "pickerFilter": "fullName"
 }
 //Call api create-update (Nhập kho bảo hành)
 //Bước 1:
@@ -49,7 +54,8 @@
                     "materialCode": "(-9760)",
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
-                    "requestQuantity": "(-9700)"
+                    "requestQuantity": "(-9700)",
+                    "note": "(-9680)"
                 }(endt)
             ]
         }
