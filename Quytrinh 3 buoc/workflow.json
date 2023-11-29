@@ -1,0 +1,204 @@
+{
+    "relatives": [
+        {
+            "id": -10,
+            "customNote": "Bước 1. Lập đề nghị",
+            "type": "ticket",
+            "isDone": false,
+            "status": "Opened"
+        },
+        {
+            "id": -20,
+            "summary": "Bước 2. Chuyên viên phê duyệt",
+            "owner": "",
+            "customNote": "Bước 2",
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -10000,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "id": -30,
+            "summary": "Bước 3. Trưởng/phó phòng phê duyệt",
+            "customNote": "Bước 3",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -10000,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "id": -1,
+            "summary": "Kết thúc",
+            "autocreate": true,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Close",
+            "status": "Waiting"
+        }
+    ],
+    "relationships": [
+        {
+            "from": -10,
+            "id": -1020,
+            "to": -20,
+            "customNote": "Bước 1",
+            "type": "default",
+            "status": "finished"
+        },
+        
+        {
+            "from": -20,
+            "id": -2030,
+            "to": -30,
+            "customNote": "Bước 2",
+            "autocreate": true,
+            
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "from": -30,
+            "id": -301,
+            "to": -1,
+            "customNote": "Bước 3",
+            
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        }
+    ],
+    "notification_config": {
+        "approvers_pending_mail_template": 59,
+        "ticket_response_mail_template": 47,
+        "comment_mail_template": 66,
+        "viewers_assignment_mail_template": 68,
+        "watchers_ticket_rejection_mail_template": 21,
+        "ticket_result_reject_mail_template": 54,
+        "new_performer_phase_reassignment_mail_template": 56,
+        "creator_rejected_mail_template": 65,
+        "ticket_share_mail_template": 71,
+        "ticket_creation_mail_template": 45,
+        "relationship_result_reject_mail_template": 55,
+        "creator_approved_mail_template": 67,
+        "mention_mail_template": 53,
+        "co_execute_rejection_mail_template": 69,
+        "implementation_reminder_mail_template": 63,
+        "ticket_cancellation_mail_template": 49,
+        "creator_requested_update_mail_template": 58,
+        "approval_input_finish_mail_template": 61,
+        "co_execute_request_to_update_mail_template": 70,
+        "old_performer_phase_reassignment_mail_template": 57,
+        "watchers_ticket_auto_closing_mail_template": 52,
+        "approval_reminder_no_token_mail_template": 73,
+        "watchers_ticket_creation_mail_template": 46,
+        "watchers_ticket_cancellation_mail_template": 50,
+        "approval_reminder_mail_template": 62,
+        "confirmation_reminder_mail_template": 64,
+        "phase_input_finish_mail_template": 60,
+        "phase_finished_mail_template": 74,
+        "watchers_ticket_closing_mail_template": 51,
+        "watchers_ticket_response_mail_template": 48,
+        "phase_approve_finished_mail_template": 75
+    },
+    "display": [
+        {
+            "positions": [
+                250,
+                15
+            ],
+            "id": -10
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                150
+            ],
+            "id": -20
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                150
+            ],
+            "id": -30
+        },
+        {
+            "positions": [
+                500,
+                150
+            ],
+            "id": -1
+        }
+    ]
+}

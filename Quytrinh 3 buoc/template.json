@@ -1,0 +1,181 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "name": "Requestor",
+            "valuefeeder": "TicketOwner",
+            "value": "",
+            "display": true,
+            "additionalDisplayClass": "left-info",
+            "position": -10000,
+            "conditions": {
+                "required": true
+            }
+        },
+        
+        {
+            "id": -9980,
+            "name": "Department",
+            "additionalDisplayClass": "left-info",
+            "position": -9980,
+            "type": "text",
+            "value": "3614",
+            "display": true,
+            "disable": true,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9960,
+            "name": "Your Contact Number",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9960,
+            "display": true,
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            }
+        },
+        {
+            "name": "Thông tin đề nghị",
+            "type": "SPLITTER",
+            "collapse": false,
+            "id": -9950,
+            "position": -9950
+        },
+        
+        {
+            "id": -9900,
+            "name": "Tại kho",
+            "type": "apiweb",
+            "additionalDisplayClass": "left-info",
+            "position": -9900,
+            "conditions": {
+                "required": true,
+                "feedTo": []
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_STOCK",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-category-warehouse",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "stockName",
+                    "minimumSearch": 0,
+                    "displayField": "stockName"
+                }
+            },
+            "display": true
+        },
+        {
+            "id": -9840,
+            "name": "Tra cứu tồn kho",
+            "type": "link",
+            "additionalDisplayClass": "left-info",
+            "position": -9840,
+            "disabled": true,
+            "value": "http://10.15.24.74:8081/sso/exportTicketRoom"
+        },
+        {
+            "id": -9610,
+            "name": "Ngày nhận thực tế",
+            "type": "date",
+            "valuefeeder": "Now",
+            "conditions": {
+                "required": true,
+                "format": {
+                    "regex": "dd/MM/yyyy",
+                    "text": "Nhập dd/MM/yyyy"
+                }
+            },
+            "additionalDisplayClass": "left-info",
+            "position": -9610
+        },
+        {
+            "id": -6000,
+            "position": -6000,
+            "name": "mappinglevel_Giám đốc",
+            "display": false,
+            "type": "number",
+            "value": "0",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5900,
+            "position": -5900,
+            "name": "mappinglevel_Trưởng phòng",
+            "display": false,
+            "type": "number",
+            "value": "1",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5800,
+            "position": -5800,
+            "name": "mappinglevel_Phó phòng",
+            "display": false,
+            "type": "number",
+            "value": "2",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5700,
+            "position": -5700,
+            "name": "mappinglevel_Chuyên viên",
+            "display": false,
+            "type": "number",
+            "value": "3",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5650,
+            "position": -5650,
+            "name": "mappinglevel_Trưởng/Phó phòng KHVT",
+            "display": false,
+            "type": "number",
+            "value": "6",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5600,
+            "position": -5600,
+            "name": "mappinglevel_Thủ kho",
+            "display": false,
+            "type": "number",
+            "value": "4",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5550,
+            "position": -5550,
+            "name": "mappinglevel_Trưởng phòng KHVT",
+            "display": false,
+            "type": "number",
+            "value": "7",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5500,
+            "position": -5500,
+            "name": "type",
+            "display": false,
+            "type": "text",
+            "value": "IMPORT_BH",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5300,
+            "position": -5300,
+            "name": "mappinglevel_Trưởng/Phó phòng",
+            "display": false,
+            "type": "number",
+            "value": "5",
+            "additionalDisplayClass": "right-info"
+        }
+        
+    ]
+}
