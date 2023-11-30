@@ -51,27 +51,11 @@
                 "parameters": [
                     {
                         "data-config": {
-                            "infoId": -9920,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonVi"
-                    },
-                    {
-                        "data-config": {
                             "infoId": -9610,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "NgayToTrinh"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "TaiKho"
                     },
                     {
                         "data-config": {
@@ -96,6 +80,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "TongCong"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9599,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_TruongDonVi"
                     },
                     {
                         "data-config": {
@@ -129,7 +121,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35701&fileName=DeNghi.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36407&fileName=DeNghi.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -184,14 +176,6 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -9900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "TaiKho"
-                    },
-                    {
-                        "data-config": {
                             "infoId": -9920,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -213,6 +197,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "TongCong"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9599,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_TruongDonVi"
                     },
                     {
                         "data-config": {
@@ -246,7 +238,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35701&fileName=DeNghi.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36407&fileName=DeNghi.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -373,59 +365,170 @@
             "printable": true,
             "print-config": {
                 "margin": "0,0,0,0",
-                "filename": "Đề nghị cấp VTTB",
+                "filename": "Yêu cầu thanh toán",
                 "img-urls": [],
                 "parameters": [
                     {
                         "data-config": {
-                            "infoId": -9920,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -9000,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "DonVi"
                     },
                     {
                         "data-config": {
-                            "infoId": -9610,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -8900,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
-                        "name": "NgayToTrinh"
+                        "name": "DiaChi"
                     },
                     {
                         "data-config": {
-                            "infoId": -9900,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -8800,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
-                        "name": "TaiKho"
+                        "name": "NgayLapPhieu"
                     },
                     {
                         "data-config": {
-                            "infoId": -9920,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -8700,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
-                        "name": "DonViDeNghi"
+                        "name": "So"
                     },
                     {
                         "data-config": {
-                            "infoId": -9610,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -8630,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
-                        "name": "NgayNhanThucTe"
+                        "name": "Theo"
                     },
                     {
                         "data-config": {
-                            "infoId": -5400,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -8670,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
-                        "name": "TongCong"
+                        "name": "SoReceipt"
                     },
                     {
                         "data-config": {
+                            "inputId": -60,
+                            "infoId": -8600,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTenNguoiGiaoHang"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8500,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoNhapKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8100,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "XuatTaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8200,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8100,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HangMuc"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9991,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_NguoiVietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -5899,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -5799,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_PhongKHVatTu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8600,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_NguoiGiaoHang"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -436,27 +539,48 @@
                                     "key": "TenVatTuVaQuyCach"
                                 },
                                 {
+                                    "columnId": -9120,
+                                    "key": "Lo"
+                                },
+                                {
                                     "columnId": -9720,
                                     "key": "DonViTinh"
                                 },
                                 {
                                     "columnId": -9700,
-                                    "key": "SoLuong"
+                                    "key": "YeuCau"
                                 },
                                 {
-                                    "columnId": -9680,
-                                    "key": "GhiChu"
+                                    "columnId": -9700,
+                                    "key": "ThucNhap"
+                                },
+                                {
+                                    "columnId": -9100,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -9080,
+                                    "key": "ThanhTien"
+                                },
+                                {
+                                    "columnId": -9060,
+                                    "key": "No"
+                                },
+                                {
+                                    "columnId": -9040,
+                                    "key": "Co"
                                 }
                             ],
+                            "phaseId": -70,
                             "tableId": -9800,
-                            "type": "TICKET_DETAIL",
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "MULTITABLE"
                         },
-                        "name": "DanhSachVatTu"
+                        "name": "BangKeChiTiet"
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35701&fileName=DeNghi.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36422&fileName=PhieuNhapKho.vm"
             },
             "type": "phase",
             "isDone": false,
@@ -520,13 +644,13 @@
                         "conditions": {
                             "right-element": {
                                 "dataset": "value",
-                                "value": "none"
+                                "value": "0"
                             },
                             "compare-type": "text",
                             "operation": "notEqual",
                             "left-element": {
                                 "inputId": -60,
-                                "infoId": -5500,
+                                "infoId": -5700,
                                 "phaseId": -70,
                                 "type": "text",
                                 "dataset": "INDIVIDUAL"
@@ -557,13 +681,13 @@
                         "conditions": {
                             "right-element": {
                                 "dataset": "value",
-                                "value": "none"
+                                "value": "0"
                             },
                             "compare-type": "text",
                             "operation": "equal",
                             "left-element": {
                                 "inputId": -60,
-                                "infoId": -5500,
+                                "infoId": -5700,
                                 "phaseId": -70,
                                 "type": "text",
                                 "dataset": "INDIVIDUAL"
@@ -797,6 +921,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9991,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_NguoiVietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -5899,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -5799,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_PhongKHVatTu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8600,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_NguoiGiaoHang"
+                    },
+                    {
+                        "data-config": {
                             "inputId": -60,
                             "column-key-mappings": [
                                 {
@@ -809,7 +971,7 @@
                                 },
                                 {
                                     "columnId": -9120,
-                                    "key": "LoVatTu"
+                                    "key": "Lo"
                                 },
                                 {
                                     "columnId": -9720,
@@ -849,7 +1011,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35702&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36422&fileName=PhieuNhapKho.vm"
             },
             "type": "phase",
             "isDone": false,
@@ -1011,6 +1173,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9991,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_NguoiVietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -5899,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -5799,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_PhongKHVatTu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -8600,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "ChuKy_NguoiGiaoHang"
+                    },
+                    {
+                        "data-config": {
                             "inputId": -60,
                             "column-key-mappings": [
                                 {
@@ -1023,7 +1223,7 @@
                                 },
                                 {
                                     "columnId": -9120,
-                                    "key": "LoVatTu"
+                                    "key": "Lo"
                                 },
                                 {
                                     "columnId": -9720,
@@ -1063,7 +1263,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35702&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36422&fileName=PhieuNhapKho.vm"
             },
             "type": "phase",
             "isDone": false,
@@ -1298,6 +1498,42 @@
             "detail": {
                 "individual": [
                     {
+                        "id": -10000,
+                        "name": "Requestor",
+                        "valuefeeder": "TicketOwner",
+                        "value": "",
+                        "display": false,
+                        "additionalDisplayClass": "left-info",
+                        "position": -10000,
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "id": -9990,
+                        "position": -9990,
+                        "name": "Userlogin",
+                        "display": false,
+                        "type": "master_data_load_user_info",
+                        "conditions": {
+                            "required": true
+                        },
+                        "dataFrom": -10000,
+                        "dataFromFunc": "feederData",
+                        "dataFromCondition": [
+                            {
+                                "conditions": {
+                                    "operation": "else"
+                                },
+                                "value": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -10000
+                                }
+                            }
+                        ],
+                        "additionalDisplayClass": "right-info"
+                    },
+                    {
                         "id": -9000,
                         "name": "Tên đơn vị đề nghị",
                         "type": "master_data_load_user_info_donvi",
@@ -1356,6 +1592,7 @@
                         "additionalDisplayClass": "left-info",
                         "id": -8600,
                         "position": -8600,
+                        
                         "type": "text",
                         "conditions": {
                             "required": true
@@ -1448,9 +1685,10 @@
                         "additionalDisplayClass": "left-info",
                         "id": -6000,
                         "position": -6000,
+                        "display": false,
                         "type": "date",
                         "conditions": {
-                            "required": true
+                            "required": false
                         }
                     },
                     {
@@ -1473,9 +1711,23 @@
                         "position": -5900,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -5899,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên thủ kho",
+                        "additionalDisplayClass": "left-info",
+                        "id": -5899,
+                        "position": -5899,
+                        "type": "text"
                     },
                     {
                         "apiWebConfig": {
@@ -1497,11 +1749,49 @@
                         "position": -5800,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -5799,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
                     },
                     {
+                        "display": false,
+                        "name": "Họ tên trưởng/phó phòng KHVT",
+                        "additionalDisplayClass": "left-info",
+                        "id": -5799,
+                        "position": -5799,
+                        "type": "text"
+                    },
+                    {
+                        "name": "Chọn loại phê duyệt",
+                        "additionalDisplayClass": "left-info",
+                        "id": -5700,
+                        "position": -5700,
+                        "type": "select",
+                        "conditions": {
+                            "data": [
+                                {
+                                    "text": "Không có phó giám đốc, giám đốc phê duyệt",
+                                    "value": "0"
+                                },
+                                {
+                                    "text": "Có giám đốc, phó giám đốc phê duyệt",
+                                    "value": "1"
+                                }
+                            ],
+                            "min-length": 1
+                        },
+                        "value": "0"
+                    },
+                    {
+                        "id": -5500,
+                        "position": -5500,
+                        "name": "Chọn giám đốc/ phó giám đốc",
                         "apiWebConfig": {
                             "apiConfig": {
                                 "hostnameKey": "SPRO_EVN",
@@ -1515,15 +1805,17 @@
                                 "displayField": "fullName"
                             }
                         },
-                        "name": "Chọn giám đốc/ phó giám đốc",
                         "additionalDisplayClass": "left-info",
-                        "id": -5500,
-                        "position": -5500,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": []
-                        },
-                        "value": "none"
+                            "displayCondition": {
+                                "valueCondition": "1",
+                                "idCondition": -5700,
+                                "dataCondition": "INDIVIDUAL"
+                            },
+                            "feedTo": [],
+                            "required": true
+                        }
                     },
                     {
                         "expressionConfig": {

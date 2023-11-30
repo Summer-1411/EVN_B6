@@ -141,35 +141,41 @@
 </head>
 
 <body>
-
-    <div class="sectionGuide" style="padding: 1cm 2cm 1cm 2.22cm;">
+    #macro( formatFinance $value )
+    #if($value.contains("."))
+    #set($tmp = $value.split("\."))
+    $tmp[0].replaceAll(',','.'),$tmp[1]
+    #else
+    $value.replaceAll(',','.')
+    #end
+    #end
+    <div class="sectionGuide" style="padding: 1cm 1.22cm 0cm 1.22cm;">
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
                 <td width="40%" style="text-align: center; font-size:13pt">
                     <span>TỔNG CÔNG TY<br />ĐIỆN LỰC TP HÀ NỘI</span>
                     <br />
-                    <b class="title">ĐƠN VỊ $DonViDeNghi</b>
-                    <br />
-                    <b><span style="line-height: 3pt">_____________</span></b>
-                    <br />
-
+                    <b class="title" style="border-bottom: 1px solid black;">$DonViDeNghi</b>
                 </td>
                 <td width="60%" style="text-align: center; font-size:13pt">
-                    <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>
-                    <br />
-                    <b class="title">Độc lập - Tự do - Hạnh phúc</b>
-                    <br />
-                    <b><span style="line-height: 3pt">___________________</span></b>
+                    <span style="text-align: center;">
+                        <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>
+                        <br />
+                        <b class="title" style="border-bottom: 1px solid black;">Độc lập - Tự do - Hạnh phúc</b>
+                    </span>
+                    <div style="font-size:11pt; text-align: right;">
+                        <br />
+                        <i>Hà Nội, ngày $NgayNhanThucTe.split(" ")[0].split("/")[0] tháng $NgayNhanThucTe.split("
+                            ")[0].split(
+                            "/")[1] năm $NgayNhanThucTe.split(" ")[0].split("/")[2]
+                        </i>
+                    </div>
                 </td>
             </tr>
         </table>
     </div>
     <div style="font-size:11pt; text-align: right;">
-        <i>
-            Hà Nội, ngày
-        </i>
-        <br />
         <div class="sectionGuide" style="padding: 0.3cm 1.22cm 0cm 1.22cm;">
             <table class="tableHeader">
                 <tr>
@@ -177,10 +183,9 @@
                         <b class="title">
                             ĐỀ NGHỊ
                             <br />
-                            Xuất VTTB đi thí nghiệm, kiểm định
+                            <span style="border-bottom: 1px solid black;">Xuất VTTB đi thí nghiệm, kiểm định</span>
+
                         </b>
-                        <br />
-                        <b><span style="line-height: 3pt">___________________</span></b>
                     </td>
                 </tr>
             </table>
@@ -225,7 +230,7 @@
                             $row.get("DonViTinh")
                         </td>
                         <td style="text-align: right; font-size: 12pt;">
-                            $row.get("SoLuong")
+                            #formatFinance($row.get("SoLuong"))
                         </td>
                         <td style="text-align: left; font-size: 12pt;">
                             $row.get("GhiChu")
@@ -239,7 +244,7 @@
                         <td></td>
                         <td></td>
                         <td style="text-align: right; font-size: 12pt;">
-                            $TongCong
+                            #formatFinance($TongCong)
                         </td>
                         <td></td>
                     </tr>
@@ -257,11 +262,9 @@
                             <th width="50%" style="text-align: center; font-size: 13pt;">
                                 <b>TRƯỞNG ĐƠN VỊ</b>
                                 <br />
-                                <i>(Ký tên, đóng dấu)</i>
-                                <br />
-                                <br />
-                                <br />
-                                <p style="font-size:2pt; color: white;">$ChuKy_TruongDonVi</p>
+
+
+                                <p style="margin-top: 100px;">$ChuKy_TruongDonVi</p>
                             </th>
                         </tr>
                     </table>

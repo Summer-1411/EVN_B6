@@ -37,6 +37,18 @@
             "additionalDisplayClass": "right-info"
         },
         {
+            "id": -9991,
+            "position": -9991,
+            "name": "Họ tên người lập yêu cầu",
+            "type": "master_data_load_user_info_hovatennguoiyeucau",
+            "display": false,
+            "disabled": true,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
             "id": -9970,
             "position": -9970,
             "name": "Requestor",
@@ -99,7 +111,7 @@
             "additionalDisplayClass": "left-info",
             "position": -9900,
             "conditions": {
-                "required": true,
+                "required": false,
                 "feedTo": []
             },
             "apiWebConfig": {
@@ -148,7 +160,13 @@
             "additionalDisplayClass": "left-info",
             "position": -9600,
             "conditions": {
-                "feedTo": [],
+                "feedTo": [
+                    {
+                        "id": -9599,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
                 "required": true
             },
             "apiWebConfig": {
@@ -164,6 +182,14 @@
                     "displayField": "fullName"
                 }
             }
+        },
+        {
+            "display": false,
+            "name": "Họ tên trưởng phòng",
+            "additionalDisplayClass": "left-info",
+            "id": -9599,
+            "position": -9599,
+            "type": "text"
         },
         {
             "id": -9500,

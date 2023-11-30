@@ -44,7 +44,6 @@
         "createUser": "(-10000)",
         "actionType": "REQUEST",
         "importExport": {
-            "ixId": 0,
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
             "warehouse": "(-9900)",
