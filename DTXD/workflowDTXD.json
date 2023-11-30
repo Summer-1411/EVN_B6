@@ -1,6 +1,5 @@
 {
     "relatives": [
-        
         {
             "customNote": "Bước 1. Lập đề nghị",
             "api_config": [
@@ -136,7 +135,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35814&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36492&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -261,7 +260,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35814&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36492&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -308,7 +307,7 @@
                         "id": 3,
                         "params": [
                             {
-                                "infoId": -9450,
+                                "infoId": -9500,
                                 "name": "info",
                                 "type": "INPUT",
                                 "dataset": "INDIVIDUAL"
@@ -415,7 +414,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35814&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36492&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -542,7 +541,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35814&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36492&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -669,7 +668,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35814&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36492&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1105,7 +1104,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35875&fileName=PhieuXuatKhoKiemVCNB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36493&fileName=PhieuXuatKhoKiemVCNB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1502,7 +1501,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35875&fileName=PhieuXuatKhoKiemVCNB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36493&fileName=PhieuXuatKhoKiemVCNB.vm"
             },
             "autocreate": false,
             "sla": {
@@ -1772,7 +1771,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35875&fileName=PhieuXuatKhoKiemVCNB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36493&fileName=PhieuXuatKhoKiemVCNB.vm"
             },
             "autocreate": false,
             "sla": {
@@ -2758,7 +2757,7 @@
                                 }
                             },
                             {
-                                "name": "Số lượng",
+                                "name": "Số lượng yêu cầu",
                                 "id": -9700,
                                 "position": -9700,
                                 "type": "finance",
@@ -2938,20 +2937,9 @@
             "detail": {
                 "individual": [
                     {
-                        "name": "Tên file ký số",
-                        "additionalDisplayClass": "left-info",
-                        "id": -9900,
-                        "position": -9900,
-                        "type": "text",
-                        "conditions": {
-                            "required": true
-                        },
-                        "value": "Tờ trình"
-                    },
-                    {
                         "display": true,
                         "name": "Văn bản cần ký số",
-                        "additionalDisplayClass": "right-info",
+                        "additionalDisplayClass": "left-info",
                         "disabled": false,
                         "id": -1,
                         "position": -1,

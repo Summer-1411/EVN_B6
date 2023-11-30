@@ -198,6 +198,7 @@ Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
         "status": 1,
+        "statusErp": 1,
         "createUser": "(-10000)",
         "actionType": "APPROVE",
         "importExport": {
@@ -215,7 +216,7 @@ Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
             "typeErp": "(-9600,-80,-90)",
             "sourceErp": "(-9500,-80,-90)",
             "tableData": [(t)<-9800,-80,-90>
-          {
+            {
                     "materialCode": "(-9760)",
                     "materialName": "(-9740)",
                     "unit": "(-9720)",

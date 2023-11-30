@@ -16,7 +16,7 @@
             "id": -9991,
             "position": -9991,
             "name": "Họ tên người lập yêu cầu",
-            "type": "master_data_load_user_info_hotennguoitaoyeucau",
+            "type": "master_data_load_user_info_hovatennguoiyeucau",
             "display": false,
             "disabled": true,
             "conditions": {
@@ -103,7 +103,6 @@
             "position": -9920,
             "additionalDisplayClass": "left-info"
         },
-        
         {
             "id": -9910,
             "name": "Ngày lập",
@@ -249,7 +248,6 @@
                     "displayField": "name"
                 }
             },
-            
             "additionalDisplayClass": "left-info"
         },
         {
@@ -345,7 +343,6 @@
             "value": "6",
             "additionalDisplayClass": "right-info"
         },
-        
         {
             "id": -5550,
             "position": -5550,
@@ -373,7 +370,6 @@
             "value": "APPROVE",
             "additionalDisplayClass": "right-info"
         }
-        
     ],
     "multitable": [
         {
@@ -441,7 +437,7 @@
                 {
                     "id": -9700,
                     "position": -9700,
-                    "name": "Số lượng",
+                    "name": "Số lượng yêu cầu",
                     "type": "finance",
                     "conditions": {
                         "required": true
