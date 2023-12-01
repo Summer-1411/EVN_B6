@@ -16,7 +16,7 @@
             "id": -9991,
             "position": -9991,
             "name": "Họ tên người lập yêu cầu",
-            "type": "master_data_load_user_info_hotennguoitaoyeucau",
+            "type": "master_data_load_user_info_hovatennguoiyeucau",
             "display": false,
             "disabled": true,
             "conditions": {

@@ -249,7 +249,7 @@
                         $row.get("DonViTinh")
                     </td>
                     <td style="text-align: right; font-size: 10.5pt;">
-                        $row.get("SoLuongYeuCau")
+                        #formatFinance($row.get("SoLuongYeuCau"))
                     </td>
                 </tr>
                 #set($index = $index + 1)

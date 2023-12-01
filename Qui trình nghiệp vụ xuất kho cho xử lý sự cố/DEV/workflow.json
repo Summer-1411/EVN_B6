@@ -136,7 +136,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -260,7 +260,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -414,7 +414,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -541,7 +541,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -702,7 +702,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "id": -80,
             "type": "phase",
@@ -829,7 +829,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "id": -90,
             "type": "phase",
@@ -952,7 +952,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1260,7 +1260,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35779&fileName=DeNghiCapVTTB.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36516&fileName=DeNghiCapVTTB.vm"
             },
             "id": -130,
             "type": "phase",
@@ -1539,7 +1539,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35780&fileName=PhieuXuatKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36517&fileName=PhieuXuatKho.vm"
             },
             "id": -170,
             "type": "phase",
@@ -1690,6 +1690,16 @@
                     {
                         "data-config": {
                             "inputId": -110,
+                            "infoId": -8000,
+                            "phaseId": -120,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -110,
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -1721,7 +1731,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35780&fileName=PhieuXuatKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36517&fileName=PhieuXuatKho.vm"
             },
             "id": -180,
             "type": "phase",
@@ -1903,7 +1913,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=35780&fileName=PhieuXuatKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=36517&fileName=PhieuXuatKho.vm"
             },
             "id": -190,
             "type": "phase",
