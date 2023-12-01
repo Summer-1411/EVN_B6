@@ -108,6 +108,8 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
             "orgRequest": "(-9920)",
             "reason": "(-9860)",
             "warehouse": "(-9900)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -198,7 +200,6 @@ Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
         "status": 1,
-        "statusErp": 1,
         "createUser": "(-10000)",
         "actionType": "APPROVE",
         "importExport": {
@@ -211,6 +212,8 @@ Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
             "location": "(-9750,-80,-90)",
             "construction": "(-9400,-80,-90)",
             "warehouse": "(-9600,-80,-90)",
+            "primaryInventory": "(-9450,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
             "orgCode": "(-9975,-80,-90)",
             "locator": "(-9950,-80,-90)",
             "typeErp": "(-9600,-80,-90)",
@@ -269,6 +272,45 @@ FINISH bước 10: B6_PARAM_FINISH_BUOC10_DTXD
 
 APPROVE bước 11: B6_PARAM_APPROVE_BUOC11_DTXD
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": 1,
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-10000,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "description": "(-9650,-80,-90)",
+            "location": "(-9750,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "warehouse": "(-9600,-80,-90)",
+            "primaryInventory": "(-9450,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "locator": "(-9950,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "tableData": [(t)<-9800,-80,-90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)"
+                }(endt)
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -277,6 +319,18 @@ APPROVE bước 11: B6_PARAM_APPROVE_BUOC11_DTXD
         "approvalUser": "(phase-owner,-110)"
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 APPROVE bước 12: B6_PARAM_APPROVE_BUOC12_DTXD
 {
     "approval": {
