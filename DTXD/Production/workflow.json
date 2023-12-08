@@ -2360,15 +2360,6 @@
                         }
                     },
                     {
-                        "id": -9370,
-                        "name": "Xuất tại kho (kho phụ)",
-                        "type": "apiweb",
-                        "additionalDisplayClass": "left-info",
-                        "position": -9370,
-                        "conditions": {
-                            "required": false,
-                            "feedTo": []
-                        },
                         "apiWebConfig": {
                             "apiConfig": {
                                 "param": "EVN_SPRO_PARAM_PICKER_FILTER_STOCK",
@@ -2382,7 +2373,16 @@
                                 "displayField": "stockName"
                             }
                         },
-                        "display": true
+                        "display": true,
+                        "name": "Xuất tại kho (kho phụ)",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9370,
+                        "position": -9370,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": false
+                        }
                     },
                     {
                         "apiWebConfig": {
@@ -2432,15 +2432,6 @@
                         }
                     },
                     {
-                        "id": -9290,
-                        "name": "Nhập vào kho (kho phụ)",
-                        "type": "apiweb",
-                        "additionalDisplayClass": "left-info",
-                        "position": -9290,
-                        "conditions": {
-                            "required": false,
-                            "feedTo": []
-                        },
                         "apiWebConfig": {
                             "apiConfig": {
                                 "param": "EVN_SPRO_PARAM_PICKER_FILTER_STOCK",
@@ -2454,7 +2445,16 @@
                                 "displayField": "stockName"
                             }
                         },
-                        "display": true
+                        "display": true,
+                        "name": "Nhập vào kho (kho phụ)",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9290,
+                        "position": -9290,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": false
+                        }
                     },
                     {
                         "apiWebConfig": {

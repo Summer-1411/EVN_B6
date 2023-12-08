@@ -98,7 +98,7 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
-        "status": 1,
+        "status": "INPROGRESS",
         "createDate": "(created-date)",
         "createUser": "(-10000)",
         "actionType": "REQUEST",
@@ -199,7 +199,7 @@ Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
-        "status": 1,
+        "status": "INPROGRESS",
         "createUser": "(-10000)",
         "actionType": "APPROVE",
         "importExport": {
@@ -246,6 +246,7 @@ Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
 
 
 
+
 APPROVE bước 9: B6_PARAM_APPROVE_BUOC9_DTXD
 {
     "approval": {
@@ -260,22 +261,10 @@ APPROVE bước 9: B6_PARAM_APPROVE_BUOC9_DTXD
 
 FINISH bước 10: B6_PARAM_FINISH_BUOC10_DTXD
 {
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 10",
-        "action": "FINISH",
-        "approvalUser": "(phase-owner,-100)"
-    }
-}
-
-
-APPROVE bước 11: B6_PARAM_APPROVE_BUOC11_DTXD
-{
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
-        "status": 1,
+        "status": "INPROGRESS",
         "statusErp": 1,
         "createUser": "(-10000)",
         "actionType": "APPROVE",
@@ -311,6 +300,18 @@ APPROVE bước 11: B6_PARAM_APPROVE_BUOC11_DTXD
             ]
         }
     },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-100)"
+    }
+}
+
+
+APPROVE bước 11: B6_PARAM_APPROVE_BUOC11_DTXD
+{
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",

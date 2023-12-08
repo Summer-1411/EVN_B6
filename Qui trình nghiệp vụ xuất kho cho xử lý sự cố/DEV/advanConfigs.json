@@ -108,13 +108,19 @@
 // bước thì mình sẽ truyền FINISH, CANCEL , APPROVE vào action nhé
 // Tạo yêu cầu : REQUEST
 // Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
+//     interface STATUS_TICKET {
+//     String DONE = "CLOSED";
+//     String PROCESS = "INPROGRESS";
+//     String CANCEL = "CANCEL";
+// }
+
 // Bước 1: 
 {
     "ticket": {
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
         "type": "EXPORT_XLSC",
-        "status": 1,
+        "status": "INPROGRESS",
         "createDate": "(created-date)",
         "createUser": "(-10000)",
         "actionType": "REQUEST",
@@ -237,7 +243,7 @@
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_XLSC",
-        "status": 1,
+        "status": "INPROGRESS",
         "createUser": "(-10000)",
         "actionType": "APPROVE",
         "importExport": {
@@ -284,14 +290,46 @@
 }
 // B6_PARAM_FINISH_BUOC13_XLSC
 {
-    "approval": {
+    "ticket": {
         "ticketCode": "(-0)",
+        "type": "EXPORT_XLSC",
         "status": "INPROGRESS",
-        "flowName": "Buoc 13",
-        "action": "FINISH",
-        "approvalUser": "(phase-owner,-130)"
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-110,-120)",
+            "receiver": "(-8600,-110,-120)",
+            "reason": "(-8500,-110,-120)",
+            "description": "(-8400,-110,-120)",
+            "location": "(-8900,-110,-120)",
+            "warehouse": "(-8100,-110,-120)",
+            "orgCode": "(-9920)",
+            "typeErp": "(-8300,-110,-120)",
+            "sourceErp": "(-8200,-110,-120)",
+            "tableData": [(t)<-9800,-110,-120>
+            {
+                "materialCode": "(-9760)",
+                "materialName": "(-9740)",
+                "unit": "(-9720)",
+                "requestQuantity": "(-9700)",
+                "batch": "(-9120)"
+            }(endt)
+            ]
+        }
+    },
+    {
+        "approval": {
+            "ticketCode": "(-0)",
+            "status": "INPROGRESS",
+            "flowName": "Buoc 13",
+            "action": "FINISH",
+            "approvalUser": "(phase-owner,-130)"
+        }
     }
 }
+
 // B6_PARAM_APPROVE_BUOC14_XLSC
 {
     "approval": {
@@ -559,3 +597,4 @@
     ],
     "status": "unfinished"
 },
+

@@ -40,7 +40,7 @@
             "id": -9975,
             "position": -9975,
             "name": "Họ tên người lập yêu cầu",
-            "type": "master_data_load_user_info_hotennguoitaoyeucau",
+            "type": "master_data_load_user_info_hovatennguoiyeucau",
             "display": false,
             "disabled": true,
             "conditions": {
