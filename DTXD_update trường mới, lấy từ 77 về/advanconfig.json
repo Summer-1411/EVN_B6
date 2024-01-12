@@ -1,0 +1,117 @@
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "warehouse": "(-9900)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength":"(-9692)"
+                }(endt)
+            ]
+        }
+    }
+}
+
+
+//Bước 8
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-10000,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "description": "(-9650,-80,-90)",
+            "location": "(-9750,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "warehouse": "(-9600,-80,-90)",
+            "primaryInventory": "(-9450,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "locator": "(-9950,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "tableData": [(t)<-9800,-80,-90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength":"(-9692)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+
+
+// B6_PARAM_KHO_CHINH_KHVT_DTXD
+{
+    "organizationId": "-9989",
+    "pickerFilter": "primaryInventoryCode"
+}
+
+
+
+// B6_PARAM_KHO_PHU_KHVT_DTXD
+{
+    "primaryInventoryId ": "-9900",
+    "pickerFilter": "nameSubInventory"
+}
+
+
+
+//B6_PARAM_MA_VART_TU_KHVT_DTXD
+{
+    "organizationId": "-9900",
+    "organizationCode": "-9901",
+    "subOrganizationCode": "-9870",
+    "pickerFilter": "materialCode"
+}
+
+// B6_PARAM_GET_MATERIAL_REQUEST_QUANTITY_DTXD
+{
+    "organizationId":"-9900", 
+    "primaryInventoryCode":"-9901", 
+    "materialCode":"-9760,-9800",
+    "availabaleQuantity":"-8745,-9800",                                                    
+    "pickerFilter":"exportQuantity"
+}
