@@ -4,7 +4,7 @@
             "id": -10000,
             "name": "Requestor",
             "valuefeeder": "TicketOwner",
-            "value": "",
+            "type": "text",
             "display": false,
             "additionalDisplayClass": "left-info",
             "position": -10000,
