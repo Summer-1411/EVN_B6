@@ -21,6 +21,60 @@
     "depId": "-5300",
     "pickerFilter": "fullName"
 }
+
+B6_PARAM_HD_DONG_PO_MSTT
+{
+    "orgId": "-9989",
+    "pickerFilter": "poName"
+}
+
+
+B6_PARAM_MA_PHIEU_GIAO_HANG_MSTT
+{
+    "poHeaderId": "-9910",
+    "orgId": "-9989",
+    "pickerFilter": "deliveryCode"
+}
+
+
+B6_PARAM_KHO_CHINH_MSTT
+{
+    "organizationId": "-9989",
+    "pickerFilter": "primaryInventoryName"
+}
+
+B6_PARAM_KHO_PHU_MSTT
+{
+    "primaryInventoryId": "-7800",
+    "pickerFilter": "nameSubInventory"
+}
+
+B6_PARAM_LO_MSTT
+{
+    "organizationId":"-7800"
+}
+
+
+
+B6_PARAM_MA_VAT_TU_MSTT
+{
+    "organizationId": "-7800",
+    "organizationCode": "-7801",
+    "subOrganizationCode": "-7650",
+    "pickerFilter": "materialCode"
+}
+
+
+
+B6_PARAM_KE_TOAN_VAT_TU_MSTT
+{
+    "orgId": "-8900",
+    "mappingLevel": "-2970",
+    "deptId" : "-5300",
+    "pickerFilter": "fullName"
+}
+
+
 //Gọi api từng bước: FINISH, APPROVE
 // B6_PARAM_CREATE_TICKET_BUOC1_MSTT
 {
@@ -29,17 +83,17 @@
         "requestSubject": "(ticket-title)",
         "type": "(-2700)",
         "status": 1,
-        "createDate": "(created-date)",
+        "createDate": "(-9999)",
         "createUser": "(-10000)",
-        "actionType": "REQUEST",
+        "actionType": "APPROVE",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-8901)",
             "reason": "(-8100)",
-            "warehouse": "(-7800)",
             "deliver": "(-8500)",
             "description": "(-7900)",
-            "primaryInventory": "(-7800)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
             "subInventory": "(-7650)",
             "typeErp": "(-8200)",
             "sourceErp": "(-8000)",
@@ -62,9 +116,6 @@
         }
     }
 }
-
-
-
 //B6_PARAM_APPROVE_BUOC2_MSTT
 {
     "approval": {
@@ -85,8 +136,48 @@
         "approvalUser": "(phase-owner,-30)"
     }
 }
-//B6_PARAM_FINISH_BUOC4_MSTT
+
+
+B6_PARAM_FINISH_BUOC4_MSTT
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": 1,
+        "statusErp": 1,
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -95,8 +186,59 @@
         "approvalUser": "(phase-owner,-40)"
     }
 }
-//B6_PARAM_APPROVE_BUOC5_MSTT
+
+
+B6_PARAM_APPROVE_BUOC5_MSTT
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": 1,
+        "statusErp": 1,
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8600)"
+                }
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -105,8 +247,59 @@
         "approvalUser": "(phase-owner,-50)"
     }
 }
-//B6_PARAM_APPROVE_BUOC6_MSTT
+
+
+B6_PARAM_APPROVE_BUOC6_MSTT
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": 1,
+        "statusErp": 1,
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-60,-70)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8600)"
+                }
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -115,6 +308,9 @@
         "approvalUser": "(phase-owner,-60)"
     }
 }
+
+
+
 //B6_PARAM_FINISH_BUOC7_MSTT
 {
     "approval": {
@@ -134,8 +330,58 @@
         "approvalUser": "(phase-owner,-150)"
     }
 }
-//B6_PARAM_APPROVE_BUOC8_MSTT
+B6_PARAM_APPROVE_BUOC8_MSTT
+
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": 1,
+        "statusErp": 1,
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-80,-90)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8600)"
+                }
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -144,8 +390,59 @@
         "approvalUser": "(phase-owner,-80)"
     }
 }
-//B6_PARAM_APPROVE_BUOC9_MSTT
+
+
+B6_PARAM_APPROVE_BUOC9_MSTT
 {
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": 1,
+        "statusErp": 1,
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-90,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8600)"
+                }
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "CLOSED",
@@ -157,11 +454,15 @@
 
 
 
-
-
-
-
-
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 9",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-90)"
+    }
+}
 //api swagger
 {
     "ticket": {
@@ -184,12 +485,10 @@
             "deliver": "string",
             "description": "string",
             "location": "string",
-            
             "primaryInventory": "string",
             "type": "string",
             "subInventory": "string",
             "locator": "string",
-            
             "receiptDate": "2023-11-28",
             "cmis": "string",
             "staff": "string",
@@ -204,7 +503,6 @@
                     "unit": "string",
                     "requestQuantity": 0,
                     "approveQuantity": 0,
-                    
                     "description": "string",
                     "inventory": 0,
                     "requestDispense": 0,
