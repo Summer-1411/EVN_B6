@@ -3,15 +3,13 @@
     <title>Untitled 1</title>
     <style type="text/css">
         body {
-            font-family: "Times New Roman";
+            font-family: Times New Roman;
             font-size: 13pt;
-            page-break-inside: avoid; 
-            page-break-after: auto;
         }
 
         table {
 
-            font-family: "Times New Roman";
+            font-family: Times New Roman;
             font-size: 13pt;
             line-height: 1.3;
             width: 100%;
@@ -22,7 +20,7 @@
         }
 
         table th {
-            font-family: "Times New Roman";
+            font-family: Times New Roman;
             font-size: 13pt;
             text-align: center;
         }
@@ -151,7 +149,7 @@
     $value.replaceAll(',','.')
     #end
     #end
-    <div class="sectionGuide" >
+    <div class="sectionGuide" style="padding: 1cm 2cm 1cm 1.22cm;">
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
@@ -162,53 +160,53 @@
                 </td>
                 <td width="50%" style="text-align: center; font-size:13pt">
                     <b>PHIẾU XUẤT KHO</b>
-                    <div>Ngày lập phiếu: $NgayLapPhieu</div>
-                    <div>Liên: </div>
+                    <p>Ngày lập phiếu: $NgayLapPhieu</p>
+                    <p>Liên: $Lien</p>
                 </td>
                 <td width="40%" style="text-align: center; font-size:11pt">
-                    <div>Số: <b>$So</b></div>
+                    <p>Số: <b>$So</b></p>
                 </td>
             </tr>
         </table>
     </div>
 
-    <div class="sectionGuide" >
+    <div class="sectionGuide" style="padding: 1cm 2cm 0cm 1.22cm; display: flex;">
         <table>
             <tr>
                 <td>
-                    <div>Họ tên người nhận hàng: <b>$HoTenNguoiNhanHang</b></div>
+                    <p>Họ tên người nhận hàng: <b>$HoTenNguoiNhanHang</b></p>
                 </td>
                 <td>
-                    <div>Địa chỉ (Bộ phận): <b>$DiaChiBoPhan</b></div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>Lý do xuất kho: <b>$LyDoXuatKho</b></div>
+                    <p>Địa chỉ (Bộ phận): <b>$DiaChiBoPhan</b></p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div>Diễn giải: <b>$DienGiai</b></div>
+                    <p>Lý do xuất kho: <b>$LyDoXuatKho</b></p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div>Xuất tại kho: <b>$XuatTaiKho</b></div>
+                    <p>Diễn giải: <b>$DienGiai</b></p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div>Công trình: <b>$CongTrinh</b></div>
+                    <p>Xuất tại kho: <b>$XuatTaiKho</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Công trình: <b>$CongTrinh</b></p>
                 </td>
                 <td>
-                    <div>Hạng mục: <b>$HangMuc</b></div>
+                    <p>Hạng mục: <b>$HangMuc</b></p>
                 </td>
             </tr>
         </table>
     </div>
 
-    <div class="sectionGuide" >
+    <div class="sectionGuide" style="padding: 1cm 2cm 1cm 1.22cm;">
         <div>
             <table class="tableHeaderxx">
                 <tr class="PaddingCellTable">
@@ -266,44 +264,31 @@
             <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 10px;">
                 <tr>
                     <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_TruongPhong</p>
-                        <b>TRƯỞNG PHÒNG</b>
+                        <b>NGƯỜI LẬP PHIẾU</b>
+                        <br />
+                        (Ký, họ tên)
                         <br />
                         <br />
                         <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_TruongPhong</p>
+                        <p >$NameSignature</p>
                     </th>
                     <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
-                        <b>GIÁM ĐỐC</b>
+                        <b>NGƯỜI NHẬN HÀNG</b>
+                        <br />
+                        (Ký, họ tên)
                         <br />
                         <br />
                         <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_GiamDoc</p>
+                        <p >$ChuKy_NguoiNhanHang</p>
                     </th>
                     <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_ThuKho</p>
-                        <b>THỦ KHO</b>
+                        <b>PHÒNG KẾ HOẠCH VẬT TƯ</b>
+                        <br />
+                        (Ký, họ tên)
                         <br />
                         <br />
                         <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_ThuKho</p>
-                    </th>
-                    <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_NhanVien</p>
-                        <b>NHÂN VIÊN</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_NhanVien</p>
+                        <p >$ChuKy_PhongKHVatTu</p>
                     </th>
                 </tr>
             </table>

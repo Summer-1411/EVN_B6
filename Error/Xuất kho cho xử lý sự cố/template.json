@@ -13,36 +13,24 @@
             }
         },
         {
-            "id": -9999,
-            "position": -9999,
-            "name": "Ngày lập đề nghị",
-            "type": "DATE",
-            "valuefeeder": "Now",
-            "display": false,
-            "conditions": {
-                "required": true
-            },
-            "additionalDisplayClass": "left-info"
-        },
-        {
-            "id": -9992,
-            "position": -9992,
-            "name": "Ngày lập đề nghị",
-            "type": "DATE",
-            "valuefeeder": "Now",
-            "display": true,
-            "conditions": {
-                "required": true
-            },
-            "additionalDisplayClass": "left-info"
-        },
-        {
             "id": -9991,
             "position": -9991,
             "name": "Họ tên người lập yêu cầu",
             "type": "master_data_load_user_info_hotennguoitaoyeucau",
             "display": false,
             "disabled": true,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9989,
+            "position": -9989,
+            "name": "ERP_ID",
+            "type": "master_data_load_user_info_erp_id",
+            "display": true,
+            "disabled": false,
             "conditions": {
                 "required": false
             },
@@ -71,18 +59,6 @@
                 }
             ],
             "additionalDisplayClass": "right-info"
-        },
-        {
-            "id": -9989,
-            "position": -9989,
-            "name": "ERP_ID",
-            "type": "master_data_load_user_info_erp_id",
-            "display": false,
-            "disabled": false,
-            "conditions": {
-                "required": false
-            },
-            "additionalDisplayClass": "left-info"
         },
         {
             "id": -9985,
@@ -139,6 +115,7 @@
             "position": -9920,
             "additionalDisplayClass": "left-info"
         },
+        
         {
             "id": -9910,
             "name": "Ngày lập",
@@ -155,68 +132,26 @@
             "position": -9910
         },
         {
-            "display": false,
-            "name": "Code kho chính",
-            "additionalDisplayClass": "left-info",
-            "id": -9901,
-            "position": -9901,
-            "conditions": {
-                "required": true
-            },
-            "type": "text"
-        },
-        {
             "id": -9900,
-            "name": "Tại kho (Kho chính)",
+            "name": "Tại kho",
             "type": "apiweb",
             "additionalDisplayClass": "left-info",
             "position": -9900,
             "conditions": {
                 "required": true,
-                "feedTo": [
-                    {
-                        "id": -9901,
-                        "fieldName": "primaryInventoryCode",
-                        "dataset": "INDIVIDUAL"
-                    }
-                ]
-            },
-            "apiWebConfig": {
-                "apiConfig": {
-                    "param": "B6_PARAM_KHO_CHINH_XLSC",
-                    "hostnameKey": "SPRO_EVN",
-                    "urlFilter": "/common-spro/getPrimaryInventory",
-                    "returnKey": "MT_GET_VENDOR_RP_S"
-                },
-                "searchConfig": {
-                    "idField": "primaryInventoryId",
-                    "minimumSearch": 0,
-                    "displayField": "primaryInventoryName"
-                }
-            },
-            "display": true
-        },
-        {
-            "id": -9870,
-            "name": "Tại kho (kho phụ)",
-            "type": "apiweb",
-            "additionalDisplayClass": "left-info",
-            "position": -9870,
-            "conditions": {
-                "required": false,
                 "feedTo": []
             },
             "apiWebConfig": {
                 "apiConfig": {
-                    "param": "B6_PARAM_KHO_PHU_DTXD",
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_STOCK",
                     "hostnameKey": "SPRO_EVN",
-                    "urlFilter": "/common-spro/getSecondInventory",
+                    "urlFilter": "/common-spro/get-category-warehouse",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
-                    "idField": "codeSubInventory",
+                    "idField": "stockName",
                     "minimumSearch": 0,
-                    "displayField": "nameSubInventory"
+                    "displayField": "stockName"
                 }
             },
             "display": true
@@ -251,7 +186,7 @@
                 "searchConfig": {
                     "idField": "reasonName",
                     "minimumSearch": 0,
-                    "displayField": "reasonDescription"
+                    "displayField": "reasonName"
                 }
             }
         },
@@ -302,6 +237,7 @@
                 }
             }
         },
+
         {
             "id": -9550,
             "position": -9550,
@@ -325,8 +261,10 @@
                     "displayField": "name"
                 }
             },
+            
             "additionalDisplayClass": "left-info"
         },
+
         {
             "id": -9500,
             "position": -9500,
@@ -365,6 +303,8 @@
             "position": -9450,
             "type": "text"
         },
+
+        
         {
             "id": -9400,
             "position": -9400,
@@ -388,6 +328,7 @@
                     "displayField": "name"
                 }
             },
+            
             "additionalDisplayClass": "left-info"
         },
         {
@@ -414,6 +355,9 @@
                 "required": true
             }
         },
+
+
+
         {
             "id": -6000,
             "position": -6000,
@@ -503,15 +447,6 @@
             "type": "number",
             "value": "5",
             "additionalDisplayClass": "right-info"
-        },
-        {
-            "id": -5000,
-            "position": -5000,
-            "name": "String empty",
-            "display": false,
-            "type": "text",
-            "value": "",
-            "additionalDisplayClass": "right-info"
         }
     ],
     "multitable": [
@@ -539,25 +474,15 @@
                         "required": true,
                         "feedTo": [
                             {
-                                "fieldName": "materialName",
+                                "fieldName": "suppliesName",
                                 "id": -9740,
-                                "dataset": "TABLE"
-                            },
-                            {
-                                "fieldName": "unit",
-                                "id": -9720,
-                                "dataset": "TABLE"
-                            },
-                            {
-                                "fieldName": "unitCode",
-                                "id": -9710,
                                 "dataset": "TABLE"
                             }
                         ]
                     },
                     "apiWebConfig": {
                         "apiConfig": {
-                            "param": "B6_PARAM_MA_VAT_TU_XLSC",
+                            "param": "B6_PARAM_MA_VART_TU_KHVT_DTXD",
                             "hostnameKey": "SPRO_EVN",
                             "urlFilter": "/common-spro/getMaterialCode",
                             "returnKey": "MT_GET_VENDOR_RP_S"
@@ -582,17 +507,7 @@
                     "id": -9720,
                     "position": -9720,
                     "name": "Đơn vị tính",
-                    "type": "text",
-                    "conditions": {
-                        "required": true
-                    }
-                },
-                {
-                    "id": -9710,
-                    "position": -9710,
-                    "display": false,
-                    "name": "Đơn vị tính (code)",
-                    "type": "text",
+                    "type": "master_data_unit",
                     "conditions": {
                         "required": true
                     }

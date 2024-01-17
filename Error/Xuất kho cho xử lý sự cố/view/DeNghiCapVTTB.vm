@@ -3,14 +3,14 @@
     <title>CongVan_CFSX</title>
     <style type="text/css">
         body {
-            font-family: "Times New Roman";
+            font-family: Times New Roman;
             font-size: 13pt;
-            page-break-inside: avoid; 
-            page-break-after: auto;
+
         }
 
         table {
-            font-family: "Times New Roman";
+
+            font-family: Times New Roman;
             font-size: 13pt;
             line-height: 1.3;
             width: 100%;
@@ -21,7 +21,7 @@
         }
 
         table th {
-            font-family: "Times New Roman";
+            font-family: Times New Roman;
             font-size: 13pt;
             text-align: center;
         }
@@ -151,7 +151,7 @@
     $value.replaceAll(',','.')
     #end
     #end
-    <div class="sectionGuide">
+    <div class="sectionGuide" style="padding: 1cm 1.22cm 0cm 1.22cm;">
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
@@ -185,7 +185,7 @@
             </tr>
         </table>
     </div>
-    <div class="sectionGuide">
+    <div class="sectionGuide" style="padding: 1cm 1.22cm 0cm 1.22cm;">
         <div>
             <table class="tableHeader">
                 <tr>
@@ -195,21 +195,21 @@
                 </tr>
                 <tr>
                     <td style="font-size:13pt; font-weight: normal;"> 
-                        <div style="margin-left: 300px;">Tại kho: $TaiKho</div>
+                            <p style="margin-left: 300px;">Tại kho: $TaiKho</p>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size:13pt; font-weight: normal;">
-                        <div style="margin-left: 300px;">Kính gửi: $KinhGui</div>
+                        <p style="margin-left: 300px;">Kính gửi: $KinhGui</p>
                     </td>
                 </tr>
             </table>
             <div style="padding-top: 15pt;">
-                <div>Tên đơn vị đề nghị: $DonViDeNghi</div>
-                <div>Lý do cấp: 
+                <p>Tên đơn vị đề nghị: $DonViDeNghi</p>
+                <p>Lý do cấp: 
                     $LyDoCap
-                </div>
-                <div>Đề nghị cấp danh sách vật tư thiết bị như sau:</div>
+                </p>
+                <p>Đề nghị cấp danh sách vật tư thiết bị như sau:</p>
             </div>
         </div>
         <div>
@@ -261,71 +261,17 @@
             </table>
             <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 20pt;">
                 <tr>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_DoiTruong</p>
-                        <b>ĐỘI TRƯỞNG</b>
-                        <b style="color: white;">EMPTY</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_DoiTruong</p>
-                    </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_ChuyenVienKT</p>
-                        <b>CHUYÊN VIÊN KT</b>
-                        <b style="color: white;">EMPTY</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_ChuyenVienKT</p>
-                    </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_TPPKT</p>
-                        <b>TRƯỞNG/PHÓ PHÒNG KT</b>
+                    <th width="50%" style="text-align: left">
                         
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_TPPKT</p>
                     </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_ChuyenVienKHVT</p>
-                        <b>CHUYÊN VIÊN KHVT</b>
-                        <b style="color: white;">EMPTY</b>
+                    <th width="50%" style="text-align: center">
+                        <b>TRƯỞNG ĐƠN VỊ</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_ChuyenVienKHVT</p>
-                    </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_TPPKHVT</p>
-                        <b>TRƯỞNG/PHÓ PHÒNG KHVT</b>
-                        
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_TPPKHVT</p>
-                    </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
-                        <b>GIÁM ĐỐC</b>
-                        <b style="color: white;">EMPTY</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_GiamDoc</p>
+                        <p style="font-size:12pt; margin-top: 30px;">$NameSignature</p>
                     </th>
                 </tr>
             </table>
