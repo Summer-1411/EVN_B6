@@ -152,7 +152,7 @@
                 "searchConfig": {
                     "idField": "poId",
                     "minimumSearch": 0,
-                    "displayField": "poName"
+                    "displayField": "poNumber"
                 }
             },
             "display": true
@@ -1006,7 +1006,7 @@
                     "id": -6800,
                     "position": -6800,
                     "name": "Tài khoản nợ",
-                    "type": "text",
+                    "type": "finance",
                     "conditions": {
                         "required": true
                     }
@@ -1015,7 +1015,7 @@
                     "id": -6780,
                     "position": -6780,
                     "name": "Tài khoản có",
-                    "type": "text",
+                    "type": "finance",
                     "conditions": {
                         "required": true
                     }

@@ -164,12 +164,7 @@
                     <div style="margin-left: 20px; margin-top: -2px">Liên: </div>
                 </td>
                 <td width="20%" style="text-align: center; font-size:11pt">
-                    <div><b>Mẫu số 01-VT</b></div>
-                    <div>(Ban hành theo QĐ số: 200/1014/QD-BTC </div>
-                    <div>Ngày 22/12/2014 của Bộ trưởng BTC)</div>
-
-                    <!-- <div style="margin-top;">Số: <b>$So</b></div> -->
-                    <div>Số receipt: </div>
+                    
                 </td>
             </tr>
         </table>
@@ -196,6 +191,7 @@
             <tr>
                 <td colspan="2">
                     <div>Theo: <b>$Theo</b></div>
+                    <div>Đơn vị nhập: <b>$DonVi</b></div>
                 </td>
                 <td style="width: 35%">
                     <div>Số Receipt: </div>
@@ -355,18 +351,6 @@
                     <br />
                     <br />
                     <div>$Name_KeToan</div>
-                </th>
-                <th style="text-align: center; font-size: 10.5pt;">
-                    <p style="font-size:2pt; color: white">$ChuKy_VietPhieu</p>
-                    <b>NGƯỜI VIẾT PHIẾU</b>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <div>$Name_VietPhieu</div>
                 </th>
                 <th style="text-align: center; font-size: 10.5pt;">
                     <p style="font-size:2pt; color: white">$ChuKy_GiaoHang</p>

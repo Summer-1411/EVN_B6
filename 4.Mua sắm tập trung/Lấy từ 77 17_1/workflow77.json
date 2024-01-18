@@ -278,7 +278,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -546,7 +546,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -815,7 +815,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -1083,7 +1083,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1351,7 +1351,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1648,7 +1648,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1916,7 +1916,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41628&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
