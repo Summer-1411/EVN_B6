@@ -265,6 +265,22 @@
             </div>
             <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 10px;">
                 <tr>
+                    #if($IsGiamDoc.equals("1"))
+                    <th style="text-align: center; font-size: 11pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
+                        <b>GIÁM ĐỐC</b>
+                        
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_GiamDoc</p>
+                    </th>
+                    #else
+                        <th>
+                        </th>
+                    #end
                     <th style="text-align: center; font-size: 11pt;">
                         <p style="font-size:2pt; color: white">$ChuKy_TruongPhong</p>
                         <b>TRƯỞNG PHÒNG</b>
@@ -276,14 +292,14 @@
                         <p style="font-size:12pt; margin-top: 30px;">$Name_TruongPhong</p>
                     </th>
                     <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
-                        <b>GIÁM ĐỐC</b>
+                        <p style="font-size:2pt; color: white">$ChuKy_ChuyenVien</p>
+                        <b>NGƯỜI LẬP PHIẾU</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_GiamDoc</p>
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_ChuyenVien</p>
                     </th>
                     <th style="text-align: center; font-size: 11pt;">
                         <p style="font-size:2pt; color: white">$ChuKy_ThuKho</p>
