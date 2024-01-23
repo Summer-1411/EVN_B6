@@ -48,8 +48,6 @@
     "mappingLevel": "-3",
     "pickerFilter": "fullName"
 }
-
-
 //start
 //B6_PARAM_CHON_TRUONG_PHO_BAN_BUOC6_DTXD_SCL
 {
@@ -58,15 +56,11 @@
     "mappingLevel": "-5",
     "pickerFilter": "fullName"
 }
-
 //B6_PARAM_CHON_PHONG_BAN_DTXD_SCL
 {
     "orgId": "-276",
     "pickerFilter": "name"
 }
-
-
-
 // Bước 6
 //Nhánh sửa chữa lớn
 //B6_PARAM_CHON_TRUONG_BAN_1_DTXD_SCL
@@ -83,8 +77,6 @@
     "mappingLevel": "-1",
     "pickerFilter": "fullName"
 }
-
-
 //B6_PARAM_CHON_PHO_BAN_BUOC8_DTXD_SCL
 {
     "orgId": "-276",
@@ -127,10 +119,6 @@
     "mappingLevel": "-5",
     "pickerFilter": "fullName"
 }
-
-
-
-
 //Nhánh đầu tư xây dựng
 //B6_PARAM_CHON_TRUONG_BAN_1_DTXD_SCL_BRANCH_DTXD
 {
@@ -146,8 +134,6 @@
     "mappingLevel": "-1",
     "pickerFilter": "fullName"
 }
-
-
 //B6_PARAM_CHON_PHO_BAN_BUOC8_DTXD_SCL_BRANCH_DTXD
 {
     "orgId": "-276",
@@ -193,10 +179,198 @@
 
 
 
-
-
-
-
+{
+    "ticket": {
+        "ticketCode": 0,
+        "orgId": 0,
+        "requestSubject": "string",
+        "type": "string",
+        "statusErp": "string",
+        "statusDelivery": "string",
+        "status": "string",
+        "createDate": "2024-01-22",
+        "createUser": "string",
+        "actionType": "string",
+        "statusValidate": "string",
+        "tranDate": "2024-01-22T02:46:39.744Z",
+        "erpDate": "2024-01-22T02:46:39.744Z",
+        "deptId": 0,
+        "createTicketDate": "2024-01-22T02:46:39.744Z",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": 0,
+            "orgRequest": "string",
+            "reason": "string",
+            "receiver": "string",
+            "deliver": "string",
+            "description": "string",
+            "location": "string",
+            "construction": "string",
+            "primaryInventory": "string",
+            "type": "string",
+            "subInventory": "string",
+            "locator": "string",
+            "typeErp": "string",
+            "sourceErp": "string",
+            "receiptDate": "2024-01-22",
+            "cmis": "string",
+            "staff": "string",
+            "orgIdTransfer": "string",
+            "orgIdReceiveTransfer": "string",
+            "constructionTransfer": "string",
+            "constructionReceiveTransfer": "string",
+            "requestDate": "2024-01-22",
+            "numberVoteApprove": "string",
+            "receiptNumber": "string",
+            "addressOrg": "string",
+            "category": "string",
+            "storekeeper": "string",
+            "oldTicketId": "string",
+            "contractPO": "string",
+            "numberDeliveryNote": "string",
+            "primaryInventory1": "string",
+            "subInventory1": "string",
+            "constructor": "string",
+            "tableData": [
+                {
+                    "id": 0,
+                    "ixfId": 0,
+                    "ticketCode": 0,
+                    "materialCode": "string",
+                    "materialName": "string",
+                    "producer": "string",
+                    "unit": "string",
+                    "requestQuantity": 0,
+                    "approveQuantity": 0,
+                    "batch": "string",
+                    "unitPrice": 0,
+                    "amount": 0,
+                    "accountDebit": "string",
+                    "accountCredit": "string",
+                    "description": "string",
+                    "inventory": 0,
+                    "requestDispense": 0,
+                    "transfer": 0,
+                    "dispenseImmediately": 0,
+                    "transferOrg": "string",
+                    "willDispense": 0,
+                    "funds": 0,
+                    "quantitySent": 0,
+                    "finalProduct": 0,
+                    "insurance": 0,
+                    "repairable": 0,
+                    "clearance": 0,
+                    "total": 0,
+                    "qualityEvaluation": "string",
+                    "issuedQuantity": 0,
+                    "usedQuantity": 0,
+                    "redundantQuantity": 0,
+                    "difference": 0,
+                    "segmentQuantity": 0,
+                    "desirableLength": 0
+                }
+            ]
+        },
+        "listMaterial": [
+            {
+                "orgId": 0,
+                "materialCodeFmis": "string",
+                "materialNameFmis": "string",
+                "unit": "string",
+                "productionCode": "string",
+                "accessoryCode": "string",
+                "qualityCode": "string",
+                "materialCode": "string",
+                "note": "string"
+            }
+        ],
+        "capitalAdvance": {
+            "ticketId": 0,
+            "company": "string",
+            "cmisCode": "string",
+            "cmisName": "string",
+            "type": "string",
+            "listTable": [
+                {
+                    "materialName": "string",
+                    "materialCode": "string",
+                    "unit": "string",
+                    "estimates": 0,
+                    "grantImmediately": 0,
+                    "willGrant": 0,
+                    "buyingUnit": "string",
+                    "estimatedUnitPrice": 0,
+                    "totalEstimate": 0,
+                    "evnGrant": 0,
+                    "orgBuy": 0
+                }
+            ]
+        },
+        "deliveryReceiptAsset": {
+            "ticketId": 0,
+            "deliver": "string",
+            "deliverPosition": "string",
+            "receiver": "string",
+            "receiverPosition": "string",
+            "orgDeliver": 0,
+            "orgReceiver": 0,
+            "numberReport": "string",
+            "linkFile": "string",
+            "listAssets": [
+                {
+                    "draId": 0,
+                    "ticketId": 0,
+                    "assetCode": "string",
+                    "assetName": "string",
+                    "deviceNumber": "string",
+                    "source": "string",
+                    "qrCode": "string",
+                    "unit": "string",
+                    "quantity": 0,
+                    "manufactureCountry": "string",
+                    "manufactureYear": 0,
+                    "yearOperation": 0,
+                    "statusDevice": "string",
+                    "capitalSource": 0,
+                    "originalPrice": 0,
+                    "depreciation": 0,
+                    "remainPrice": 0,
+                    "note": "string"
+                }
+            ],
+            "listDocument": [
+                {
+                    "draId": 0,
+                    "ticketId": 0,
+                    "name": "string",
+                    "unit": "string",
+                    "quantity": 0,
+                    "value": "string",
+                    "note": "string"
+                }
+            ]
+        },
+        "noteInfo": {
+            "ticketId": 0,
+            "files": [
+                {
+                    "link": "string",
+                    "type": "string",
+                    "numberVote": "string",
+                    "createUser": "string"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": 0,
+        "status": "string",
+        "reason": "string",
+        "flowName": "string",
+        "approvalUser": "string",
+        "action": "string"
+    }
+}
 //CALL API 
 // B6_PARAM_CREATE_TICKET_CAP_VON_SCL_DTXD
 {
@@ -205,7 +379,7 @@
         "requestSubject": "(ticket-title)",
         "type": "(-200)",
         "status": "INPROGRESS",
-        "createDate": "(created-date)",
+        "createDate": "(-9999)",
         "createUser": "(-10000)",
         "actionType": "(-400)",
         "capitalAdvance": {
@@ -242,7 +416,6 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-20)"
     }
 }
-
 // B6_PARAM_APPROVE_BUOC3_SCL_DTXD
 {
     "approval": {
@@ -253,7 +426,6 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-30)"
     }
 }
-
 // B6_PARAM_FINISH_BUOC4_SCL_DTXD
 {
     "approval": {
@@ -264,7 +436,6 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-40)"
     }
 }
-
 // B6_PARAM_APPROVE_BUOC5_SCL_DTXD
 {
     "approval": {
@@ -275,16 +446,14 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-50)"
     }
 }
-
 // B6_PARAM_FINISH_BUOC6_SCL_DTXD_BRANCH_SCL
-
 {
     "ticket": {
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
         "type": "(-200)",
         "status": "INPROGRESS",
-        "createDate": "(created-date)",
+        "createDate": "(-9999)",
         "createUser": "(-10000)",
         "actionType": "(-300)",
         "capitalAdvance": {
@@ -318,7 +487,6 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-60)"
     }
 }
-
 // B6_PARAM_FINISH_BUOC6_SCL_DTXD_BRANCH_DTXD
 {
     "ticket": {
@@ -360,10 +528,7 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-65)"
     }
 }
-
-
-
-// B6_PARAM_APPROVE_BUOC7_SCL_DTXD
+// B6_PARAM_APPROVE_BUOC7_SCL_DTXD_BRANCH_SCL
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -373,8 +538,17 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-70)"
     }
 }
-
-// B6_PARAM_FINISH_BUOC8_SCL_DTXD
+// B6_PARAM_APPROVE_BUOC7_SCL_DTXD_BRANCH_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 7",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-75)"
+    }
+}
+// B6_PARAM_FINISH_BUOC8_SCL_DTXD_BRANCH_SCL
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -384,8 +558,17 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-80)"
     }
 }
-
-// B6_PARAM_APPROVE_BUOC9_SCL_DTXD
+// B6_PARAM_FINISH_BUOC8_SCL_DTXD_BRANCH_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-85)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC9_SCL_DTXD_BRANCH_SCL
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -395,8 +578,17 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-90)"
     }
 }
-
-// B6_PARAM_FINISH_BUOC10_SCL_DTXD
+// B6_PARAM_APPROVE_BUOC9_SCL_DTXD_BRANCH_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 9",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-95)"
+    }
+}
+// B6_PARAM_FINISH_BUOC10_SCL_DTXD_BRANCH_SCL
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -406,8 +598,18 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-100)"
     }
 }
+// B6_PARAM_FINISH_BUOC10_SCL_DTXD_BRANCH_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-105)"
+    }
+}
 
-// B6_PARAM_APPROVE_BUOC11_SCL_DTXD
+// B6_PARAM_APPROVE_BUOC11_SCL_DTXD_BRANCH_SCL
 {
     "approval": {
         "ticketCode": "(-0)",
@@ -417,50 +619,89 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-110)"
     }
 }
+// B6_PARAM_APPROVE_BUOC11_SCL_DTXD_BRANCH_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-115)"
+    }
+}
 
-// B6_PARAM_FINISH_BUOC12_SCL_DTXD
+// B6_PARAM_FINISH_BUOC12_SCL_DTXD_BRANCH_DTXD
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 12",
         "action": "FINISH",
-        "approvalUser": "(phase-owner,-120)"
+        "approvalUser": "(phase-owner,-125)"
     }
 }
 
-// B6_PARAM_FINISH_BUOC13_SCL_DTXD
+
+// B6_PARAM_FINISH_BUOC13_SCL_DTXD_BRANCH_DTXD
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 13",
         "action": "FINISH",
-        "approvalUser": "(phase-owner,-130)"
+        "approvalUser": "(phase-owner,-135)"
     }
 }
 
-// B6_PARAM_FINISH_BUOC14_SCL_DTXD
+
+// B6_PARAM_FINISH_BUOC14_SCL_DTXD_BRANCH_DTXD
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 14",
         "action": "FINISH",
-        "approvalUser": "(phase-owner,-140)"
+        "approvalUser": "(phase-owner,-145)"
     }
 }
 
-// B6_PARAM_APPROVE_BUOC15_SCL_DTXD
+
+
+
+B6_PARAM_APPROVE_BUOC15_SCL_DTXD_BRANCH_DTXD
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "flowName": "Buoc 15",
         "action": "APPROVE",
-        "approvalUser": "(phase-owner,-150)"
+        "approvalUser": "(phase-owner,-155)"
     }
 }
+
+B6_PARAM_APPROVE_BUOC15_1_SCL_DTXD_BRANCH_SCL
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 15.1",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-151)"
+    }
+}
+B6_PARAM_APPROVE_BUOC15_2_SCL_DTXD_BRANCH_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 15.1",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-152)"
+    }
+}
+
+
+
 
 // B6_PARAM_APPROVE_BUOC16_SCL_DTXD
 {
@@ -473,6 +714,111 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
     }
 }
 
+// B6_PARAM_APPROVE_BUOC16_SCL_DTXD_BRANCH_SCL
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-60,-70>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6750)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-160,-170)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 16",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-160)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC16_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-165,-175)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 16",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-165)"
+    }
+}
+
+
+
 // B6_PARAM_APPROVE_BUOC17_SCL_DTXD
 {
     "approval": {
@@ -484,6 +830,110 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
     }
 }
 
+// B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_SCL
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-60,-70>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6750)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-170,-180)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 17",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-170)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-175,-185)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 17",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-170)"
+    }
+}
+
+
 // B6_PARAM_APPROVE_BUOC18_SCL_DTXD
 {
     "approval": {
@@ -494,6 +944,117 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-180)"
     }
 }
+// B6_PARAM_APPROVE_BUOC18_SCL_DTXD_BRANCH_SCL
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-60,-70>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6750)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-180,-200)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 18",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-180)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC18_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(created-date)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-185,-195)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 18",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-180)"
+    }
+}
+
+
+
+
+
+
+
+
+
 
 // B6_PARAM_APPROVE_BUOC19_SCL_DTXD
 {
@@ -506,6 +1067,61 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
     }
 }
 
+// B6_PARAM_APPROVE_BUOC19_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(created-date)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-195,-205)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 19",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-190)"
+    }
+}
+
+
+
+
 
 // B6_PARAM_APPROVE_BUOC20_SCL_DTXD
 {
@@ -517,6 +1133,110 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
         "approvalUser": "(phase-owner,-200)"
     }
 }
+
+// B6_PARAM_APPROVE_BUOC20_SCL_DTXD_BRANCH_SCL
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-60,-70>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6750)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-200,-210)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 20",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-200)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC20_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-205,-215)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 18",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-205)"
+    }
+}
+
 // B6_PARAM_APPROVE_BUOC21_SCL_DTXD
 {
     "approval": {
@@ -528,13 +1248,239 @@ Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
     }
 }
 
+// B6_PARAM_APPROVE_BUOC21_SCL_DTXD_BRANCH_SCL
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-60,-70>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6750)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-210,-220)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 21",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-210)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC21_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-215,-225)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 21",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-215)"
+    }
+}
+
+
+
+
+
+
 // B6_PARAM_APPROVE_BUOC22_SCL_DTXD
 {
     "approval": {
         "ticketCode": "(-0)",
-        "status": "INPROGRESS",
+        "status": "CLOSED",
         "flowName": "Buoc 22",
         "action": "APPROVE",
         "approvalUser": "(phase-owner,-220)"
     }
+}
+
+// B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_SCL
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "CLOSED",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-60,-70>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6750)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-210,-220)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 22",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-220)"
+    }
+}
+// B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-200)",
+        "status": "CLOSED",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "(-300)",
+        "capitalAdvance": {
+            "ticketId": "(-0)",
+            "company": "(-9920)",
+            "cmisCode": "(-9700)",
+            "cmisName": "(-9600)",
+            "type": "(-9799)",
+            "listTable": [(t)<-7000,-65,-75>
+                {
+                    "materialName": "(-6940)",
+                    "materialCode": "(-6960)",
+                    "unit": "(-6920)",
+                    "estimates": "(-6900)",
+                    "grantImmediately": "(-6860)",
+                    "willGrant": "(-6840)",
+                    "buyingUnit": "(-6820)",
+                    "estimatedUnitPrice": "(-6800)",
+                    "totalEstimate": "(-6780)",
+                    "evnGrant": "(-6760)",
+                    "orgBuy": "(-6740)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-215,-225)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 22",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-225)"
+    }
+}
+
+
+B6_PARAM_MA_VAT_TU_DTXD_SCL
+{
+    "erpId": "-9989",
+    "pickerFilter": "materialCode"
+}
+
+B6_PARAM_CHON_TRUONG_BAN_VAT_TU_DTXD_SCL
+{
+    "orgId": "-276",
+    "depId": "-5400",
+    "mappingLevel": "-1",
+    "pickerFilter": "fullName"
 }

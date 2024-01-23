@@ -13,6 +13,18 @@
             }
         },
         {
+            "id": -9999,
+            "position": -9999,
+            "name": "Ngày lập đề nghị",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
             "id": -9991,
             "position": -9991,
             "name": "Họ tên người lập yêu cầu",
@@ -47,6 +59,18 @@
                 }
             ],
             "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9989,
+            "position": -9989,
+            "name": "ERP_ID",
+            "type": "master_data_load_user_info_erp_id",
+            "display": false,
+            "disabled": false,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
         },
         {
             "id": -9985,
@@ -93,9 +117,9 @@
         },
         {
             "id": -9920,
-            "name": "Đơn vị",
+            "name": "Mã Đơn vị",
             "type": "master_data_load_user_info_donvi",
-            "display": true,
+            "display": false,
             "disable": true,
             "conditions": {
                 "required": true
@@ -106,7 +130,7 @@
         {
             "id": -9915,
             "position": -9915,
-            "name": "Mã đơn vị (org id)",
+            "name": "Đơn vị",
             "type": "master_data_load_user_info_don_vi_van_chuyennn",
             "display": true,
             "disable": true,
@@ -185,19 +209,19 @@
                 "apiConfig": {
                     "param": "EVN_SPRO_PARAM_PICKER_FILTER_CMIS",
                     "hostnameKey": "SPRO_EVN",
-                    "urlFilter": "/common-spro/get-cmis",
+                    "urlFilter": "/common-spro/get-cmis?type=KHAC",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
-                    "idField": "cmisCode",
+                    "idField": "projectCode",
                     "minimumSearch": 0,
-                    "displayField": "cmisCode"
+                    "displayField": "projectCode"
                 }
             },
             "conditions": {
                 "feedTo": [
                     {
-                        "fieldName": "cmisName",
+                        "fieldName": "projectName",
                         "id": -9600,
                         "dataset": "INDIVIDUAL"
                     }
@@ -240,10 +264,11 @@
             "name": "Số",
             "additionalDisplayClass": "right-info",
             "id": -9350,
+            "display": false,
             "position": -9350,
             "type": "text",
             "conditions": {
-                "required": true
+                "required": false
             }
         },
         {
@@ -404,7 +429,7 @@
                 "apiConfig": {
                     "hostnameKey": "SPRO_EVN",
                     "param": "B6_PARAM_CHON_TONG_GIAM_DOC_DTXD_SCL",
-                    "urlFilter": "/common-spro/getUserByPosition",
+                    "urlFilter": "/common-spro/get-all-user-by-org-id",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
@@ -421,6 +446,69 @@
             "additionalDisplayClass": "right-info",
             "id": -5599,
             "position": -5599,
+            "type": "text"
+        },
+        {
+            "id": -5400,
+            "position": -5400,
+            "type": "apiweb",
+            "disable": true,
+            "name": "Chọn Ban vật tư",
+            "conditions": {
+                "feedTo": [],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_GET_DEPARTMENT_OF_BAN_DTXD_SCL",
+                    "urlFilter": "/common-spro/get-all-department",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "deptId",
+                    "minimumSearch": 0,
+                    "displayField": "name"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -5350,
+            "position": -5350,
+            "name": "Chọn Trưởng Ban vật tư",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5349,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_TRUONG_BAN_VAT_TU_DTXD_SCL",
+                    "urlFilter": "/common-spro/get-usser-by-department",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "display": false,
+            "name": "Họ tên trưởng ban vật tư",
+            "additionalDisplayClass": "left-info",
+            "id": -5349,
+            "position": -5349,
             "type": "text"
         },
         {
@@ -781,23 +869,28 @@
                         "required": false,
                         "feedTo": [
                             {
-                                "fieldName": "suppliesName",
+                                "fieldName": "materialName",
                                 "id": -6940,
+                                "dataset": "TABLE"
+                            },
+                            {
+                                "fieldName": "unit",
+                                "id": -6920,
                                 "dataset": "TABLE"
                             }
                         ]
                     },
                     "apiWebConfig": {
                         "apiConfig": {
-                            "param": "EVN_SPRO_PARAM_PICKER_FILTER_SUPPLIES",
+                            "param": "B6_PARAM_MA_VAT_TU_DTXD_SCL",
                             "hostnameKey": "SPRO_EVN",
-                            "urlFilter": "/common-spro/get-supplies",
+                            "urlFilter": "/common-spro/getMaterialCode",
                             "returnKey": "MT_GET_VENDOR_RP_S"
                         },
                         "searchConfig": {
-                            "idField": "suppliesCode",
+                            "idField": "materialCode",
                             "minimumSearch": 0,
-                            "displayField": "suppliesCode"
+                            "displayField": "materialCode"
                         }
                     }
                 },
@@ -814,7 +907,7 @@
                     "id": -6920,
                     "position": -6920,
                     "name": "Đơn vị tính",
-                    "type": "master_data_unit",
+                    "type": "text",
                     "conditions": {
                         "required": true
                     }
@@ -875,7 +968,7 @@
                     "disabled": true,
                     "type": "expression",
                     "conditions": {
-                        "required": false
+                        "required": true
                     }
                 },
                 {
