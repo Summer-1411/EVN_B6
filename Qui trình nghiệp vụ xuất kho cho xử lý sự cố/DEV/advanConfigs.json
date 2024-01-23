@@ -155,7 +155,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -204,7 +204,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -278,7 +278,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -342,7 +342,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -411,7 +411,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -471,7 +471,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -531,7 +531,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "reason": "(-9860)",
             "primaryInventory": "(-9901)",
             "subInventory": "(-9871)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-9910)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -579,6 +579,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "orgRequest": "(-9000,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "description": "(-8400,-110,-120)",
             "location": "(-8900,-110,-120)",
             "orgCode": "(-9000,-110,-120)",
@@ -589,7 +590,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -598,6 +599,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -638,6 +640,7 @@ B6_PARAM_FINISH_BUOC13_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -650,7 +653,7 @@ B6_PARAM_FINISH_BUOC13_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -659,6 +662,7 @@ B6_PARAM_FINISH_BUOC13_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -690,6 +694,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -702,7 +707,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -711,6 +716,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -800,6 +806,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -812,7 +819,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -821,6 +828,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -868,6 +876,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -880,7 +889,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -889,6 +898,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -947,6 +957,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -959,7 +970,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -968,6 +979,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -1045,6 +1057,7 @@ B6_PARAM_FINISH_BUOC17_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -1057,7 +1070,7 @@ B6_PARAM_FINISH_BUOC17_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -1066,6 +1079,7 @@ B6_PARAM_FINISH_BUOC17_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
@@ -1120,7 +1134,7 @@ B6_PARAM_APPROVE_BUOC19_XLSC
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_XLSC",
-        "status": "INPROGRESS",
+        "status": "CLOSED",
         "statusDelivery": "1",
         "statusErp": 1,
         "createUser": "(-10000)",
@@ -1129,6 +1143,7 @@ B6_PARAM_APPROVE_BUOC19_XLSC
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9000,-110,-120)",
+            "addressOrg": "(-8555,-110,-120)",
             "receiver": "(-8600,-110,-120)",
             "reason": "(-8500,-110,-120)",
             "description": "(-8400,-110,-120)",
@@ -1141,7 +1156,7 @@ B6_PARAM_APPROVE_BUOC19_XLSC
             "subInventory": "(-9871,-110,-120)",
             "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
-            "requestDate": "(-9999,-110,-120)",
+            "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
             "constructor": "(-5700,-110,-120)",
             "tableData": [(t)<-9800,-110,-120>
@@ -1150,6 +1165,7 @@ B6_PARAM_APPROVE_BUOC19_XLSC
                     "materialName": "(-9740)",
                     "unit": "(-9720)",
                     "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)",
                     "batch": "(-9120)",
                     "segmentQuantity": "(-9694)",
                     "desirableLength": "(-9692)"
