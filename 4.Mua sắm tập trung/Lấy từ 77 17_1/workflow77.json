@@ -106,6 +106,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -278,7 +286,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -374,6 +382,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -546,7 +562,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -643,6 +659,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -815,7 +839,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -911,6 +935,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1083,7 +1115,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1179,6 +1211,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1351,7 +1391,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1476,6 +1516,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1648,7 +1696,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1744,6 +1792,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -8300,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1916,7 +1972,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=41826&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42896&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,

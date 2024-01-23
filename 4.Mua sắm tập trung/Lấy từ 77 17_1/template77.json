@@ -322,20 +322,21 @@
         {
             "apiWebConfig": {
                 "apiConfig": {
+                    "param": "B6_IMPORT_MSTT_FILTER_SOURCE",
                     "hostnameKey": "SPRO_EVN",
                     "urlFilter": "/common-spro/get-source-erp",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
-                    "idField": "orgName",
+                    "idField": "code",
                     "minimumSearch": 0,
-                    "displayField": "orgName"
+                    "displayField": "description"
                 }
             },
             "name": "Source",
-            "additionalDisplayClass": "left-info",
+            "additionalDisplayClass": "right-info",
             "id": -8000,
-            "position": -8000,
+            "position": -7630,
             "type": "apiweb",
             "conditions": {
                 "feedTo": [],

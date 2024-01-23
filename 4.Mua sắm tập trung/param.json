@@ -36,6 +36,11 @@ B6_PARAM_MA_PHIEU_GIAO_HANG_MSTT
     "pickerFilter": "deliveryCode"
 }
 
+B6_IMPORT_MSTT_FILTER_SOURCE
+{
+    "orgId":"-7800",
+    "pickerFilter": "description"
+}
 
 B6_PARAM_KHO_CHINH_MSTT
 {
@@ -100,6 +105,7 @@ B6_PARAM_KE_TOAN_VAT_TU_MSTT
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
             "requestDate": "(-9999)",
+            "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
             "storekeeper": "(-5600)",
@@ -169,6 +175,7 @@ B6_PARAM_FINISH_BUOC4_MSTT
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
             "requestDate": "(-9999)",
+            "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
             "storekeeper": "(-5600)",
@@ -225,6 +232,7 @@ B6_PARAM_APPROVE_BUOC5_MSTT
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
             "requestDate": "(-9999)",
+            "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
             "storekeeper": "(-5600)",
@@ -292,6 +300,7 @@ B6_PARAM_APPROVE_BUOC6_MSTT
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
             "requestDate": "(-9999)",
+            "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
             "storekeeper": "(-5600)",
@@ -345,15 +354,7 @@ B6_PARAM_APPROVE_BUOC6_MSTT
         "approvalUser": "(phase-owner,-70)"
     }
 }
-{
-    "approval": {
-        "ticketCode": "(-0)",
-        "status": "INPROGRESS",
-        "flowName": "Buoc 15",
-        "action": "APPROVE",
-        "approvalUser": "(phase-owner,-150)"
-    }
-}
+
 B6_PARAM_APPROVE_BUOC8_MSTT
 
 {
@@ -380,6 +381,7 @@ B6_PARAM_APPROVE_BUOC8_MSTT
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
             "requestDate": "(-9999)",
+            "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
             "storekeeper": "(-5600)",
@@ -447,6 +449,7 @@ B6_PARAM_APPROVE_BUOC9_MSTT
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
             "requestDate": "(-9999)",
+            "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
             "storekeeper": "(-5600)",

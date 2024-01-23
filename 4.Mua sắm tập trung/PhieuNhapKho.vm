@@ -191,10 +191,10 @@
             <tr>
                 <td colspan="2">
                     <div>Theo: <b>$Theo</b></div>
-                    <div>Đơn vị nhập: <b>$DonVi</b></div>
+                    <div>Đơn vị nhập: <b>$DonViNhap</b></div>
                 </td>
                 <td style="width: 35%">
-                    <div>Số Receipt: </div>
+                    <div>Số Receipt: $Receipt</div>
                 </td>
             </tr>
             <tr>
