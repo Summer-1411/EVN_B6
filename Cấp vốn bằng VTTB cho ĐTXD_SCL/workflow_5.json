@@ -8521,15 +8521,11 @@
                         "position": -9200,
                         "type": "apiweb",
                         "disable": true,
+                        "display": false,
                         "name": "Chọn Ban 2",
                         "conditions": {
-                            "displayCondition": {
-                                "valueCondition": "DTXD",
-                                "idCondition": -9800,
-                                "dataCondition": "INDIVIDUAL"
-                            },
                             "feedTo": [],
-                            "required": true
+                            "required": false
                         },
                         "apiWebConfig": {
                             "apiConfig": {
@@ -8550,6 +8546,7 @@
                         "id": -9100,
                         "position": -9100,
                         "name": "Chọn trưởng Ban 2",
+                        "display": false,
                         "apiWebConfig": {
                             "apiConfig": {
                                 "hostnameKey": "SPRO_EVN",
@@ -8566,13 +8563,8 @@
                         "additionalDisplayClass": "right-info",
                         "type": "apiweb",
                         "conditions": {
-                            "displayCondition": {
-                                "valueCondition": "DTXD",
-                                "idCondition": -9800,
-                                "dataCondition": "INDIVIDUAL"
-                            },
                             "feedTo": [],
-                            "required": true
+                            "required": false
                         }
                     },
                     {
@@ -8954,23 +8946,28 @@
                                     "required": false,
                                     "feedTo": [
                                         {
-                                            "fieldName": "suppliesName",
+                                            "fieldName": "materialName",
                                             "id": -6940,
+                                            "dataset": "TABLE"
+                                        },
+                                        {
+                                            "fieldName": "unit",
+                                            "id": -6920,
                                             "dataset": "TABLE"
                                         }
                                     ]
                                 },
                                 "apiWebConfig": {
                                     "apiConfig": {
-                                        "param": "EVN_SPRO_PARAM_PICKER_FILTER_SUPPLIES",
+                                        "param": "B6_PARAM_MA_VAT_TU_DTXD_SCL",
                                         "hostnameKey": "SPRO_EVN",
-                                        "urlFilter": "/common-spro/get-supplies",
+                                        "urlFilter": "/common-spro/getMaterialCode",
                                         "returnKey": "MT_GET_VENDOR_RP_S"
                                     },
                                     "searchConfig": {
-                                        "idField": "suppliesCode",
+                                        "idField": "materialCode",
                                         "minimumSearch": 0,
-                                        "displayField": "suppliesCode"
+                                        "displayField": "materialCode"
                                     }
                                 }
                             },
@@ -8987,7 +8984,7 @@
                                 "id": -6920,
                                 "position": -6920,
                                 "name": "Đơn vị tính",
-                                "type": "master_data_unit",
+                                "type": "text",
                                 "conditions": {
                                     "required": true
                                 }
@@ -9006,6 +9003,7 @@
                                 "position": -6880,
                                 "name": "Số lượng duyệt TCT cấp",
                                 "type": "finance",
+                                "display": false,
                                 "conditions": {
                                     "displayCondition": {
                                         "valueCondition": "DTXD",
@@ -9022,11 +9020,6 @@
                                 "name": "Số lượng duyệt TCT cấp ngay",
                                 "type": "finance",
                                 "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "SCL",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
                                     "feedTo": [],
                                     "required": true
                                 }
@@ -9037,11 +9030,6 @@
                                 "name": "Số lượng duyệt TCT sẽ cấp",
                                 "type": "finance",
                                 "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "SCL",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
                                     "feedTo": [],
                                     "required": true
                                 }
@@ -9149,7 +9137,7 @@
                                         "dataCondition": "INDIVIDUAL"
                                     },
                                     "feedTo": [],
-                                    "required": true
+                                    "required": false
                                 }
                             },
                             {
@@ -9242,7 +9230,7 @@
                                 "id": -6750,
                                 "position": -6750,
                                 "name": "Thành tiền TCT cấp",
-                                "display": false,
+                                "display": true,
                                 "expressionConfig": {
                                     "operands": [
                                         {
@@ -9276,11 +9264,7 @@
                                 "disabled": true,
                                 "type": "expression",
                                 "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "SCL",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
+                                    
                                     "feedTo": [],
                                     "required": true
                                 }
@@ -9455,11 +9439,6 @@
                         "disable": true,
                         "name": "Chọn Ban 2",
                         "conditions": {
-                            "displayCondition": {
-                                "valueCondition": "DTXD",
-                                "idCondition": -9800,
-                                "dataCondition": "INDIVIDUAL"
-                            },
                             "feedTo": [],
                             "required": true
                         },
@@ -9498,11 +9477,6 @@
                         "additionalDisplayClass": "right-info",
                         "type": "apiweb",
                         "conditions": {
-                            "displayCondition": {
-                                "valueCondition": "DTXD",
-                                "idCondition": -9800,
-                                "dataCondition": "INDIVIDUAL"
-                            },
                             "feedTo": [],
                             "required": true
                         }
@@ -9731,7 +9705,6 @@
                         "display": false,
                         "additionalDisplayClass": "left-info"
                     },
-            
                     {
                         "id": -4200,
                         "position": -4200,
@@ -9883,26 +9856,31 @@
                                 "name": "Mã vật tư",
                                 "type": "apiweb",
                                 "conditions": {
-                                    "required": false,
+                                    "required": true,
                                     "feedTo": [
                                         {
-                                            "fieldName": "suppliesName",
+                                            "fieldName": "materialName",
                                             "id": -6940,
+                                            "dataset": "TABLE"
+                                        },
+                                        {
+                                            "fieldName": "unit",
+                                            "id": -6920,
                                             "dataset": "TABLE"
                                         }
                                     ]
                                 },
                                 "apiWebConfig": {
                                     "apiConfig": {
-                                        "param": "EVN_SPRO_PARAM_PICKER_FILTER_SUPPLIES",
+                                        "param": "B6_PARAM_MA_VAT_TU_DTXD_SCL",
                                         "hostnameKey": "SPRO_EVN",
-                                        "urlFilter": "/common-spro/get-supplies",
+                                        "urlFilter": "/common-spro/getMaterialCode",
                                         "returnKey": "MT_GET_VENDOR_RP_S"
                                     },
                                     "searchConfig": {
-                                        "idField": "suppliesCode",
+                                        "idField": "materialCode",
                                         "minimumSearch": 0,
-                                        "displayField": "suppliesCode"
+                                        "displayField": "materialCode"
                                     }
                                 }
                             },
@@ -9919,7 +9897,7 @@
                                 "id": -6920,
                                 "position": -6920,
                                 "name": "Đơn vị tính",
-                                "type": "master_data_unit",
+                                "type": "text",
                                 "conditions": {
                                     "required": true
                                 }
@@ -9939,45 +9917,12 @@
                                 "name": "Số lượng duyệt TCT cấp",
                                 "type": "finance",
                                 "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "DTXD",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
                                     "feedTo": [],
                                     "required": true
                                 }
                             },
-                            {
-                                "id": -6860,
-                                "position": -6860,
-                                "name": "Số lượng duyệt TCT cấp ngay",
-                                "type": "finance",
-                                "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "SCL",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
-                                    "feedTo": [],
-                                    "required": true
-                                }
-                            },
-                            {
-                                "id": -6840,
-                                "position": -6840,
-                                "name": "Số lượng duyệt TCT sẽ cấp",
-                                "type": "finance",
-                                "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "SCL",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
-                                    "feedTo": [],
-                                    "required": true
-                                }
-                            },
+                            
+                            
                             {
                                 "id": -6820,
                                 "position": -6820,
@@ -10041,7 +9986,7 @@
                                 "id": -6760,
                                 "position": -6760,
                                 "name": "Thành tiền TCT cấp",
-                                "display": false,
+                                "display": true,
                                 "expressionConfig": {
                                     "operands": [
                                         {
@@ -10075,11 +10020,6 @@
                                 "disabled": true,
                                 "type": "expression",
                                 "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "DTXD",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
                                     "feedTo": [],
                                     "required": true
                                 }
@@ -10171,53 +10111,6 @@
                                 }
                             },
                             {
-                                "id": -6750,
-                                "position": -6750,
-                                "name": "Thành tiền TCT cấp",
-                                "display": false,
-                                "expressionConfig": {
-                                    "operands": [
-                                        {
-                                            "data-config": {
-                                                "operands": [
-                                                    {
-                                                        "data-config": {
-                                                            "columnId": -6758,
-                                                            "tableId": -7000,
-                                                            "dataset": "MULTITABLE"
-                                                        },
-                                                        "type": "simple"
-                                                    },
-                                                    {
-                                                        "data-config": {
-                                                            "columnId": -6759,
-                                                            "tableId": -7000,
-                                                            "dataset": "MULTITABLE"
-                                                        },
-                                                        "type": "simple"
-                                                    }
-                                                ],
-                                                "type": "ARITHMETIC",
-                                                "operator": "ADD"
-                                            },
-                                            "type": "expression"
-                                        }
-                                    ],
-                                    "type": "ARITHMETIC"
-                                },
-                                "disabled": true,
-                                "type": "expression",
-                                "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "SCL",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
-                                    "feedTo": [],
-                                    "required": true
-                                }
-                            },
-                            {
                                 "id": -6740,
                                 "position": -6740,
                                 "name": "Thành tiền đơn vị mua",
@@ -10255,7 +10148,7 @@
                                 "disabled": true,
                                 "type": "expression",
                                 "conditions": {
-                                    "required": false
+                                    "required": true
                                 }
                             }
                         ]
