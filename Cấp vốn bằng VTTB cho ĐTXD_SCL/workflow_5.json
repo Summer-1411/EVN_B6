@@ -8332,7 +8332,7 @@
                     }
                 ]
             },
-            "type": "approval",
+            "type": "default",
             "status": "waiting"
         },
         {
@@ -8380,7 +8380,7 @@
                     }
                 ]
             },
-            "type": "approval",
+            "type": "default",
             "status": "waiting"
         },
         {
@@ -8791,7 +8791,6 @@
                         "display": false,
                         "additionalDisplayClass": "left-info"
                     },
-            
                     {
                         "id": -4200,
                         "position": -4200,
@@ -10522,7 +10521,7 @@
                     }
                 ]
             },
-            "type": "approval",
+            "type": "default",
             "status": "waiting"
         },
         {
@@ -10570,7 +10569,7 @@
                     }
                 ]
             },
-            "type": "approval",
+            "type": "default",
             "status": "waiting"
         },
         {
@@ -10629,7 +10628,7 @@
                     }
                 ]
             },
-            "type": "default",
+            "type": "approval",
             "status": "waiting"
         },
         {
@@ -10688,17 +10687,10 @@
                     }
                 ]
             },
-            "type": "default",
+            "type": "approval",
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 11.1 Trưởng/phó Ban 1 duyệt",
             "autocreate": false,
             "api_config": [
@@ -10734,13 +10726,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 11.2 Trưởng/phó Ban 1 duyệt",
             "autocreate": false,
             "api_config": [
@@ -10776,13 +10761,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 12.2 Trưởng Ban 2 giao việc cho Phó Ban",
             "autocreate": false,
             "api_config": [
@@ -10832,13 +10810,6 @@
         },
         
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 13.2 Phó ban 2 giao việc cho chuyên viên",
             "autocreate": false,
             "api_config": [
@@ -10887,13 +10858,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 14.2 Chuyên viên Ban 2 duyệt",
             "autocreate": false,
             "api_config": [
@@ -10949,17 +10913,10 @@
                     }
                 ]
             },
-            "type": "default",
+            "type": "approval",
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 15.2 Trưởng/phó Ban 2 duyệt",
             "autocreate": false,
             "api_config": [
@@ -11093,13 +11050,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 16.1 Giám đốc/phó giám đốc ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11183,13 +11133,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 16.2 Giám đốc/phó giám đốc ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11273,13 +11216,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 17.1 Trưởng/phó Ban VT ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11365,13 +11301,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 17.2 Trưởng/phó Ban VT ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11457,13 +11386,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 18.1 Trưởng/phó Ban 1 ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11549,13 +11471,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 18.2 Trưởng/phó Ban 1 ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11642,13 +11557,6 @@
         },
         
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 19.2 Trưởng/phó Ban 2 ký số đề nghị",
             "autocreate": false,
             "api_config": [
@@ -11734,13 +11642,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 20.1 Thư ký TGĐ/PTGĐ duyệt và ký số",
             "autocreate": false,
             "api_config": [
@@ -11826,13 +11727,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 20.2 Thư ký TGĐ/PTGĐ duyệt và ký số",
             "autocreate": false,
             "api_config": [
@@ -11918,13 +11812,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 21.1 TGĐ/PTGĐ duyệt và ký số",
             "autocreate": false,
             "api_config": [
@@ -12010,13 +11897,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 21.2 TGĐ/PTGĐ duyệt và ký số",
             "autocreate": false,
             "api_config": [
@@ -12102,13 +11982,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 22.1 Đơn vị lập đề nghị nhận kết quả",
             "autocreate": false,
             "api_config": [
@@ -12177,13 +12050,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 22.2 Đơn vị lập đề nghị nhận kết quả",
             "autocreate": false,
             "api_config": [
