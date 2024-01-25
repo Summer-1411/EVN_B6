@@ -1,11 +1,11 @@
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <title>CongVan_CFSX</title>
     <style type="text/css">
-                body {
+        body {
             font-family: "Times New Roman";
             font-size: 13pt;
-            page-break-inside: avoid; 
+            page-break-inside: avoid;
             page-break-after: auto
         }
 
@@ -140,6 +140,7 @@
         }
     </style>
 </head>
+
 <body>
     #macro( formatFinance $value )
     #if($value.contains("."))
@@ -149,7 +150,32 @@
     $value.replaceAll(',','.')
     #end
     #end
-    <div class="sectionGuide" >
+
+
+    #macro(formatNumber $number)
+    #set($numberTool = $tool.number)
+    #set($formattedNumber = $numberTool.format("#,##0", $number))
+    $formattedNumber
+    #end
+
+    #set($outputMap = {})
+
+    #foreach($item in $DanhSachVatTu)
+    #set($MaVatTu = $item.MaVatTu)
+    #set($SoLuong = $item.SoLuong)
+
+    #if(!$outputMap.containsKey($MaVatTu))
+    #set($outputMap[$MaVatTu] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu })
+    #else
+    #set($existingItem = $outputMap[$MaVatTu])
+    #set($existingItem.SoLuong = $existingItem.SoLuong + $SoLuong)
+    #end
+    #end
+
+    #set($outputArray = $outputMap.values().toArray())
+
+
+    <div class="sectionGuide">
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
@@ -183,7 +209,7 @@
             </tr>
         </table>
     </div>
-    <div class="sectionGuide" >
+    <div class="sectionGuide">
         <div>
             <table class="tableHeader">
                 <tr>
@@ -192,8 +218,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-size:13pt; font-weight: normal;"> 
-                            <p style="margin-left: 300px;">Tại kho: $TaiKho</p>
+                    <td style="font-size:13pt; font-weight: normal;">
+                        <p style="margin-left: 300px;">Tại kho: $TaiKho</p>
                     </td>
                 </tr>
                 <tr>
@@ -213,27 +239,27 @@
         <div>
             <table class="tableHeaderxx">
                 <tr class="PaddingCellTable">
-                    <th  style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold;">
                         STT
                     </th>
                     <th style="text-align: center; font-weight: bold;">
                         MÃ VẬT TƯ
                     </th>
-                    <th  style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold;">
                         TÊN VẬT TƯ VÀ QUY CÁCH
                     </th>
-                    <th  style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold;">
                         ĐƠN VỊ TÍNH
                     </th>
-                    <th  style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold;">
                         SỐ LƯỢNG
                     </th>
-                    <th  style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold;">
                         GHI CHÚ
                     </th>
                 </tr>
                 #set($index = 1)
-                #foreach($row in $DanhSachVatTu)
+                #foreach($row in $outputArray)
                 <tr class="PaddingCellTable">
                     <td style="text-align: center; font-size: 10.5pt;">
                         $index
@@ -248,7 +274,7 @@
                         $row.get("DonViTinh")
                     </td>
                     <td style="text-align: right; font-size: 10.5pt;">
-                        #formatFinance($row.get("SoLuong"))
+                        $row.get("SoLuong")
                     </td>
                     <td style="text-align: left; font-size: 10.5pt;">
                         $row.get("GhiChu")
