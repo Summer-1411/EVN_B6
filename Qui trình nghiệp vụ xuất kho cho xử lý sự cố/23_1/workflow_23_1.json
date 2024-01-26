@@ -1513,113 +1513,6 @@
                 "res": 15.99,
                 "fix": 16
             },
-            "decisions": {
-                "textDisp": "Processes Decision",
-                "text": "Processes Decision",
-                "actions": [
-                    {
-                        "workflow": {
-                            "relationships": [
-                                -120130,
-                                -80150,
-                                -70100,
-                                -100150,
-                                -110190,
-                                -130135,
-                                -135140,
-                                -140150,
-                                -150160,
-                                -160170,
-                                -170180,
-                                -180190,
-                                -1901
-                            ],
-                            "relatives": [
-                                -1,
-                                -80,
-                                -70,
-                                -100,
-                                -110,
-                                -120,
-                                -130,
-                                -135,
-                                -140,
-                                -150,
-                                -160,
-                                -170,
-                                -180,
-                                -190
-                            ]
-                        },
-                        "name": "Có chọn giám đốc phê duyệt",
-                        "id": -1,
-                        "conditions": {
-                            "right-element": {
-                                "dataset": "value",
-                                "value": "0"
-                            },
-                            "compare-type": "text",
-                            "operation": "notEqual",
-                            "left-element": {
-                                "inputId": -110,
-                                "infoId": -5570,
-                                "phaseId": -120,
-                                "type": "text",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        }
-                    },
-                    {
-                        "workflow": {
-                            "relationships": [
-                                -120130,
-                                -70100,
-                                -110190,
-                                -130135,
-                                -135140,
-                                -140160,
-                                -160170,
-                                -170180,
-                                -180190,
-                                -1901
-                            ],
-                            "relatives": [
-                                -1,
-                                -80,
-                                -70,
-                                -100,
-                                -110,
-                                -120,
-                                -130,
-                                -135,
-                                -140,
-                                -160,
-                                -170,
-                                -180,
-                                -190
-                            ]
-                        },
-                        "name": "Không chọn giám đốc phê duyệt",
-                        "id": -2,
-                        "conditions": {
-                            "right-element": {
-                                "dataset": "value",
-                                "value": "0"
-                            },
-                            "compare-type": "text",
-                            "operation": "equal",
-                            "left-element": {
-                                "inputId": -110,
-                                "infoId": -5570,
-                                "phaseId": -120,
-                                "type": "text",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        }
-                    }
-                ],
-                "status": "unfinished"
-            },
             "id": -120,
             "type": "phase",
             "printable": true,
@@ -1858,6 +1751,109 @@
                 "res": 15.99,
                 "fix": 16
             },
+            "decisions": {
+                "textDisp": "Processes Decision",
+                "text": "Processes Decision",
+                "actions": [
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -80150,
+                                -70100,
+                                -100150,
+                                -110190,
+                                -130135,
+                                -135140,
+                                -140150,
+                                -150160,
+                                -160170,
+                                -170180,
+                                -180190,
+                                -1901
+                            ],
+                            "relatives": [
+                                -1,
+                                -80,
+                                -70,
+                                -100,
+                                -110,
+                                -130,
+                                -135,
+                                -140,
+                                -150,
+                                -160,
+                                -170,
+                                -180,
+                                -190
+                            ]
+                        },
+                        "name": "Có chọn giám đốc phê duyệt",
+                        "id": -1,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "0"
+                            },
+                            "compare-type": "text",
+                            "operation": "notEqual",
+                            "left-element": {
+                                "inputId": -110,
+                                "infoId": -5570,
+                                "phaseId": -120,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    },
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -70100,
+                                -110190,
+                                -130135,
+                                -135140,
+                                -140160,
+                                -160170,
+                                -170180,
+                                -180190,
+                                -1901
+                            ],
+                            "relatives": [
+                                -1,
+                                -80,
+                                -70,
+                                -100,
+                                -110,
+                                -130,
+                                -135,
+                                -140,
+                                -160,
+                                -170,
+                                -180,
+                                -190
+                            ]
+                        },
+                        "name": "Không chọn giám đốc phê duyệt",
+                        "id": -2,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "0"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -110,
+                                "infoId": -5570,
+                                "phaseId": -120,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    }
+                ],
+                "status": "unfinished"
+            },
             "id": -130,
             "type": "phase",
             "printable": true,
@@ -2092,7 +2088,7 @@
                 "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=43077&fileName=PhieuXuatKho.vm",
                 "newVersion": true
             },
-            "autocreate": false,
+            "autocreate": true,
             "sla": {
                 "res": 15.99,
                 "fix": 16
@@ -3549,13 +3545,6 @@
             "requestUpdateKeepData": true
         },
         {
-            "requestUpdateLock": true,
-            "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                }
-            },
             "customNote": "Bước 11",
             "api_config": [
                 {
@@ -3741,7 +3730,7 @@
                         "position": -8900,
                         "type": "text",
                         "conditions": {
-                            "max-length": 50,
+                            "max-length": 200,
                             "required": true
                         }
                     },
@@ -3861,7 +3850,7 @@
                         "type": "apiweb",
                         "conditions": {
                             "feedTo": [],
-                            "required": false
+                            "required": true
                         }
                     },
                     {
@@ -4221,18 +4210,46 @@
                                 "name": "Số lượng tồn kho",
                                 "id": -9698,
                                 "position": -9698,
-                                "type": "finance",
+                                "type": "apiweb",
                                 "conditions": {
-                                    "required": false
+                                    "required": false,
+                                    "feedTo": []
+                                },
+                                "apiWebConfig": {
+                                    "apiConfig": {
+                                        "param": "B6_XLSC_PARAM_GET_MATERIAL_INVENTORY_QUANTITY",
+                                        "hostnameKey": "SPRO_EVN",
+                                        "urlFilter": "/common-spro/get-material-inventory-info",
+                                        "returnKey": "MT_GET_VENDOR_RP_S"
+                                    },
+                                    "searchConfig": {
+                                        "idField": "availableQuantity",
+                                        "minimumSearch": 0,
+                                        "displayField": "availableQuantity"
+                                    }
                                 }
                             },
                             {
                                 "name": "Số lượng có thể xuất",
                                 "id": -9696,
                                 "position": -9696,
-                                "type": "finance",
+                                "type": "apiweb",
                                 "conditions": {
-                                    "required": false
+                                    "required": false,
+                                    "feedTo": []
+                                },
+                                "apiWebConfig": {
+                                    "apiConfig": {
+                                        "param": "B6_XLSC_GET_MATERIAL_REQUEST_QUANTITY",
+                                        "hostnameKey": "SPRO_EVN",
+                                        "urlFilter": "/common-spro/get-material-available-export",
+                                        "returnKey": "MT_GET_VENDOR_RP_S"
+                                    },
+                                    "searchConfig": {
+                                        "idField": "exportQuantity",
+                                        "minimumSearch": 0,
+                                        "displayField": "exportQuantity"
+                                    }
                                 }
                             },
                             {
@@ -4312,7 +4329,6 @@
         },
         {
             "customNote": "Bước 13",
-            "autocreate": false,
             "api_config": [
                 {
                     "executeAPI": {
@@ -4371,6 +4387,16 @@
             "status": "waiting"
         },
         {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
             "customNote": "Bước 13.5",
             "advancedConfig": {
                 "signature_evn": {
@@ -4459,6 +4485,9 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
                 }
             },
             "customNote": "Bước 14.1 Có chọn giám đốc/phó giám đốc phê duyệt",
@@ -4551,6 +4580,9 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
                 }
             },
             "customNote": "Bước 14.2 Không chọn giám đốc/phó giám đốc phê duyệt",
@@ -4643,6 +4675,9 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
                 }
             },
             "customNote": "Bước 15",
@@ -4735,6 +4770,9 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
                 }
             },
             "customNote": "Bước 16",
@@ -4881,6 +4919,9 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
                 }
             },
             "customNote": "Bước 18",
@@ -5036,6 +5077,9 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
                 }
             },
             "customNote": "Bước 19",

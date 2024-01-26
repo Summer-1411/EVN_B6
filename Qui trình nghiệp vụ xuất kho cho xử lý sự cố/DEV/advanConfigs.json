@@ -96,6 +96,29 @@
     "mappingLevel": "-5700",
     "pickerFilter": "fullName"
 }
+
+
+B6_IMPORT_XLSC_FILTER_SOURCE
+{
+    "orgId": "-9902,-110,-120",
+    "pickerFilter": "description"
+}
+
+B6_XLSC_PARAM_GET_MATERIAL_INVENTORY_QUANTITY
+{
+    "organizationId":"-9902,-110,-120",
+    "materialCode":"-9760"
+}
+
+B6_XLSC_GET_MATERIAL_REQUEST_QUANTITY
+{
+    "primaryInventoryCode":"-9901,-110,-120", 
+    "materialCode":"-9760,-9800,-110,-120",
+    "availableQuantity":"-9698,-9800,-110,-120",                                                             
+    "pickerFilter":"exportQuantity"
+}
+
+
 //API các bước duyệt
 // bước thì mình sẽ truyền FINISH, CANCEL , APPROVE vào action nhé
 // Tạo yêu cầu : REQUEST
@@ -588,7 +611,6 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -651,7 +673,6 @@ B6_PARAM_FINISH_BUOC13_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -705,7 +726,6 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -817,7 +837,6 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -887,7 +906,6 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -968,7 +986,6 @@ B6_PARAM_FINISH_BUOC13_5_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -1068,7 +1085,6 @@ B6_PARAM_FINISH_BUOC17_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
@@ -1154,7 +1170,6 @@ B6_PARAM_APPROVE_BUOC19_XLSC
             "construction": "(-8000,-110,-120)",
             "primaryInventory": "(-9901,-110,-120)",
             "subInventory": "(-9871,-110,-120)",
-            "locator": "(-8900,-110,-120)",
             "storekeeper": "(-5900,-110,-120)",
             "requestDate": "(-8800,-110,-120)",
             "numberVoteApprove": "(-8700,-110,-120)",
