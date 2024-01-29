@@ -226,7 +226,7 @@
                         "dataset": "INDIVIDUAL"
                     }
                 ],
-                "required": false
+                "required": true
             },
             "additionalDisplayClass": "left-info"
         },
@@ -256,8 +256,9 @@
             "id": -9400,
             "position": -9400,
             "type": "text",
+            "display": false,
             "conditions": {
-                "required": true
+                "required": false
             }
         },
         {
@@ -733,6 +734,24 @@
             "display": false,
             "type": "text",
             "value": "",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1000,
+            "position": -1000,
+            "name": "Lập phiếu chưa đến bước 6",
+            "display": false,
+            "type": "text",
+            "value": "0",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1001,
+            "position": -1001,
+            "name": "Lập phiếu đã qua bước 6",
+            "display": false,
+            "type": "text",
+            "value": "1",
             "additionalDisplayClass": "right-info"
         },
         {

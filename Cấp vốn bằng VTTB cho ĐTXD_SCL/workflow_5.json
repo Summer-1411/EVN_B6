@@ -59,6 +59,38 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -4500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -4500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -4500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -297,7 +329,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "sla": {
                 "res": 7.99,
@@ -345,6 +377,38 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -4500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -1000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -4500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -4500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -583,7 +647,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "decisions": {
                 "textDisp": "Processes Decision",
@@ -909,6 +973,34 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -973,6 +1065,7 @@
                         },
                         "name": "TongDuToan"
                     },
+                    
                     {
                         "data-config": {
                             "inputId": -60,
@@ -997,6 +1090,16 @@
                         "data-config": {
                             "inputId": -60,
                             "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1167,7 +1270,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "id": -70,
             "type": "phase",
@@ -1224,6 +1327,34 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "NgayToTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
                     },
                     {
                         "data-config": {
@@ -1307,6 +1438,16 @@
                         "data-config": {
                             "inputId": -65,
                             "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1397,7 +1538,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -1405,7 +1546,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -1477,7 +1618,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "id": -75,
             "type": "phase",
@@ -1667,6 +1808,34 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9800,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1747,6 +1916,16 @@
                         "data-config": {
                             "inputId": -60,
                             "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1901,7 +2080,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "phaseType": "Implement",
@@ -1949,6 +2128,44 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
                     },
                     {
                         "data-config": {
@@ -2039,7 +2256,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2130,7 +2347,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -2138,7 +2355,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -2210,7 +2427,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "phaseType": "Implement",
@@ -2262,6 +2479,44 @@
                     },
                     {
                         "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2349,7 +2604,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2440,7 +2695,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -2448,7 +2703,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -2520,7 +2775,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "phaseType": "Implement",
             "status": "Responding",
@@ -2571,6 +2826,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2658,7 +2951,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2749,7 +3042,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -2757,7 +3050,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -2829,7 +3122,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "phaseType": "Implement",
             "status": "Responding",
@@ -2946,6 +3239,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3033,7 +3364,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3124,7 +3455,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -3132,7 +3463,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -3204,7 +3535,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "phaseType": "Implement",
             "status": "Responding",
@@ -3246,6 +3577,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3333,7 +3702,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3400,31 +3769,37 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -60,
+                            "infoId": -9499,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "Name_VT"
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -100,
+                            "infoId": -9400,
+                            "phaseId": -110,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "Name_1"
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -145,
+                            "infoId": -9400,
+                            "phaseId": -155,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "Name_2"
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -3432,7 +3807,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -3504,7 +3879,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -3553,6 +3928,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3640,7 +4053,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3707,31 +4120,37 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -105,
+                            "infoId": -9400,
+                            "phaseId": -115,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "Name_VT"
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -105,
+                            "infoId": -9400,
+                            "phaseId": -115,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "Name_1"
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
-                            "type": "TICKET_DETAIL",
+                            "inputId": -145,
+                            "infoId": -9400,
+                            "phaseId": -155,
+                            "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "Name_2"
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -3739,7 +4158,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -3811,7 +4230,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -3868,6 +4287,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3955,7 +4412,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4046,7 +4503,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4054,7 +4511,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4126,7 +4583,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "isDone": false,
             "phaseType": "Implement",
@@ -4169,6 +4626,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4256,7 +4751,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4347,7 +4842,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4355,7 +4850,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4427,7 +4922,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -4476,6 +4971,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4563,7 +5096,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4654,7 +5187,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4662,7 +5195,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4734,7 +5267,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -4783,6 +5316,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4870,7 +5441,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -4961,7 +5532,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -4969,7 +5540,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5041,7 +5612,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -5092,6 +5663,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -5179,7 +5788,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -5270,7 +5879,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5278,7 +5887,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5350,7 +5959,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -5401,6 +6010,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -5488,7 +6135,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -5579,7 +6226,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5587,7 +6234,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5659,7 +6306,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -5710,6 +6357,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -5797,7 +6482,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -5888,7 +6573,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5896,7 +6581,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -5968,7 +6653,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -6019,6 +6704,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -6106,7 +6829,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -6197,7 +6920,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -6205,7 +6928,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -6277,7 +7000,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -6328,6 +7051,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -6415,7 +7176,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -6506,7 +7267,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -6514,7 +7275,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -6586,7 +7347,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -6635,6 +7396,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -6722,7 +7521,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -6813,7 +7612,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -6821,7 +7620,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -6893,7 +7692,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -6942,6 +7741,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7029,7 +7866,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7120,7 +7957,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -7128,7 +7965,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -7200,7 +8037,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -7249,6 +8086,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7336,7 +8211,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7427,7 +8302,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -7435,7 +8310,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -7507,7 +8382,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -7556,6 +8431,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9401,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -9201,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -60,
+                            "infoId": -4400,
+                            "phaseId": -70,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7643,7 +8556,7 @@
                     {
                         "data-config": {
                             "inputId": -60,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -70,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7734,7 +8647,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -7742,7 +8655,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -7814,7 +8727,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -7863,6 +8776,44 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1001,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9401,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban1"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -9201,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Ban2"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -65,
+                            "infoId": -4400,
+                            "phaseId": -75,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TongDonViMua"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -7950,7 +8901,7 @@
                     {
                         "data-config": {
                             "inputId": -65,
-                            "infoId": -4400,
+                            "infoId": -3900,
                             "phaseId": -75,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -8041,7 +8992,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5699,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -8049,7 +9000,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -4500,
+                            "infoId": -5599,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -8121,7 +9072,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=42525&fileName=DeNghiCapVonSCL_DTXD.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=44768&fileName=DeNghiCapVonSCL_DTXD.vm"
             },
             "autocreate": false,
             "sla": {
@@ -8463,9 +9414,23 @@
                         "position": -9500,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9499,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên trưởng/phó ban VT",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9499,
+                        "position": -9499,
+                        "type": "text"
                     },
                     {
                         "id": -9400,
@@ -8474,7 +9439,13 @@
                         "disable": true,
                         "name": "Chọn Ban 1",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9401,
+                                    "fieldName": "name",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         },
                         "apiWebConfig": {
@@ -8491,6 +9462,14 @@
                             }
                         },
                         "additionalDisplayClass": "left-info"
+                    },
+                    {
+                        "display": false,
+                        "name": "Tên ban 1",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9401,
+                        "position": -9401,
+                        "type": "text"
                     },
                     {
                         "apiWebConfig": {
@@ -8524,7 +9503,13 @@
                         "display": false,
                         "name": "Chọn Ban 2",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9201,
+                                    "fieldName": "name",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": false
                         },
                         "apiWebConfig": {
@@ -8541,6 +9526,14 @@
                             }
                         },
                         "additionalDisplayClass": "left-info"
+                    },
+                    {
+                        "display": false,
+                        "name": "Tên ban 2",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9201,
+                        "position": -9201,
+                        "type": "text"
                     },
                     {
                         "id": -9100,
@@ -8997,22 +9990,7 @@
                                     "required": true
                                 }
                             },
-                            {
-                                "id": -6880,
-                                "position": -6880,
-                                "name": "Số lượng duyệt TCT cấp",
-                                "type": "finance",
-                                "display": false,
-                                "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "DTXD",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
-                                    "feedTo": [],
-                                    "required": true
-                                }
-                            },
+                            
                             {
                                 "id": -6860,
                                 "position": -6860,
@@ -9093,56 +10071,9 @@
                                 }
                             },
                             {
-                                "id": -6760,
-                                "position": -6760,
-                                "name": "Thành tiền TCT cấp",
-                                "display": false,
-                                "expressionConfig": {
-                                    "operands": [
-                                        {
-                                            "data-config": {
-                                                "operands": [
-                                                    {
-                                                        "data-config": {
-                                                            "columnId": -6900,
-                                                            "tableId": -7000,
-                                                            "dataset": "MULTITABLE"
-                                                        },
-                                                        "type": "simple"
-                                                    },
-                                                    {
-                                                        "data-config": {
-                                                            "columnId": -6880,
-                                                            "tableId": -7000,
-                                                            "dataset": "MULTITABLE"
-                                                        },
-                                                        "type": "simple"
-                                                    }
-                                                ],
-                                                "type": "ARITHMETIC",
-                                                "operator": "MULTIPLY"
-                                            },
-                                            "type": "expression"
-                                        }
-                                    ],
-                                    "type": "ARITHMETIC"
-                                },
-                                "disabled": true,
-                                "type": "expression",
-                                "conditions": {
-                                    "displayCondition": {
-                                        "valueCondition": "DTXD",
-                                        "idCondition": -9800,
-                                        "dataCondition": "INDIVIDUAL"
-                                    },
-                                    "feedTo": [],
-                                    "required": false
-                                }
-                            },
-                            {
                                 "id": -6759,
                                 "position": -6759,
-                                "name": "TCT cấp ngay * Dự toán",
+                                "name": "TCT cấp ngay * Đơn giá Dự toán",
                                 "display": false,
                                 "expressionConfig": {
                                     "operands": [
@@ -9151,7 +10082,7 @@
                                                 "operands": [
                                                     {
                                                         "data-config": {
-                                                            "columnId": -6900,
+                                                            "columnId": -6800,
                                                             "tableId": -7000,
                                                             "dataset": "MULTITABLE"
                                                         },
@@ -9185,7 +10116,7 @@
                             {
                                 "id": -6758,
                                 "position": -6758,
-                                "name": "TCT sẽ cấp * Dự toán",
+                                "name": "TCT sẽ cấp * Đơn giá Dự toán",
                                 "display": false,
                                 "expressionConfig": {
                                     "operands": [
@@ -9194,7 +10125,7 @@
                                                 "operands": [
                                                     {
                                                         "data-config": {
-                                                            "columnId": -6900,
+                                                            "columnId": -6800,
                                                             "tableId": -7000,
                                                             "dataset": "MULTITABLE"
                                                         },
@@ -9280,7 +10211,7 @@
                                                 "operands": [
                                                     {
                                                         "data-config": {
-                                                            "columnId": -6900,
+                                                            "columnId": -6800,
                                                             "tableId": -7000,
                                                             "dataset": "MULTITABLE"
                                                         },
@@ -9315,7 +10246,8 @@
             },
             "autocreate": false,
             "type": "default",
-            "status": "waiting"
+            "status": "waiting",
+            "requestUpdateKeepData": true
         },
         {
             "customNote": "Bước 6.2 Chuyên viên Ban VT duyệt (DTXD)",
@@ -9378,9 +10310,23 @@
                         "position": -9500,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9499,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên trưởng/phó ban VT",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9499,
+                        "position": -9499,
+                        "type": "text"
                     },
                     {
                         "id": -9400,
@@ -9389,7 +10335,13 @@
                         "disable": true,
                         "name": "Chọn Ban 1",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9401,
+                                    "fieldName": "name",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         },
                         "apiWebConfig": {
@@ -9406,6 +10358,14 @@
                             }
                         },
                         "additionalDisplayClass": "left-info"
+                    },
+                    {
+                        "display": false,
+                        "name": "Tên ban 1",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9401,
+                        "position": -9401,
+                        "type": "text"
                     },
                     {
                         "apiWebConfig": {
@@ -9438,7 +10398,13 @@
                         "disable": true,
                         "name": "Chọn Ban 2",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9201,
+                                    "fieldName": "name",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         },
                         "apiWebConfig": {
@@ -9455,6 +10421,14 @@
                             }
                         },
                         "additionalDisplayClass": "left-info"
+                    },
+                    {
+                        "display": false,
+                        "name": "Tên ban 2",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9201,
+                        "position": -9201,
+                        "type": "text"
                     },
                     {
                         "id": -9100,
@@ -9920,8 +10894,6 @@
                                     "required": true
                                 }
                             },
-                            
-                            
                             {
                                 "id": -6820,
                                 "position": -6820,
@@ -9993,7 +10965,7 @@
                                                 "operands": [
                                                     {
                                                         "data-config": {
-                                                            "columnId": -6900,
+                                                            "columnId": -6800,
                                                             "tableId": -7000,
                                                             "dataset": "MULTITABLE"
                                                         },
@@ -10078,7 +11050,7 @@
                                                 "operands": [
                                                     {
                                                         "data-config": {
-                                                            "columnId": -6900,
+                                                            "columnId": -6800,
                                                             "tableId": -7000,
                                                             "dataset": "MULTITABLE"
                                                         },
@@ -10121,7 +11093,7 @@
                                                 "operands": [
                                                     {
                                                         "data-config": {
-                                                            "columnId": -6900,
+                                                            "columnId": -6800,
                                                             "tableId": -7000,
                                                             "dataset": "MULTITABLE"
                                                         },
@@ -10155,159 +11127,8 @@
                 ]
             },
             "type": "default",
-            "status": "waiting"
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -60,
-            "comment": "Liên kết ẩn từ Bước 6.1 -> Bước 10.1 để xem",
-            "id": -60100,
-            "to": -100,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6070
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 10.2 để xem",
-            "id": -65105,
-            "to": -105,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -60,
-            "comment": "Liên kết ẩn từ Bước 6.1 -> Bước 11.1 để xem",
-            "id": -60110,
-            "to": -110,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6070
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 11.2 để xem",
-            "id": -65115,
-            "to": -115,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 14.2 để xem",
-            "id": -65145,
-            "to": -145,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 15.2 để xem",
-            "id": -65155,
-            "to": -155,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -60,
-            "comment": "Liên kết ẩn từ Bước 6.1 -> Bước 16.1 để xem",
-            "id": -60160,
-            "to": -160,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6070
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 16.2 để xem",
-            "id": -65165,
-            "to": -165,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -60,
-            "comment": "Liên kết ẩn từ Bước 6.1 -> Bước 17.1 để xem",
-            "id": -60170,
-            "to": -170,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6070
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 17.2 để xem",
-            "id": -65175,
-            "to": -175,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -60,
-            "comment": "Liên kết ẩn từ Bước 6.1 -> Bước 18.1 để xem",
-            "id": -60180,
-            "to": -180,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6070
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 18.2 để xem",
-            "id": -65185,
-            "to": -185,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 19.2 để xem",
-            "id": -65195,
-            "to": -195,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -60,
-            "comment": "Liên kết ẩn từ Bước 6.1 -> Bước 20.1 để xem",
-            "id": -60200,
-            "to": -200,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6070
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -65,
-            "comment": "Liên kết ẩn từ Bước 6.2 -> Bước 20.2 để xem",
-            "id": -65205,
-            "to": -205,
-            "requestUpdateKeepData": true,
-            "relatedTo": -6575
+            "status": "waiting",
+            "requestUpdateKeepData": true
         },
         {
             "customNote": "Bước 7.1 Trưởng/phó Ban VT duyệt",
@@ -10611,9 +11432,23 @@
                         "position": -9500,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9400,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên trưởng phòng",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9400,
+                        "position": -9400,
+                        "type": "text"
                     },
                     {
                         "name": "Ghi chú",
@@ -10670,9 +11505,23 @@
                         "position": -9500,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9400,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên trưởng phòng",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9400,
+                        "position": -9400,
+                        "type": "text"
                     },
                     {
                         "name": "Ghi chú",
@@ -10896,9 +11745,23 @@
                         "position": -9500,
                         "type": "apiweb",
                         "conditions": {
-                            "feedTo": [],
+                            "feedTo": [
+                                {
+                                    "id": -9400,
+                                    "fieldName": "fullName",
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Chọn trưởng/phó ban",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9400,
+                        "position": -9400,
+                        "type": "text"
                     },
                     {
                         "name": "Ghi chú",
@@ -12057,7 +12920,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC21_SCL_DTXD_BRANCH_DTXD",
+                        "param": "B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_DTXD",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false

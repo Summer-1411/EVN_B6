@@ -161,8 +161,7 @@
                     <br />
                     <span style="font-weight: normal;">ĐIỆN LỰC TP HÀ NỘI </span>
                     <br />
-                    <b>$DonViDeNghi</b>
-                    <div><span style="line-height: 3pt">_______________</span></div>
+                    <b style="border-bottom: 1px solid black;">$DonViDeNghi</b>
                     <br />
                     <div style="font-size:11pt; font-weight: normal;">
                         Số:$SoCongVan/Ttr-Đơn vị soạn thảo<br />
@@ -172,14 +171,14 @@
                     <span style="text-align: center;">
                         <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>
                         <br />
-                        <b>Độc lập - Tự do - Hạnh phúc</b>
+                        <b style="border-bottom: 1px solid black;">Độc lập - Tự do - Hạnh phúc</b>
                         <br />
-                        <b><span style="line-height: 3pt">________________________</span></b>
+                        
                         <br />
                     </span>
                     <div style="font-size:11pt; text-align: right; font-weight: normal;">
-                        <br />
-                        <i>$DonViDeNghi, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
+                        
+                        <i>Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
                             "/")[1] năm $NgayToTrinh.split(" ")[0].split("/")[2]
                         </i>
@@ -197,25 +196,23 @@
             </tr>
             <tr>
                 <td style=" text-align: center;font-size:13pt;">
-                    <b>Về việc đề nghị tạm ứng vốn $LoaiCapVon bằng vật tư thiết bị</b>
-                    <br />
-                    <b style="line-height: 3pt;">________________________</b>
+                    #if($LoaiCapVon.equals("SCL"))
+                        <b style="border-bottom: 1px solid black;">Về việc đề nghị tạm ứng vốn SCL bằng vật tư thiết bị</b>
+                    #else 
+                        <b style="border-bottom: 1px solid black;">Về việc đề nghị tạm ứng vốn ĐTXD bằng vật tư thiết bị</b>
+                    #end
                 </td>
             </tr>
         </table>
-        <div style="padding-top: 20pt;">
+        <div >
+            <div>$CanCu</div>
             <div>Tên công trình: $TenCongTrinh</div>
             <div style="display: inline-block;">
                 <span style="margin-right: 400pt;">Mã công trình: $MaCongTrinh</span>
                 #if($LoaiCapVon.equals("SCL"))
                     <span >Mã TSCĐ: </span>
-                
                 #end
             </div>
-            <br />
-            <i>ASDF</i>
-            <br/>
-            <br/>
             <div>$DonViDeNghi kính đề nghị Tổng Công ty cấp chi phí $LoaiCapVon bằng VTTB với danh mục cụ thể
                 như sau:
             </div>
@@ -227,7 +224,7 @@
         <table class="tableHeaderxx">
             <tr class="PaddingCellTable">
                 <th witdh="4%" rowspan="2" style="text-align: center; font-weight: bold; font-size: 10.5pt;">
-                    TT
+                    STT
                 </th>
                 <th witdh="36%" rowspan="2" style="text-align: center; font-weight: bold;font-size: 10.5pt;">
                     Tên và quy cách VTTB
@@ -294,7 +291,7 @@
                     #formatFinance($row.get("CongTyCap"))
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    $row.get("DonViMua")
+                    #formatFinance($row.get("DonViMua"))
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
                     #formatFinance($row.get("DonGiaDuToan"))
@@ -326,25 +323,39 @@
                     
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongDuToan)
+                    <b>
+                        #formatFinance($TongDuToan)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongCongTyCap)
+                    <b>
+                        #formatFinance($TongCongTyCap)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    
+                    <b>
+                        #formatFinance($TongDonViMua)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongDonGiaDuToan)
+                    <b>
+                        #formatFinance($TongDonGiaDuToan)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongThanhTienDuToan)
+                    <b>
+                        #formatFinance($TongThanhTienDuToan)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongThanhTienCongTyCapDTXD)
+                    <b>
+                        #formatFinance($TongThanhTienCongTyCapDTXD)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongThanhTienDonViMua)
+                    <b>
+                        #formatFinance($TongThanhTienDonViMua)
+                    </b>
                 </td>
             </tr>
         </table>
@@ -455,28 +466,40 @@
                     
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongDuToan)
+                    <b>#formatFinance($TongDuToan)</b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongCapNgay)
+                <b>#formatFinance($TongCapNgay)</b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongSeCap)
+                    <b>
+                        #formatFinance($TongSeCap)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    
+                    <b>
+                        #formatFinance($TongDonViMua)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongDonGiaDuToan)
+                    <b>
+                        #formatFinance($TongDonGiaDuToan)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongThanhTienDuToan)
+                    <b>
+                        #formatFinance($TongThanhTienDuToan)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongThanhTienCongTyCapSCL)
+                    <b>
+                        #formatFinance($TongThanhTienCongTyCapSCL)
+                    </b>
                 </td>
                 <td style="text-align: right; font-size: 10.5pt;">
-                    #formatFinance($TongThanhTienDonViMua)
+                    <b>
+                        #formatFinance($TongThanhTienDonViMua)
+                    </b>
                 </td>
             
             </tr>
@@ -487,69 +510,73 @@
             <tr>
                 <th style="text-align: center">
                     <p style="font-size:2pt; color: white">$ChuKy_GD</p>
-                    <b>GIÁM ĐỐC/PHÓ GIÁM ĐỐC</b>
+                    <b style="font-size:12pt;">GIÁM ĐỐC/PHÓ GIÁM ĐỐC</b>
                     <br />
                     <br />
                     <br />
                     <br />
-                    <p style="font-size:14pt;">$Name_GD</p>
+                    <p style="font-size:12pt;">$Name_GD</p>
                 </th>
 
 
                 <th style="text-align: center">
                     <p style="font-size:2pt; color: white">$ChuKy_VT</p>
-                    <b>TRƯỞNG/PHÓ BAN VT</b>
+                    <b style="font-size:12pt;">TRƯỞNG/PHÓ BAN VT</b>
                     <br />
                     <br />
                     <br />
                     <br />
-                    <p style="font-size:14pt;">$Name_VT</p>
+                    <p style="font-size:12pt;">$Name_VT</p>
                 </th>
 
-
+                
                 <th style="text-align: center">
+                    #if($LapPhieu.equals("1"))
                     <p style="font-size:2pt; color: white">$ChuKy_1</p>
-                    <b>TRƯỞNG/PHÓ BAN 1</b>
+                    <b style="font-size:12pt; text-transform: uppercase;">TRƯỞNG/PHÓ $Ban1</b>
                     <br />
                     <br />
                     <br />
                     <br />
-                    <p style="font-size:14pt;">$Name_1</p>
+                    <p style="font-size:12pt;">$Name_1</p>
+                    #end
                 </th>
-
+                
 
                 <th style="text-align: center">
-                    #if($LoaiCapVon.equals("SCL"))
+                    #if($LapPhieu.equals("1"))
+                    #if($LoaiCapVon.equals("DTXD"))
                         <p style="font-size:2pt; color: white">$ChuKy_2</p>
-                        <b>TRƯỞNG/PHÓ BAN VT 2</b>
+                        <b style="font-size:12pt; text-transform: uppercase;">TRƯỞNG/PHÓ $Ban2</b>
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:14pt;">$Name_2</p>
+                        <p style="font-size:12pt;">$Name_2</p>
+                    #end
                     #end
                 </th>
 
 
                 <th style="text-align: center">
                     <p style="font-size:2pt; color: white">$ChuKy_TK</p>
-                    <b>THƯ KÝ TGĐ/PTGĐ</b>
+                    <b style="font-size:12pt;">THƯ KÝ TGĐ/PTGĐ</b>
                     <br />
                     <br />
                     <br />
                     <br />
-                    <p style="font-size:14pt;">$Name_TK</p>
+                    <p style="font-size:12pt;">$Name_TK</p>
                 </th>
 
 
                 <th style="text-align: center">
                     <p style="font-size:2pt; color: white">$ChuKy_TGD</p>
-                    <b>TGĐ/PTGĐ</b>
+                    <b style="font-size:12pt;">TGĐ/PTGĐ</b>
                     <br />
                     <br />
                     <br />
                     <br />
-                    <p style="font-size:14pt;">$Name_TGD</p>
+                    <p style="font-size:12pt;">$Name_TGD</p>
                 </th>
             </tr>
         </table>
