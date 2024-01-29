@@ -2231,8 +2231,8 @@
                         "conditions": {
                             "feedTo": [
                                 {
-                                    "id": -9450,
                                     "fieldName": "fullName",
+                                    "id": -9450,
                                     "dataset": "INDIVIDUAL"
                                 }
                             ],
@@ -4075,8 +4075,8 @@
                         "conditions": {
                             "feedTo": [
                                 {
-                                    "id": -9400,
                                     "fieldName": "fullName",
+                                    "id": -9400,
                                     "dataset": "INDIVIDUAL"
                                 }
                             ],
