@@ -493,7 +493,7 @@
                 "apiConfig": {
                     "hostnameKey": "SPRO_EVN",
                     "param": "B6_PARAM_CHON_TRUONG_BAN_VAT_TU_DTXD_SCL",
-                    "urlFilter": "/common-spro/get-usser-by-department",
+                    "urlFilter": "/common-spro/getUserByPosition",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
@@ -919,7 +919,7 @@
                     "name": "Tên vật tư",
                     "type": "text",
                     "conditions": {
-                        "required": false
+                        "required": true
                     }
                 },
                 {

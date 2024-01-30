@@ -27,6 +27,12 @@
     "depId": "-5800",
     "pickerFilter": "fullName"
 }
+
+EVN_SPRO_PARAM_PICKER_FILTER_CMIS
+{
+    "orgId": "-9989",
+    "pickerFilter": "projectName"
+}
 // B6_PARAM_CHON_TONG_GIAM_DOC_DTXD_SCL
 {
     "orgId": "-276",
